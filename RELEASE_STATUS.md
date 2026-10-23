@@ -1,7 +1,7 @@
 # Workspace release status — 23 October 2026
 
 Live site: https://workspaceapps.vercel.app/
-Private repository: https://github.com/SidAjmera/Workspace
+Public repository: https://github.com/SidAjmera/Workspace
 Local project: C:/Users/ajmer/OneDrive/Documents/Coding/Workspace
 
 ## Release one production setup completed

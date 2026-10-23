@@ -4,7 +4,7 @@ One Supabase account for **Toolnest** and **Musecoach**, maintained as equal sib
 
 **Live:** https://workspaceapps.vercel.app/
 
-**Private source:** https://github.com/SidAjmera/Workspace
+**Public source:** https://github.com/SidAjmera/Workspace
 
 ## Workspace design and neutral address
 
