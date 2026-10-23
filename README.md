@@ -2,6 +2,10 @@
 
 One account for **Toolnest** and **Musecoach**, maintained as equal sibling modules. Neither app is the parent product.
 
+**Live:** https://sidajmera-workspace.vercel.app/
+
+**Private source:** https://github.com/SidAjmera/Workspace
+
 ## Structure
 
 - `/`: neutral workspace home and app switcher.
