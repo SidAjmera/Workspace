@@ -21,7 +21,7 @@ The user explicitly approved the remaining settings. BYOK_SESSION_SECRET was imp
 
 ## Validation and rollout
 
-The final unit/database suite passed 547 tests. TypeScript and production builds passed. The expanded local desktop/mobile suite passed all 22 checks. Production rollout and the final hosted checks are in progress.
+Release two version 1.1.0 is live. Commit e2d7ac9 deployed successfully as Vercel deployment 4SmtgM6HS4a9rBbXCmEWz2kNnwx7. The final unit/database suite passed 547 tests. TypeScript and production builds passed. All 22 local and all 22 hosted desktop/mobile checks passed, including the 159-app catalog, equal app navigation, device-audio review reload, shared account screens, guest cloud restrictions and protected API responses.
 
 Release-two SQL is supabase/release-two.sql. Embedded PostgreSQL tests verify opt-in enforcement, RLS isolation, stale-write rejection, audio-pointer preservation and deletion behavior. Migration-history and connected schema-write requests returned invalid request-state errors. The reviewed upgrade was applied transactionally through the Supabase SQL editor, then the new tables were verified to have RLS and all three new functions were verified to be SECURITY INVOKER. No new security-advisor findings were added. Do not claim a recorded migration-history entry or rerun the one-time schema blindly.
 
