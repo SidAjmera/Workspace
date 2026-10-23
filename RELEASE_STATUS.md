@@ -38,3 +38,7 @@ The new production address and exact authentication callback are configured in V
 ## Blue studio theme and expandable Workspace Apps address
 
 The public home is now https://workspaceapps.vercel.app/. workspace-apps.vercel.app was unavailable. Shared light/dark palettes follow Musecoach, with a header theme toggle available before sign-in. Previous addresses remain available for exporting browser-only data and link to the new home. Commit d854087 deployed successfully as Vercel deployment HhwqJR7wtJcF8bLUpRTa9FapzhHY. TypeScript and the production build passed; all 22 local and 22 live desktop/mobile checks passed. Additional 320px, 390px and 1280px checks confirmed theme switching, reload persistence and no horizontal overflow across home, both apps, settings and privacy. Live light/dark switching, the new exact Supabase callback, and the former-domain migration link were also verified. Both original READMEs were updated and pushed.
+
+## Active app headers and All Apps sidebar
+
+The shared header identifies the current app, with a modal All Apps sidebar replacing the top app tabs. Prefix breadcrumbs, fixed two-app wording and the existing-Toolnest-account sign-in claim were removed. Sidebar focus, Escape, responsive layout and production rollout checks are in progress.

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTheme } from "next-themes";
 import {
   ArrowUpRight,
@@ -11,6 +11,9 @@ import {
   UserRound,
   Sun,
   Moon,
+  PanelLeft,
+  X,
+  Check,
 } from "lucide-react";
 import { useAccount } from "./auth";
 export function Shell({ children }: { children: React.ReactNode }) {
@@ -22,6 +25,26 @@ export function Shell({ children }: { children: React.ReactNode }) {
       ? "musecoach"
       : "";
   const { resolvedTheme, setTheme } = useTheme();
+  const [switcherOpen, setSwitcherOpen] = useState(false);
+  const switcher = useRef<HTMLDialogElement>(null);
+  const activeApp =
+    app === "musecoach"
+      ? { name: "MuseCoach", href: "/musecoach", icon: AudioLines }
+      : app === "toolnest"
+        ? { name: "Toolnest", href: "/toolnest", icon: Compass }
+        : { name: "All Apps", href: "/", icon: Grid2X2 };
+  const ActiveIcon = activeApp.icon;
+  useEffect(() => {
+    if (switcher.current?.open) switcher.current.close();
+  }, [path]);
+  useEffect(() => {
+    if (!switcherOpen) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previous;
+    };
+  }, [switcherOpen]);
   const [legacy, setLegacy] = useState(false);
   useEffect(() => {
     setLegacy(
@@ -45,31 +68,30 @@ export function Shell({ children }: { children: React.ReactNode }) {
   return (
     <>
       <nav className="ws-bar" aria-label="Workspace navigation">
-        <Link href="/" className="ws-wordmark" aria-label="Workspace home">
+        <Link
+          href={activeApp.href}
+          className="ws-wordmark"
+          aria-label={activeApp.name + " home"}
+        >
           <span className="ws-brand-icon">
-            <Grid2X2 size={19} />
+            <ActiveIcon size={19} />
           </span>
-          <span>
-            Workspace<span className="ws-brand-period">.</span>
-          </span>
+          <span>{activeApp.name}</span>
         </Link>
         <span className="ws-nav-divider" />
-        <div className="ws-apps">
-          <a
-            href="/toolnest"
-            aria-current={app === "toolnest" ? "page" : undefined}
-          >
-            <Compass size={15} />
-            <span>Toolnest</span>
-          </a>
-          <a
-            href="/musecoach"
-            aria-current={app === "musecoach" ? "page" : undefined}
-          >
-            <AudioLines size={15} />
-            <span>Musecoach</span>
-          </a>
-        </div>
+        <button
+          className="ws-switcher-button"
+          aria-haspopup="dialog"
+          aria-controls="ws-app-switcher"
+          aria-expanded={switcherOpen}
+          onClick={() => {
+            switcher.current?.showModal();
+            setSwitcherOpen(true);
+          }}
+        >
+          <PanelLeft size={17} />
+          <span>All Apps</span>
+        </button>
         <button
           className="ws-theme-toggle"
           aria-label={
@@ -96,6 +118,100 @@ export function Shell({ children }: { children: React.ReactNode }) {
           <ArrowUpRight size={15} />
         </a>
       </nav>
+      <dialog
+        ref={switcher}
+        id="ws-app-switcher"
+        className="ws-app-dialog"
+        aria-labelledby="ws-switcher-title"
+        onKeyDown={(event) => {
+          if (event.key !== "Tab") return;
+          const items = Array.from(
+            event.currentTarget.querySelectorAll<HTMLElement>(
+              'a[href], button:not([disabled]), [tabindex="0"]',
+            ),
+          );
+          const first = items[0],
+            last = items[items.length - 1];
+          if (event.shiftKey && document.activeElement === first) {
+            event.preventDefault();
+            last?.focus();
+          } else if (!event.shiftKey && document.activeElement === last) {
+            event.preventDefault();
+            first?.focus();
+          }
+        }}
+        onClose={() => setSwitcherOpen(false)}
+        onClick={(event) => {
+          if (event.target === event.currentTarget) switcher.current?.close();
+        }}
+      >
+        <div className="ws-switcher-content">
+          <div className="ws-switcher-heading">
+            <span className="ws-brand-icon">
+              <Grid2X2 size={20} />
+            </span>
+            <h2 id="ws-switcher-title">All Apps</h2>
+            <button
+              autoFocus
+              className="ws-switcher-close"
+              aria-label="Close app sidebar"
+              onClick={() => switcher.current?.close()}
+            >
+              <X size={19} />
+            </button>
+          </div>
+          <p className="ws-switcher-description">Choose where to go next.</p>
+          <nav aria-label="All Apps">
+            <a
+              href="/"
+              aria-current={!app && path === "/" ? "page" : undefined}
+            >
+              <Grid2X2 size={20} />
+              <span>
+                <strong>All Apps</strong>
+                <small>Explore your apps</small>
+              </span>
+            </a>
+            {[
+              {
+                name: "Toolnest",
+                href: "/toolnest",
+                id: "toolnest",
+                icon: Compass,
+                description: "Discover and compare software",
+              },
+              {
+                name: "MuseCoach",
+                href: "/musecoach",
+                id: "musecoach",
+                icon: AudioLines,
+                description: "Find your voice, build your practice",
+              },
+            ].map((item) => (
+              <a
+                key={item.id}
+                href={item.href}
+                aria-current={app === item.id ? "page" : undefined}
+              >
+                <item.icon size={20} />
+                <span>
+                  <strong>{item.name}</strong>
+                  <small>{item.description}</small>
+                </span>
+                {app === item.id && <Check size={17} />}
+              </a>
+            ))}
+          </nav>
+          <div className="ws-switcher-bottom">
+            <a href="/settings">
+              <UserRound size={17} />
+              Account & settings
+              <ArrowUpRight size={14} />
+            </a>
+            <a href="/privacy">Privacy & data</a>
+          </div>
+        </div>
+      </dialog>
       {legacy && (
         <aside className="ws-move-notice" aria-label="Workspace address update">
           <button

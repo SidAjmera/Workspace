@@ -230,11 +230,11 @@ export default function Musecoach() {
         Skip to content
       </a>
       <aside className="sidebar">
-        <Link href="/" className="brand" aria-label="Musecoach home">
+        <Link href="/" className="brand" aria-label="MuseCoach home">
           <span className="brand-mark">
             <AudioLines size={23} />
           </span>
-          musecoach<span className="brand-period">.</span>
+          MuseCoach<span className="brand-period">.</span>
         </Link>
         <p className="sidebar-caption">A LITTLE PRACTICE. MORE YOU.</p>
         <nav aria-label="Main navigation">
@@ -288,10 +288,7 @@ export default function Musecoach() {
       </aside>
       <div className="workspace">
         <header className="topbar">
-          <div className="breadcrumb">
-            Workspace <ChevronRight size={13} /> Musecoach{" "}
-            <ChevronRight size={13} /> <span>{title}</span>
-          </div>
+          <div className="breadcrumb">MuseCoach</div>
           <div className="topbar-right">
             <span className="private-badge">
               <span /> A space for your voice

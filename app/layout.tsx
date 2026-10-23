@@ -5,7 +5,7 @@ import { Shell } from "@/shell";
 import { PracticeSyncManager } from "@/practice-sync-ui";
 import "./workspace.css";
 export const metadata: Metadata = {
-  title: "Workspace · Your apps, together",
+  title: "All Apps · Your apps, together",
   description: "One workspace for software discovery and singing practice.",
 };
 export default function Layout({ children }: { children: React.ReactNode }) {

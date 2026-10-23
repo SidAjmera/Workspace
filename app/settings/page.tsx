@@ -67,11 +67,11 @@ export default function Settings() {
   }
   return (
     <main className="ws-settings">
-      <span className="ws-kicker">ONE ACCOUNT · BOTH APPS</span>
+      <span className="ws-kicker">ONE ACCOUNT · ALL APPS</span>
       <h1>Account & settings</h1>
       <p>
-        Toolnest and Musecoach share your workspace identity. Their preferences
-        and saved content remain separate.
+        All Apps share your account. App preferences and saved content remain
+        separate.
       </p>
       {message && (
         <p role="status" className="ws-feedback">
@@ -81,7 +81,6 @@ export default function Settings() {
       {!user ? (
         <section>
           <h2>{signup ? "Create your workspace" : "Welcome back"}</h2>
-          <p>Your existing Toolnest email and password work here.</p>
           {!configured && (
             <p>
               Account services need Supabase configuration. Guest browsing and
@@ -229,7 +228,7 @@ export default function Settings() {
           <section>
             <h2>Export your data</h2>
             <p>
-              Download account settings and cloud records from both apps. Export
+              Download account settings and cloud records from All Apps. Export
               local Musecoach reviews from Progress. Download original audio
               individually from each saved review.
             </p>
@@ -258,8 +257,8 @@ export default function Settings() {
             <h2>Delete data</h2>
             <p>
               App deletion keeps your shared account. Workspace deletion removes
-              both apps’ cloud data and submits an account deletion request for
-              the operator. Device data on other browsers must be cleared on
+              cloud data from All Apps and submits an account deletion request
+              for the operator. Device data on other browsers must be cleared on
               those devices.
             </p>
             <label>
@@ -311,7 +310,7 @@ export default function Settings() {
         <section>
           <h2>Guest practice</h2>
           <p>
-            You can explore both apps and practise without an account. Sign in
+            You can explore All Apps and practise without an account. Sign in
             when you want private cloud recordings.
           </p>
           <a className="ws-action" href="/musecoach">

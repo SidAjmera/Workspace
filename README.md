@@ -24,6 +24,10 @@ Both previous Workspace addresses remain available with a migration notice so de
 
 Review sync never uploads device audio. Audio downloads occur for requested playback or explicit transfers, not as part of bulk review sync. API keys, conversations, designed-exercise drafts and solo-song guide audio are not synchronized.
 
+## All Apps navigation
+
+The shared header shows the active app name (Toolnest or MuseCoach). Use **All Apps** to open the app-selection sidebar; the sidebar supports keyboard navigation, Escape to close, focus restoration and light/dark themes. The home, account and privacy screens use All Apps wording, and sign-in does not assume a previous Toolnest account. App headers show names without workspace or app breadcrumb prefixes.
+
 ## Equal app structure
 
 - `/`: workspace home and app switcher.

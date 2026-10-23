@@ -1,12 +1,12 @@
 export default function Privacy() {
   return (
     <main className="ws-settings">
-      <a href="/">← Workspace home</a>
-      <h1>Your workspace data</h1>
+      <a href="/">← All Apps</a>
+      <h1>Your All Apps data</h1>
       <p>
-        Updated 23 October 2026. Toolnest and Musecoach share one Supabase
-        account. Email, authentication, workspace appearance and the account
-        identifier support both apps.
+        Updated 23 October 2026. All Apps share one Supabase account. Email,
+        authentication, workspace appearance and the account identifier support
+        All Apps.
       </p>
       <section>
         <h2>Toolnest</h2>

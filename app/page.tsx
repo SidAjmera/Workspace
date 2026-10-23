@@ -141,7 +141,7 @@ export default function Home() {
       </header>
       <section aria-labelledby="ws-apps-heading" className="ws-app-section">
         <div className="ws-section-heading">
-          <h2 id="ws-apps-heading">Your workspace</h2>
+          <h2 id="ws-apps-heading">All Apps</h2>
           <span>Your apps. One account. Room to grow.</span>
         </div>
         <div className="ws-cards">
@@ -156,7 +156,7 @@ export default function Home() {
                 <span>
                   <Compass size={14} /> DISCOVER & COMPARE
                 </span>
-                <span className="ws-card-index">01 / 02</span>
+                <span className="ws-card-index">01</span>
               </div>
               <div className="ws-card-title">
                 <h2>Toolnest</h2>
@@ -179,7 +179,7 @@ export default function Home() {
           <a
             href="/musecoach"
             className="ws-app-card ws-musecoach-card"
-            aria-label="Open Musecoach"
+            aria-label="Open MuseCoach"
           >
             <VoicePreview />
             <div className="ws-card-content">
@@ -187,10 +187,10 @@ export default function Home() {
                 <span>
                   <AudioLines size={14} /> SING & GROW
                 </span>
-                <span className="ws-card-index">02 / 02</span>
+                <span className="ws-card-index">02</span>
               </div>
               <div className="ws-card-title">
-                <h2>Musecoach</h2>
+                <h2>MuseCoach</h2>
                 <span className="ws-round-arrow">
                   <ArrowUpRight size={24} />
                 </span>
@@ -202,7 +202,7 @@ export default function Home() {
               <div className="ws-card-footer">
                 <span>100 ways to practise</span>
                 <strong>
-                  Open Musecoach <ArrowRight size={15} />
+                  Open MuseCoach <ArrowRight size={15} />
                 </strong>
               </div>
             </div>
@@ -230,7 +230,7 @@ export default function Home() {
       </aside>
       <footer className="ws-footer">
         <span>
-          Workspace <span className="ws-footer-dot">•</span> Built for a curious
+          All Apps <span className="ws-footer-dot">•</span> Built for a curious
           mind.
         </span>
         <div>

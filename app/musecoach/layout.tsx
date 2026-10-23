@@ -1,1 +1,1 @@
-import './styles.css'; export const metadata={title:'Musecoach · Workspace'}; export default function Layout({children}:{children:React.ReactNode}){return children;}
+import './styles.css'; export const metadata={title:'MuseCoach'}; export default function Layout({children}:{children:React.ReactNode}){return children;}
