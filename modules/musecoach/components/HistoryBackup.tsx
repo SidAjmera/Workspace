@@ -148,7 +148,7 @@ export default function HistoryBackup({
             </p>
             <p className="small muted">
               Backup created{" "}
-              {new Date(candidate.exportedAt).toLocaleDateString()}. Imported
+              {new Date(candidate.exportedAt).toLocaleDateString("en-US")}. Imported
               measurements are restored as saved, rather than reanalysed.
             </p>
             <label className="inline-check">

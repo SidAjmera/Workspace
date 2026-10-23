@@ -190,7 +190,7 @@ export default function Coach({
           {profile.version} version · {profile.pronouns}
         </p>
         <button className="button secondary" onClick={onCustomize}>
-          <Settings2 size={15} /> Customise coach
+          <Settings2 size={15} /> Customize coach
         </button>
         <button
           className="text-button"

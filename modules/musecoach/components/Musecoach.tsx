@@ -355,7 +355,7 @@ export default function Musecoach() {
                   setFirst(false);
                 }}
               >
-                <Settings2 size={16} /> Personalise your studio
+                <Settings2 size={16} /> Personalize your studio
               </button>
             )}
           </div>
@@ -480,10 +480,10 @@ export default function Musecoach() {
               {profile.favoriteExercises.length > 0 && (
                 <section
                   className="panel home-favorites"
-                  aria-label="Favourite exercises"
+                  aria-label="Favorite exercises"
                 >
                   <div className="section-heading">
-                    <h3>Your favourites</h3>
+                    <h3>Your favorites</h3>
                     <Link href="/practice" className="text-button">
                       View library <ArrowRight size={15} />
                     </Link>
@@ -496,7 +496,7 @@ export default function Musecoach() {
                         <button
                           key={kind}
                           className="chip"
-                          aria-label={`Open favourite: ${exerciseInfo[kind].label}`}
+                          aria-label={`Open favorite: ${exerciseInfo[kind].label}`}
                           disabled={unavailable}
                           onClick={() => practice(kind)}
                         >
@@ -596,7 +596,7 @@ export default function Musecoach() {
                   setProfile(next);
                 } catch {
                   setError(
-                    "Could not save your favourite exercises. Check browser storage permissions.",
+                    "Could not save your favorite exercises. Check browser storage permissions.",
                   );
                 }
               }}
@@ -714,7 +714,7 @@ export default function Musecoach() {
   );
 }
 function formatDate(date: string) {
-  return new Intl.DateTimeFormat(undefined, {
+  return new Intl.DateTimeFormat("en-US", {
     month: "short",
     day: "numeric",
     hour: "numeric",

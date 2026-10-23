@@ -107,7 +107,7 @@ export default function SongPractice({
       setReference(exercise);
       setGuide(file);
       setStatus(
-        `${exercise.targets.length} estimated note targets ready. Listen and check the guide before practising.`,
+        `${exercise.targets.length} estimated note targets ready. Listen and check the guide before practicing.`,
       );
     } catch (e) {
       if (token === generation.current) {
@@ -121,7 +121,7 @@ export default function SongPractice({
   return (
     <section className="panel song-practice">
       <details>
-        <summary>Practise a real song</summary>
+        <summary>Practice a real song</summary>
         <p>
           Search by title or artist, then load your own 15–57 second solo-vocal
           guide. Musecoach estimates its notes locally so you can sing the same
@@ -246,7 +246,7 @@ export default function SongPractice({
                 }
               }}
             >
-              Practise this song phrase
+              Practice this song phrase
             </button>
           </div>
         )}

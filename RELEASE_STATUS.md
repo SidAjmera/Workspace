@@ -42,3 +42,7 @@ The public home is now https://workspaceapps.vercel.app/. workspace-apps.vercel.
 ## Active app headers and All Apps sidebar
 
 The shared header identifies the current app, with a modal All Apps sidebar replacing the top app tabs. Prefix breadcrumbs, fixed two-app wording and the existing-Toolnest-account sign-in claim were removed. Commit ea39924 deployed successfully as Vercel deployment 7MvtrMjhEo4yviS7Xq585ezj34Ku. TypeScript and production builds passed. All 22 local and 22 live desktop/mobile checks passed. Additional 320px, 390px and 1280px checks verified active app headers, no horizontal overflow, dark sidebar rendering, keyboard focus containment, Escape closing and focus restoration. Live sidebar switching, prefix-free Toolnest display and sign-in without legacy account claims were verified separately. Both original READMEs are updated and pushed.
+
+## Workspace home and American English
+
+Restored Workspace branding outside apps, retaining MuseCoach and Toolnest headers within their respective apps. Updated interface text, exercise and coach descriptions, errors, English AI response instructions and date formatting to American English; the document language is en-US. Existing genre preference values remain compatible. Both original READMEs are updated. Validation and rollout are in progress.

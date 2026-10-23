@@ -32,7 +32,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
       ? { name: "MuseCoach", href: "/musecoach", icon: AudioLines }
       : app === "toolnest"
         ? { name: "Toolnest", href: "/toolnest", icon: Compass }
-        : { name: "All Apps", href: "/", icon: Grid2X2 };
+        : { name: "Workspace", href: "/", icon: Grid2X2 };
   const ActiveIcon = activeApp.icon;
   useEffect(() => {
     if (switcher.current?.open) switcher.current.close();

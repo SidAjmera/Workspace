@@ -79,7 +79,7 @@ export const coaches: {
     role: "Give every phrase a story",
     traits: "Thoughtful · Soulful · Expressive",
     approach:
-      "Explore phrasing and musical choices while keeping your own story at the centre.",
+      "Explore phrasing and musical choices while keeping your own story at the center.",
     color: "#cc927d",
     greeting: "What would you like your next phrase to say?",
   },
@@ -96,7 +96,7 @@ export const coaches: {
   {
     id: "Lola",
     defaultVersion: "female",
-    role: "A little theatre. A lot of you.",
+    role: "A little theater. A lot of you.",
     traits: "Dramatic · Funny · Imaginative",
     approach: "Try a scene or a character to open up new performance choices.",
     color: "#e8a2af",
@@ -116,7 +116,7 @@ export const coaches: {
     id: "Kai",
     defaultVersion: "male",
     role: "Small challenges. Steady momentum.",
-    traits: "Energetic · Organised · Motivating",
+    traits: "Energetic · Organized · Motivating",
     approach:
       "Turn one useful insight into a short, achievable practice challenge.",
     color: "#8abfc5",

@@ -158,7 +158,7 @@ export default function ProfileEditor({
             </fieldset>
             <fieldset>
               <legend>
-                Your favourite genres <span className="muted">Optional</span>
+                Your favorite genres <span className="muted">Optional</span>
               </legend>
               <div className="chips">
                 {[
@@ -178,7 +178,7 @@ export default function ProfileEditor({
                     key={g}
                     onClick={() => toggle("genres", g)}
                   >
-                    {g}
+                    {g === "Musical theatre" ? "Musical theater" : g}
                   </button>
                 ))}
               </div>

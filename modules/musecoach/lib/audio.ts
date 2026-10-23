@@ -173,7 +173,7 @@ export function runAnalysis(
     cancel = () => {
       clearTimeout(timeout);
       worker.terminate();
-      reject(new Error("Analysis cancelled."));
+      reject(new Error("Analysis canceled."));
     };
     worker.onmessage = (e) => {
       clearTimeout(timeout);

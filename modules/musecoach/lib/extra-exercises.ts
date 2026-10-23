@@ -85,7 +85,7 @@ export const extraExercises = {
   ),
   "step-back-path": pattern(
     "Step-back path",
-    "Begin above the base, step down, and practise small returns without rushing.",
+    "Begin above the base, step down, and practice small returns without rushing.",
     "Basics",
     "Descending coordination",
     [4, 2, 0, 2, 0, 2, 4],
@@ -144,7 +144,7 @@ export const extraExercises = {
     "Melodic-minor path",
     "Climb with raised sixth and seventh notes, then return through the lowered notes of natural minor.",
     "Scales",
-    "Changing minor-scale colours",
+    "Changing minor-scale colors",
     [0, 2, 3, 5, 7, 9, 11, 12, 10, 8, 3, 0],
   ),
   "dorian-path": pattern(
@@ -227,7 +227,7 @@ export const extraExercises = {
   ),
   "descending-fifths": pattern(
     "Descending fifth landings",
-    "Begin a fifth above the base and practise clear downward landings.",
+    "Begin a fifth above the base and practice clear downward landings.",
     "Intervals",
     "Descending fifths",
     [7, 0, 7, 0, 4, 0],
@@ -362,7 +362,7 @@ export const extraExercises = {
 
   "major-phrase-arch": pattern(
     "Major phrase arch",
-    "Follow an original rising and falling phrase with a fourth and fifth near its centre.",
+    "Follow an original rising and falling phrase with a fourth and fifth near its center.",
     "Phrases",
     "Phrase contour",
     [0, 2, 5, 7, 5, 2, 0],

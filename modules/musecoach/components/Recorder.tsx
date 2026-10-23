@@ -247,7 +247,7 @@ export default function Recorder({
                   ? "Listen to the reference first. Recording starts with a three-beat count-in. Sing the highlighted targets; headphones help keep the count-in out of your take."
                   : rangeExploration
                     ? "On a gentle “oo”, explore a few notes that feel easy, pausing between phrases. Stay comfortable and stop if anything hurts. This is a provisional range check."
-                    : "Choose a favourite phrase, or a comfortable “oo”. Solo singing in a quiet room gives the clearest picture."}
+                    : "Choose a favorite phrase, or a comfortable “oo”. Solo singing in a quiet room gives the clearest picture."}
         </p>
         <div
           className="record-time"

@@ -15,7 +15,7 @@ Both previous Workspace addresses remain available with a migration notice so de
 ## Release two (1.1.0)
 
 - Independent opt-in controls for Musecoach profile sync and review sync, both off by default.
-- Profile sync includes coach choices, goals, comfortable range and favourites. Review sync includes existing and future measured reviews, session names and notes, including takes without saved audio.
+- Profile sync includes coach choices, goals, comfortable range and favorites. Review sync includes existing and future measured reviews, session names and notes, including takes without saved audio.
 - Enabled sync runs on opening/returning to the workspace, reconnection and local changes. Device edits remain available if a request fails. Sync errors are visible and can be retried from Account & settings.
 - Revision checks prevent stale writes. Conflicts keep both versions: choose a cloud profile/review or explicitly upload the device profile; device review edits can be kept as a separate take.
 - Four recording choices: measurements only, device audio, cloud review without audio, or private cloud audio with its review.
@@ -26,7 +26,7 @@ Review sync never uploads device audio. Audio downloads occur for requested play
 
 ## All Apps navigation
 
-The shared header shows the active app name (Toolnest or MuseCoach). Use **All Apps** to open the app-selection sidebar; the sidebar supports keyboard navigation, Escape to close, focus restoration and light/dark themes. The home, account and privacy screens use All Apps wording, and sign-in does not assume a previous Toolnest account. App headers show names without workspace or app breadcrumb prefixes.
+The shared header shows the active app name (Toolnest or MuseCoach). Use **All Apps** to open the app-selection sidebar; the sidebar supports keyboard navigation, Escape to close, focus restoration and light/dark themes. Outside apps, the header and home keep Workspace branding; All Apps labels the app selector and collective app references, and sign-in does not assume a previous Toolnest account. App headers show names without workspace or app breadcrumb prefixes.
 
 ## Equal app structure
 

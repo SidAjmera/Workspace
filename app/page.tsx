@@ -23,7 +23,7 @@ function ToolPreview() {
             <i />
             <i />
           </span>
-          <span>Find your next favourite tool</span>
+          <span>Find your next favorite tool</span>
           <SlidersHorizontal size={13} />
         </div>
         <div className="ws-mini-search">
@@ -141,7 +141,7 @@ export default function Home() {
       </header>
       <section aria-labelledby="ws-apps-heading" className="ws-app-section">
         <div className="ws-section-heading">
-          <h2 id="ws-apps-heading">All Apps</h2>
+          <h2 id="ws-apps-heading">Your workspace</h2>
           <span>Your apps. One account. Room to grow.</span>
         </div>
         <div className="ws-cards">
@@ -200,7 +200,7 @@ export default function Home() {
                 turn small moments into progress.
               </p>
               <div className="ws-card-footer">
-                <span>100 ways to practise</span>
+                <span>100 ways to practice</span>
                 <strong>
                   Open MuseCoach <ArrowRight size={15} />
                 </strong>
@@ -230,7 +230,7 @@ export default function Home() {
       </aside>
       <footer className="ws-footer">
         <span>
-          All Apps <span className="ws-footer-dot">•</span> Built for a curious
+          Workspace <span className="ws-footer-dot">•</span> Built for a curious
           mind.
         </span>
         <div>

@@ -135,7 +135,7 @@ export function PracticeSyncSettings() {
       <h2>Musecoach sync</h2>
       <p>
         Both choices start off. Profile sync includes your coach, goals, range
-        and favourites. Review sync includes existing and future device
+        and favorites. Review sync includes existing and future device
         measurements, review titles and notes. Audio moves only when you
         explicitly choose cloud recording or use transfer controls.
       </p>

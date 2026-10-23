@@ -310,7 +310,7 @@ export default function Settings() {
         <section>
           <h2>Guest practice</h2>
           <p>
-            You can explore All Apps and practise without an account. Sign in
+            You can explore All Apps and practice without an account. Sign in
             when you want private cloud recordings.
           </p>
           <a className="ws-action" href="/musecoach">

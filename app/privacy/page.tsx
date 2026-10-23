@@ -23,7 +23,7 @@ export default function Privacy() {
         <p>
           Profile sync and review sync start off and are controlled
           independently in Account & settings. Profile sync stores your singing
-          profile, coach choices, goals, comfortable range and favourites.
+          profile, coach choices, goals, comfortable range and favorites.
           Review sync stores measured reviews, pitch graphs, session names and
           notes, including takes whose audio was never saved.
         </p>

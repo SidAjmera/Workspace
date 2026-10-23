@@ -44,7 +44,7 @@ function define(
 export const exerciseInfo: Record<ExerciseKind, ExerciseDefinition> = {
   match: define(
     "Match a note",
-    "Listen, hum, and find the centre of a comfortable note.",
+    "Listen, hum, and find the center of a comfortable note.",
     "Basics",
     "Pitch accuracy",
     [0, 0, 0, 0],

@@ -125,7 +125,7 @@ export function practicePlan(
   return {
     focus: weakest.key,
     title: `Focus on ${weakest.label.toLowerCase()}`,
-    reason: `${weakest.label} had the lowest available median indicator (${Math.round(weakest.median)}/100) across up to five recent takes analysed with the current detector. These suggestions target that measured area; different exercises and recording conditions can affect it.`,
+    reason: `${weakest.label} had the lowest available median indicator (${Math.round(weakest.median)}/100) across up to five recent takes analyzed with the current detector. These suggestions target that measured area; different exercises and recording conditions can affect it.`,
     exercises: fit([...weakest.kinds]),
     pointers,
     evidence: weakest.evidence,

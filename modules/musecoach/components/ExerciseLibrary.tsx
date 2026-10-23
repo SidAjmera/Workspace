@@ -51,7 +51,7 @@ export default function ExerciseLibrary({
           checked={favoritesOnly}
           onChange={(e) => setFavoritesOnly(e.target.checked)}
         />
-        Show favourites only ({favorites.length})
+        Show favorites only ({favorites.length})
       </label>
       <p className="small muted">
         Choose one comfortable challenge. Every exercise has a defined reference
@@ -123,8 +123,8 @@ export default function ExerciseLibrary({
                 aria-pressed={favorite}
                 aria-label={
                   favorite
-                    ? `Remove ${e.label} from favourites`
-                    : `Add ${e.label} to favourites`
+                    ? `Remove ${e.label} from favorites`
+                    : `Add ${e.label} to favorites`
                 }
                 onClick={() => {
                   onFavorites(
@@ -147,8 +147,8 @@ export default function ExerciseLibrary({
       {visible.length === 0 && (
         <p className="empty-inline">
           {favoritesOnly && favorites.length === 0
-            ? "No favourites yet. Use the star beside an exercise to save it."
-            : "No exercises match those filters. Try another focus, a shorter search, or turn off favourites only."}
+            ? "No favorites yet. Use the star beside an exercise to save it."
+            : "No exercises match those filters. Try another focus, a shorter search, or turn off favorites only."}
         </p>
       )}
     </section>
