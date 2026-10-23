@@ -1,6 +1,6 @@
 # Workspace release status — 23 October 2026
 
-Live site: https://sidajmera-workspace.vercel.app/
+Live site: https://toolnest-musecoach.vercel.app/
 Private repository: https://github.com/SidAjmera/Workspace
 Local project: C:/Users/ajmer/OneDrive/Documents/Coding/Workspace
 
@@ -30,3 +30,7 @@ Release-two SQL is supabase/release-two.sql. Embedded PostgreSQL tests verify op
 Email delivery and confirmation, signed-in profile/history sync across actual devices, authenticated audio upload/download/transfers/deletion, physical microphones and real AI-provider calls still need an actual account/device check. Browser recordings use synthetic WAV fixtures; transport tests use mocks and SQL tests supply synthetic claims in embedded PostgreSQL. These are not live authenticated-upload verification.
 
 Full account deletion is queued for operator processing after file/app-data cleanup. Both original standalone sites remain available for legacy browser-data export.
+
+## Neutral domain and visual redesign
+
+The new production address and exact authentication callback are configured in Vercel and Supabase. The previous address remains connected for device-data export, with a migration notice linking to the new home. A full shared-home redesign adds illustrated equal app cards, ivory/evergreen styling, improved navigation and account/privacy surfaces. Desktop/mobile checks are being repeated against this design before rollout.
