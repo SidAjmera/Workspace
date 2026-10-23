@@ -1,0 +1,5 @@
+import {z} from 'zod';
+import {featureNames,platforms} from './types';
+export const requirementsSchema=z.object({query:z.string().max(2000).default(''),category:z.string().max(100).optional(),platform:z.enum(platforms).optional(),platformMandatory:z.boolean().optional(),maxPrice:z.number().min(0).max(10000).optional(),priceMandatory:z.boolean().optional(),requiredFeatures:z.array(z.enum(featureNames)).max(20).default([]),preferredFeatures:z.array(z.enum(featureNames)).max(20).default([]),excludeId:z.string().max(100).optional(),priorities:z.array(z.string().max(40)).max(6).optional()});
+export const consentSchema=z.object({personalization:z.boolean(),history:z.boolean(),analytics:z.boolean()});
+export const profileSchema=z.object({platforms:z.array(z.enum(platforms)).max(6),budget:z.enum(['free','under10','flexible']),priorities:z.array(z.enum(['Privacy','Features','Ease of use','Performance','Integrations','Customizability'])).max(6),experience:z.enum(['Beginner','Intermediate','Advanced']),theme:z.enum(['light','dark','system']).optional()});

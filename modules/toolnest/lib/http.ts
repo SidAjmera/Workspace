@@ -1,0 +1,4 @@
+import {NextResponse} from 'next/server';
+export function errorResponse(e:unknown){const message=e instanceof SyntaxError?'Invalid JSON request.':e instanceof Error?e.message:'';const status=message==='Sign in to continue.'?401:message.includes('not configured')?503:400;return NextResponse.json({error:message.startsWith('[')?'Invalid request.':message||'Unable to complete request.'},{status,headers:{'Cache-Control':'no-store'}});}
+export function assertOrigin(req:Request){const origin=req.headers.get('origin');if(origin && origin!==new URL(req.url).origin)throw new Error('Cross-origin requests are not allowed.');}
+export async function body(req:Request){assertOrigin(req);if(Number(req.headers.get('content-length')||0)>32000)throw new Error('Request is too large.');const raw=await req.text();if(raw.length>32000)throw new Error('Request is too large.');return JSON.parse(raw);}

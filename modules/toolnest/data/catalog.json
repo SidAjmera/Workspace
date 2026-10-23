@@ -1,0 +1,4373 @@
+[
+  {
+    "id": "obsidian",
+    "name": "Obsidian",
+    "category": "Productivity",
+    "description": "A private, flexible home for your notes. Connect ideas and build a knowledge base that stays on your device.",
+    "website": "https://obsidian.md",
+    "color": "#7059d6",
+    "glyph": "◈",
+    "platforms": {
+      "Windows": "supported",
+      "macOS": "supported",
+      "Linux": "supported",
+      "iOS": "supported",
+      "Android": "supported"
+    },
+    "features": {
+      "offline": "supported",
+      "local-storage": "supported",
+      "customization": "supported"
+    },
+    "price": 0,
+    "pricingNote": "Free core app · optional services sold separately",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://obsidian.md",
+        "claim": "Free core app; notes stored on device and available offline; plugins and themes.",
+        "verifiedAt": "2026-10-21"
+      },
+      {
+        "url": "https://obsidian.md/download",
+        "claim": "Desktop and mobile downloads",
+        "verifiedAt": "2026-10-21"
+      }
+    ],
+    "limitations": [
+      "Sync and Publish are separate optional services.",
+      "Collaboration and integration requirements need individual review."
+    ],
+    "keywords": [
+      "notes",
+      "note-taking",
+      "knowledge",
+      "writing",
+      "markdown",
+      "productivity"
+    ]
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "category": "Productivity",
+    "description": "Bring documents, team knowledge, and project work into a connected workspace.",
+    "website": "https://www.notion.com",
+    "color": "#353535",
+    "glyph": "N",
+    "platforms": {},
+    "features": {
+      "collaboration": "supported",
+      "integrations": "supported"
+    },
+    "price": 0,
+    "pricingNote": "Free plan available · paid plan limits need review",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.notion.com",
+        "claim": "Team workspace; integrations and free signup advertised.",
+        "verifiedAt": "2026-10-21"
+      }
+    ],
+    "limitations": [
+      "Offline scope, plan limits, and platform compatibility need verification."
+    ],
+    "keywords": [
+      "notes",
+      "note-taking",
+      "knowledge",
+      "projects",
+      "productivity",
+      "teams"
+    ]
+  },
+  {
+    "id": "joplin",
+    "name": "Joplin",
+    "category": "Productivity",
+    "description": "Capture notes, keep your data in an open format, and sync with your choice of service.",
+    "website": "https://joplinapp.org",
+    "color": "#2378dd",
+    "glyph": "J",
+    "platforms": {
+      "Windows": "supported",
+      "macOS": "supported",
+      "Linux": "supported",
+      "iOS": "supported",
+      "Android": "supported"
+    },
+    "features": {
+      "open-source": "supported",
+      "sync": "supported",
+      "markdown": "supported",
+      "encryption": "supported",
+      "customization": "supported",
+      "collaboration": "supported"
+    },
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://joplinapp.org",
+        "claim": "Open source; Markdown; E2EE; sync; desktop/mobile platforms; cloud collaboration.",
+        "verifiedAt": "2026-10-21"
+      }
+    ],
+    "limitations": [
+      "Collaboration requires Joplin Cloud.",
+      "Pricing and offline scope need additional review."
+    ],
+    "keywords": [
+      "notes",
+      "note-taking",
+      "writing",
+      "notebook",
+      "productivity"
+    ]
+  },
+  {
+    "id": "todoist",
+    "name": "Todoist",
+    "category": "Productivity",
+    "description": "Turn a busy day into a clear plan. Organize personal tasks and shared projects in one place.",
+    "website": "https://www.todoist.com",
+    "color": "#df584e",
+    "glyph": "≡",
+    "platforms": {},
+    "features": {
+      "integrations": "supported"
+    },
+    "price": 0,
+    "pricingNote": "Free signup · paid plan limits need review",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.todoist.com",
+        "claim": "Task management, integrations, and free signup.",
+        "verifiedAt": "2026-10-21"
+      }
+    ],
+    "limitations": [
+      "Plan limits and offline behavior need verification."
+    ],
+    "keywords": [
+      "tasks",
+      "to-do",
+      "projects",
+      "productivity"
+    ]
+  },
+  {
+    "id": "linear",
+    "name": "Linear",
+    "category": "Productivity",
+    "description": "A focused workspace for product teams to plan projects and keep development moving.",
+    "website": "https://linear.app",
+    "color": "#655be8",
+    "glyph": "◒",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://linear.app",
+        "claim": "Product development planning for teams.",
+        "verifiedAt": "2026-10-21"
+      }
+    ],
+    "limitations": [
+      "Current pricing, platform support, and offline behavior need review."
+    ],
+    "keywords": [
+      "projects",
+      "issues",
+      "tasks",
+      "developer",
+      "teams",
+      "productivity"
+    ]
+  },
+  {
+    "id": "trello",
+    "name": "Trello",
+    "category": "Productivity",
+    "description": "Visual boards for organizing projects.",
+    "website": "https://trello.com",
+    "color": "#19a394",
+    "glyph": "T",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://trello.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "asana",
+    "name": "Asana",
+    "category": "Productivity",
+    "description": "Coordinate projects and team work.",
+    "website": "https://asana.com",
+    "color": "#bc6b9c",
+    "glyph": "A",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://asana.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "clickup",
+    "name": "ClickUp",
+    "category": "Productivity",
+    "description": "A workspace for managing tasks and projects.",
+    "website": "https://clickup.com",
+    "color": "#6a8fba",
+    "glyph": "C",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://clickup.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "airtable",
+    "name": "Airtable",
+    "category": "Productivity",
+    "description": "Organize workflows around structured information.",
+    "website": "https://airtable.com",
+    "color": "#7059d6",
+    "glyph": "A",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://airtable.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "anytype",
+    "name": "Anytype",
+    "category": "Productivity",
+    "description": "A workspace for connected information.",
+    "website": "https://anytype.io",
+    "color": "#353535",
+    "glyph": "A",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://anytype.io",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "logseq",
+    "name": "Logseq",
+    "category": "Productivity",
+    "description": "An outliner for connected notes.",
+    "website": "https://logseq.com",
+    "color": "#2378dd",
+    "glyph": "L",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://logseq.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "standard-notes",
+    "name": "Standard Notes",
+    "category": "Productivity",
+    "description": "A dedicated space for personal notes.",
+    "website": "https://standardnotes.com",
+    "color": "#df584e",
+    "glyph": "S",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://standardnotes.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "evernote",
+    "name": "Evernote",
+    "category": "Productivity",
+    "description": "Capture and organize your notes.",
+    "website": "https://evernote.com",
+    "color": "#655be8",
+    "glyph": "E",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://evernote.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "microsoft-onenote",
+    "name": "Microsoft OneNote",
+    "category": "Productivity",
+    "description": "A digital notebook from Microsoft.",
+    "website": "https://www.onenote.com",
+    "color": "#19a394",
+    "glyph": "M",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.onenote.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "google-keep",
+    "name": "Google Keep",
+    "category": "Productivity",
+    "description": "Capture quick notes and lists.",
+    "website": "https://keep.google.com",
+    "color": "#bc6b9c",
+    "glyph": "G",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://keep.google.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "ticktick",
+    "name": "TickTick",
+    "category": "Productivity",
+    "description": "Plan tasks and organize routines.",
+    "website": "https://ticktick.com",
+    "color": "#6a8fba",
+    "glyph": "T",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://ticktick.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "things",
+    "name": "Things",
+    "category": "Productivity",
+    "description": "A personal task manager.",
+    "website": "https://culturedcode.com/things",
+    "color": "#7059d6",
+    "glyph": "T",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://culturedcode.com/things",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "omnifocus",
+    "name": "OmniFocus",
+    "category": "Productivity",
+    "description": "Organize tasks and projects.",
+    "website": "https://www.omnigroup.com/omnifocus",
+    "color": "#353535",
+    "glyph": "O",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.omnigroup.com/omnifocus",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "superlist",
+    "name": "Superlist",
+    "category": "Productivity",
+    "description": "Manage lists and shared tasks.",
+    "website": "https://www.superlist.com",
+    "color": "#2378dd",
+    "glyph": "S",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.superlist.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "amplenote",
+    "name": "Amplenote",
+    "category": "Productivity",
+    "description": "Connect notes and tasks.",
+    "website": "https://www.amplenote.com",
+    "color": "#df584e",
+    "glyph": "A",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.amplenote.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "capacities",
+    "name": "Capacities",
+    "category": "Productivity",
+    "description": "Organize knowledge around objects.",
+    "website": "https://capacities.io",
+    "color": "#655be8",
+    "glyph": "C",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://capacities.io",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "craft",
+    "name": "Craft",
+    "category": "Productivity",
+    "description": "Create and organize documents.",
+    "website": "https://www.craft.do",
+    "color": "#19a394",
+    "glyph": "C",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.craft.do",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "reflect",
+    "name": "Reflect",
+    "category": "Productivity",
+    "description": "Capture and connect personal notes.",
+    "website": "https://reflect.app",
+    "color": "#bc6b9c",
+    "glyph": "R",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://reflect.app",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "heptabase",
+    "name": "Heptabase",
+    "category": "Productivity",
+    "description": "Visual thinking and research.",
+    "website": "https://heptabase.com",
+    "color": "#6a8fba",
+    "glyph": "H",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://heptabase.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "milanote",
+    "name": "Milanote",
+    "category": "Productivity",
+    "description": "A visual workspace for creative projects.",
+    "website": "https://milanote.com",
+    "color": "#7059d6",
+    "glyph": "M",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://milanote.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "miro",
+    "name": "Miro",
+    "category": "Productivity",
+    "description": "Collaborate on a visual canvas.",
+    "website": "https://miro.com",
+    "color": "#353535",
+    "glyph": "M",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://miro.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "category": "Productivity",
+    "description": "Team communication and shared channels.",
+    "website": "https://slack.com",
+    "color": "#2378dd",
+    "glyph": "S",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://slack.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "discord",
+    "name": "Discord",
+    "category": "Productivity",
+    "description": "Community conversations and group communication.",
+    "website": "https://discord.com",
+    "color": "#df584e",
+    "glyph": "D",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://discord.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "zoom",
+    "name": "Zoom",
+    "category": "Productivity",
+    "description": "Meet and collaborate through video.",
+    "website": "https://zoom.us",
+    "color": "#655be8",
+    "glyph": "Z",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://zoom.us",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "cal-com",
+    "name": "Cal.com",
+    "category": "Productivity",
+    "description": "Organize bookings and scheduling.",
+    "website": "https://cal.com",
+    "color": "#19a394",
+    "glyph": "C",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://cal.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "category": "AI tools",
+    "description": "An AI assistant for everyday work.",
+    "website": "https://chatgpt.com",
+    "color": "#7059d6",
+    "glyph": "C",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://chatgpt.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "claude",
+    "name": "Claude",
+    "category": "AI tools",
+    "description": "An AI assistant for writing and problem solving.",
+    "website": "https://claude.ai",
+    "color": "#353535",
+    "glyph": "C",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://claude.ai",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini",
+    "category": "AI tools",
+    "description": "Google's AI assistant.",
+    "website": "https://gemini.google.com",
+    "color": "#2378dd",
+    "glyph": "G",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://gemini.google.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity",
+    "category": "AI tools",
+    "description": "Research and explore questions with AI.",
+    "website": "https://www.perplexity.ai",
+    "color": "#df584e",
+    "glyph": "P",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.perplexity.ai",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "poe",
+    "name": "Poe",
+    "category": "AI tools",
+    "description": "Explore conversations with AI models.",
+    "website": "https://poe.com",
+    "color": "#655be8",
+    "glyph": "P",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://poe.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "huggingchat",
+    "name": "HuggingChat",
+    "category": "AI tools",
+    "description": "An AI chat experience from Hugging Face.",
+    "website": "https://huggingface.co/chat",
+    "color": "#19a394",
+    "glyph": "H",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://huggingface.co/chat",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "ollama",
+    "name": "Ollama",
+    "category": "AI tools",
+    "description": "Tools for running language models.",
+    "website": "https://ollama.com",
+    "color": "#bc6b9c",
+    "glyph": "O",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://ollama.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "lm-studio",
+    "name": "LM Studio",
+    "category": "AI tools",
+    "description": "Explore and run language models.",
+    "website": "https://lmstudio.ai",
+    "color": "#6a8fba",
+    "glyph": "L",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://lmstudio.ai",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "jan",
+    "name": "Jan",
+    "category": "AI tools",
+    "description": "A desktop AI assistant.",
+    "website": "https://jan.ai",
+    "color": "#7059d6",
+    "glyph": "J",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://jan.ai",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "gpt4all",
+    "name": "GPT4All",
+    "category": "AI tools",
+    "description": "An application for working with language models.",
+    "website": "https://www.nomic.ai/gpt4all",
+    "color": "#353535",
+    "glyph": "G",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.nomic.ai/gpt4all",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "open-webui",
+    "name": "Open WebUI",
+    "category": "AI tools",
+    "description": "An interface for AI models.",
+    "website": "https://openwebui.com",
+    "color": "#2378dd",
+    "glyph": "O",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://openwebui.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "anythingllm",
+    "name": "AnythingLLM",
+    "category": "AI tools",
+    "description": "Work with documents and AI models.",
+    "website": "https://anythingllm.com",
+    "color": "#df584e",
+    "glyph": "A",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://anythingllm.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "librechat",
+    "name": "LibreChat",
+    "category": "AI tools",
+    "description": "A customizable AI chat interface.",
+    "website": "https://www.librechat.ai",
+    "color": "#655be8",
+    "glyph": "L",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.librechat.ai",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "lobehub",
+    "name": "LobeHub",
+    "category": "AI tools",
+    "description": "Build a workspace with AI assistants.",
+    "website": "https://lobehub.com",
+    "color": "#19a394",
+    "glyph": "L",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://lobehub.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "cherry-studio",
+    "name": "Cherry Studio",
+    "category": "AI tools",
+    "description": "A desktop workspace for AI models.",
+    "website": "https://www.cherry-ai.com",
+    "color": "#bc6b9c",
+    "glyph": "C",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.cherry-ai.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "typingmind",
+    "name": "TypingMind",
+    "category": "AI tools",
+    "description": "A chat interface for AI providers.",
+    "website": "https://www.typingmind.com",
+    "color": "#6a8fba",
+    "glyph": "T",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.typingmind.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "chatbox",
+    "name": "Chatbox",
+    "category": "AI tools",
+    "description": "An AI chat client.",
+    "website": "https://chatboxai.app",
+    "color": "#7059d6",
+    "glyph": "C",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://chatboxai.app",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "bolt",
+    "name": "Bolt",
+    "category": "AI tools",
+    "description": "Build applications with AI.",
+    "website": "https://bolt.new",
+    "color": "#353535",
+    "glyph": "B",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://bolt.new",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "lovable",
+    "name": "Lovable",
+    "category": "AI tools",
+    "description": "Create applications with AI.",
+    "website": "https://lovable.dev",
+    "color": "#2378dd",
+    "glyph": "L",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://lovable.dev",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "replit",
+    "name": "Replit",
+    "category": "AI tools",
+    "description": "A workspace for building applications.",
+    "website": "https://replit.com",
+    "color": "#df584e",
+    "glyph": "R",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://replit.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "category": "AI tools",
+    "description": "An editor built for AI assisted development.",
+    "website": "https://cursor.com",
+    "color": "#655be8",
+    "glyph": "C",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://cursor.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "windsurf",
+    "name": "Windsurf",
+    "category": "AI tools",
+    "description": "An AI assisted development environment.",
+    "website": "https://windsurf.com",
+    "color": "#19a394",
+    "glyph": "W",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://windsurf.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "tabnine",
+    "name": "Tabnine",
+    "category": "AI tools",
+    "description": "AI assistance for writing code.",
+    "website": "https://www.tabnine.com",
+    "color": "#bc6b9c",
+    "glyph": "T",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.tabnine.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "continue",
+    "name": "Continue",
+    "category": "AI tools",
+    "description": "AI workflows for developers.",
+    "website": "https://www.continue.dev",
+    "color": "#6a8fba",
+    "glyph": "C",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.continue.dev",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "aider",
+    "name": "Aider",
+    "category": "AI tools",
+    "description": "AI pair programming in the terminal.",
+    "website": "https://aider.chat",
+    "color": "#7059d6",
+    "glyph": "A",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://aider.chat",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "ai tools"
+    ]
+  },
+  {
+    "id": "visual-studio-code",
+    "name": "Visual Studio Code",
+    "category": "Developer tools",
+    "description": "An extensible editor for writing and debugging code.",
+    "website": "https://code.visualstudio.com",
+    "color": "#7059d6",
+    "glyph": "V",
+    "platforms": {
+      "Windows": "supported",
+      "macOS": "supported",
+      "Linux": "supported",
+      "Web": "supported"
+    },
+    "features": {
+      "open-source": "supported"
+    },
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://code.visualstudio.com",
+        "claim": "Open source editor; Windows, macOS, Linux downloads and web link.",
+        "verifiedAt": "2026-10-21"
+      }
+    ],
+    "limitations": [
+      "Extension licenses and AI services may have separate terms.",
+      "Current pricing and offline capability need review."
+    ],
+    "keywords": [
+      "code",
+      "editor",
+      "developer",
+      "programming"
+    ]
+  },
+  {
+    "id": "vscodium",
+    "name": "VSCodium",
+    "category": "Developer tools",
+    "description": "A community distribution of a code editor.",
+    "website": "https://vscodium.com",
+    "color": "#353535",
+    "glyph": "V",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://vscodium.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "zed",
+    "name": "Zed",
+    "category": "Developer tools",
+    "description": "An editor for programming.",
+    "website": "https://zed.dev",
+    "color": "#2378dd",
+    "glyph": "Z",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://zed.dev",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "neovim",
+    "name": "Neovim",
+    "category": "Developer tools",
+    "description": "An extensible terminal editor.",
+    "website": "https://neovim.io",
+    "color": "#df584e",
+    "glyph": "N",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://neovim.io",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "vim",
+    "name": "Vim",
+    "category": "Developer tools",
+    "description": "A configurable text editor.",
+    "website": "https://www.vim.org",
+    "color": "#655be8",
+    "glyph": "V",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.vim.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "sublime-text",
+    "name": "Sublime Text",
+    "category": "Developer tools",
+    "description": "A text editor for code and prose.",
+    "website": "https://www.sublimetext.com",
+    "color": "#19a394",
+    "glyph": "S",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.sublimetext.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "intellij-idea",
+    "name": "IntelliJ IDEA",
+    "category": "Developer tools",
+    "description": "An environment for application development.",
+    "website": "https://www.jetbrains.com/idea",
+    "color": "#bc6b9c",
+    "glyph": "I",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.jetbrains.com/idea",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "pycharm",
+    "name": "PyCharm",
+    "category": "Developer tools",
+    "description": "A development environment for Python.",
+    "website": "https://www.jetbrains.com/pycharm",
+    "color": "#6a8fba",
+    "glyph": "P",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.jetbrains.com/pycharm",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "webstorm",
+    "name": "WebStorm",
+    "category": "Developer tools",
+    "description": "An environment for JavaScript development.",
+    "website": "https://www.jetbrains.com/webstorm",
+    "color": "#7059d6",
+    "glyph": "W",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.jetbrains.com/webstorm",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "github-desktop",
+    "name": "GitHub Desktop",
+    "category": "Developer tools",
+    "description": "Manage Git repositories with a desktop interface.",
+    "website": "https://desktop.github.com",
+    "color": "#353535",
+    "glyph": "G",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://desktop.github.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "gitkraken",
+    "name": "GitKraken",
+    "category": "Developer tools",
+    "description": "Tools for Git workflows.",
+    "website": "https://www.gitkraken.com",
+    "color": "#2378dd",
+    "glyph": "G",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.gitkraken.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "fork",
+    "name": "Fork",
+    "category": "Developer tools",
+    "description": "A desktop Git client.",
+    "website": "https://git-fork.com",
+    "color": "#df584e",
+    "glyph": "F",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://git-fork.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "sourcetree",
+    "name": "Sourcetree",
+    "category": "Developer tools",
+    "description": "A graphical interface for Git.",
+    "website": "https://www.sourcetreeapp.com",
+    "color": "#655be8",
+    "glyph": "S",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.sourcetreeapp.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "postman",
+    "name": "Postman",
+    "category": "Developer tools",
+    "description": "Build and test APIs.",
+    "website": "https://www.postman.com",
+    "color": "#19a394",
+    "glyph": "P",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.postman.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "insomnia",
+    "name": "Insomnia",
+    "category": "Developer tools",
+    "description": "Design and test API requests.",
+    "website": "https://insomnia.rest",
+    "color": "#bc6b9c",
+    "glyph": "I",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://insomnia.rest",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "bruno",
+    "name": "Bruno",
+    "category": "Developer tools",
+    "description": "An API client for development teams.",
+    "website": "https://www.usebruno.com",
+    "color": "#6a8fba",
+    "glyph": "B",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.usebruno.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "hoppscotch",
+    "name": "Hoppscotch",
+    "category": "Developer tools",
+    "description": "An interface for API development.",
+    "website": "https://hoppscotch.io",
+    "color": "#7059d6",
+    "glyph": "H",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://hoppscotch.io",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "dbeaver",
+    "name": "DBeaver",
+    "category": "Developer tools",
+    "description": "A database management interface.",
+    "website": "https://dbeaver.io",
+    "color": "#353535",
+    "glyph": "D",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://dbeaver.io",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "beekeeper-studio",
+    "name": "Beekeeper Studio",
+    "category": "Developer tools",
+    "description": "A SQL editor and database manager.",
+    "website": "https://www.beekeeperstudio.io",
+    "color": "#2378dd",
+    "glyph": "B",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.beekeeperstudio.io",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "tableplus",
+    "name": "TablePlus",
+    "category": "Developer tools",
+    "description": "A graphical interface for databases.",
+    "website": "https://tableplus.com",
+    "color": "#df584e",
+    "glyph": "T",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://tableplus.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "docker-desktop",
+    "name": "Docker Desktop",
+    "category": "Developer tools",
+    "description": "Tools for working with containers.",
+    "website": "https://www.docker.com/products/docker-desktop",
+    "color": "#655be8",
+    "glyph": "D",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.docker.com/products/docker-desktop",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "podman-desktop",
+    "name": "Podman Desktop",
+    "category": "Developer tools",
+    "description": "Manage containers from your desktop.",
+    "website": "https://podman-desktop.io",
+    "color": "#19a394",
+    "glyph": "P",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://podman-desktop.io",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "warp",
+    "name": "Warp",
+    "category": "Developer tools",
+    "description": "A terminal and development workspace.",
+    "website": "https://www.warp.dev",
+    "color": "#bc6b9c",
+    "glyph": "W",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.warp.dev",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "wezterm",
+    "name": "WezTerm",
+    "category": "Developer tools",
+    "description": "A terminal emulator.",
+    "website": "https://wezterm.org",
+    "color": "#6a8fba",
+    "glyph": "W",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://wezterm.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "alacritty",
+    "name": "Alacritty",
+    "category": "Developer tools",
+    "description": "A terminal emulator.",
+    "website": "https://alacritty.org",
+    "color": "#7059d6",
+    "glyph": "A",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://alacritty.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "kitty",
+    "name": "Kitty",
+    "category": "Developer tools",
+    "description": "A terminal emulator.",
+    "website": "https://sw.kovidgoyal.net/kitty",
+    "color": "#353535",
+    "glyph": "K",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://sw.kovidgoyal.net/kitty",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "hyper",
+    "name": "Hyper",
+    "category": "Developer tools",
+    "description": "A terminal application.",
+    "website": "https://hyper.is",
+    "color": "#2378dd",
+    "glyph": "H",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://hyper.is",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "httpie",
+    "name": "HTTPie",
+    "category": "Developer tools",
+    "description": "Tools for testing HTTP services.",
+    "website": "https://httpie.io",
+    "color": "#df584e",
+    "glyph": "H",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://httpie.io",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "supabase",
+    "name": "Supabase",
+    "category": "Developer tools",
+    "description": "Tools for application databases and authentication.",
+    "website": "https://supabase.com",
+    "color": "#655be8",
+    "glyph": "S",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://supabase.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "appwrite",
+    "name": "Appwrite",
+    "category": "Developer tools",
+    "description": "Backend tools for application developers.",
+    "website": "https://appwrite.io",
+    "color": "#19a394",
+    "glyph": "A",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://appwrite.io",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "developer tools"
+    ]
+  },
+  {
+    "id": "ia-writer",
+    "name": "iA Writer",
+    "category": "Writing",
+    "description": "A focused environment for writing.",
+    "website": "https://ia.net/writer",
+    "color": "#7059d6",
+    "glyph": "i",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://ia.net/writer",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "ulysses",
+    "name": "Ulysses",
+    "category": "Writing",
+    "description": "A workspace for writing projects.",
+    "website": "https://ulysses.app",
+    "color": "#353535",
+    "glyph": "U",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://ulysses.app",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "scrivener",
+    "name": "Scrivener",
+    "category": "Writing",
+    "description": "Organize long form writing projects.",
+    "website": "https://www.literatureandlatte.com/scrivener/overview",
+    "color": "#2378dd",
+    "glyph": "S",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.literatureandlatte.com/scrivener/overview",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "bear",
+    "name": "Bear",
+    "category": "Writing",
+    "description": "Capture notes and write.",
+    "website": "https://bear.app",
+    "color": "#df584e",
+    "glyph": "B",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://bear.app",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "typora",
+    "name": "Typora",
+    "category": "Writing",
+    "description": "An editor for Markdown documents.",
+    "website": "https://typora.io",
+    "color": "#655be8",
+    "glyph": "T",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://typora.io",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "mark-text",
+    "name": "Mark Text",
+    "category": "Writing",
+    "description": "A Markdown writing environment.",
+    "website": "https://www.marktext.cc",
+    "color": "#19a394",
+    "glyph": "M",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.marktext.cc",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "zettlr",
+    "name": "Zettlr",
+    "category": "Writing",
+    "description": "Write and organize research.",
+    "website": "https://www.zettlr.com",
+    "color": "#bc6b9c",
+    "glyph": "Z",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.zettlr.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "ghostwriter",
+    "name": "Ghostwriter",
+    "category": "Writing",
+    "description": "A focused Markdown editor.",
+    "website": "https://ghostwriter.kde.org",
+    "color": "#6a8fba",
+    "glyph": "G",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://ghostwriter.kde.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "hemingway-editor",
+    "name": "Hemingway Editor",
+    "category": "Writing",
+    "description": "Tools for editing prose.",
+    "website": "https://hemingwayapp.com",
+    "color": "#7059d6",
+    "glyph": "H",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://hemingwayapp.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "languagetool",
+    "name": "LanguageTool",
+    "category": "Writing",
+    "description": "A writing and grammar assistant.",
+    "website": "https://languagetool.org",
+    "color": "#353535",
+    "glyph": "L",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://languagetool.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "grammarly",
+    "name": "Grammarly",
+    "category": "Writing",
+    "description": "Assistance for writing and editing.",
+    "website": "https://www.grammarly.com",
+    "color": "#2378dd",
+    "glyph": "G",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.grammarly.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "prowritingaid",
+    "name": "ProWritingAid",
+    "category": "Writing",
+    "description": "Editing tools for writers.",
+    "website": "https://prowritingaid.com",
+    "color": "#df584e",
+    "glyph": "P",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://prowritingaid.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "google-docs",
+    "name": "Google Docs",
+    "category": "Writing",
+    "description": "Create and edit documents.",
+    "website": "https://docs.google.com",
+    "color": "#655be8",
+    "glyph": "G",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://docs.google.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "libreoffice",
+    "name": "LibreOffice",
+    "category": "Writing",
+    "description": "An open source office suite for documents and spreadsheets.",
+    "website": "https://www.libreoffice.org",
+    "color": "#19a394",
+    "glyph": "L",
+    "platforms": {},
+    "features": {
+      "open-source": "supported"
+    },
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.libreoffice.org",
+        "claim": "Open source office suite with Writer, Calc, and Impress.",
+        "verifiedAt": "2026-10-21"
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing",
+      "documents",
+      "spreadsheets",
+      "office"
+    ]
+  },
+  {
+    "id": "onlyoffice",
+    "name": "ONLYOFFICE",
+    "category": "Writing",
+    "description": "Tools for documents and collaboration.",
+    "website": "https://www.onlyoffice.com",
+    "color": "#bc6b9c",
+    "glyph": "O",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.onlyoffice.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "wps-office",
+    "name": "WPS Office",
+    "category": "Writing",
+    "description": "An office suite for everyday documents.",
+    "website": "https://www.wps.com",
+    "color": "#6a8fba",
+    "glyph": "W",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.wps.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "focuswriter",
+    "name": "FocusWriter",
+    "category": "Writing",
+    "description": "A focused writing environment.",
+    "website": "https://gottcode.org/focuswriter",
+    "color": "#7059d6",
+    "glyph": "F",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://gottcode.org/focuswriter",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "novelwriter",
+    "name": "novelWriter",
+    "category": "Writing",
+    "description": "Organize and write novels.",
+    "website": "https://novelwriter.io",
+    "color": "#353535",
+    "glyph": "n",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://novelwriter.io",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "manuskript",
+    "name": "Manuskript",
+    "category": "Writing",
+    "description": "Tools for organizing writing projects.",
+    "website": "https://www.theologeek.ch/manuskript",
+    "color": "#2378dd",
+    "glyph": "M",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.theologeek.ch/manuskript",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "quoll-writer",
+    "name": "Quoll Writer",
+    "category": "Writing",
+    "description": "An environment for writing stories.",
+    "website": "https://quollwriter.com",
+    "color": "#df584e",
+    "glyph": "Q",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://quollwriter.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "writing"
+    ]
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "category": "Design",
+    "description": "Bring ideas to life with a shared canvas for interface design and prototyping.",
+    "website": "https://www.figma.com",
+    "color": "#7059d6",
+    "glyph": "⠿",
+    "platforms": {},
+    "features": {
+      "collaboration": "supported"
+    },
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.figma.com",
+        "claim": "Collaborative design and prototyping tools.",
+        "verifiedAt": "2026-10-21"
+      }
+    ],
+    "limitations": [
+      "Current pricing and offline support need verification."
+    ],
+    "keywords": [
+      "design",
+      "prototypes",
+      "interfaces",
+      "teams"
+    ]
+  },
+  {
+    "id": "penpot",
+    "name": "Penpot",
+    "category": "Design",
+    "description": "A workspace for interface design.",
+    "website": "https://penpot.app",
+    "color": "#353535",
+    "glyph": "P",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://penpot.app",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "canva",
+    "name": "Canva",
+    "category": "Design",
+    "description": "Create visual content and presentations.",
+    "website": "https://www.canva.com",
+    "color": "#2378dd",
+    "glyph": "C",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.canva.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "sketch",
+    "name": "Sketch",
+    "category": "Design",
+    "description": "Design interfaces and prototypes.",
+    "website": "https://www.sketch.com",
+    "color": "#df584e",
+    "glyph": "S",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.sketch.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "affinity",
+    "name": "Affinity",
+    "category": "Design",
+    "description": "Tools for graphic design and visual work.",
+    "website": "https://affinity.studio",
+    "color": "#655be8",
+    "glyph": "A",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://affinity.studio",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "gimp",
+    "name": "GIMP",
+    "category": "Design",
+    "description": "An image editing application.",
+    "website": "https://www.gimp.org",
+    "color": "#19a394",
+    "glyph": "G",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.gimp.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "krita",
+    "name": "Krita",
+    "category": "Design",
+    "description": "Tools for digital painting.",
+    "website": "https://krita.org",
+    "color": "#bc6b9c",
+    "glyph": "K",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://krita.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "inkscape",
+    "name": "Inkscape",
+    "category": "Design",
+    "description": "An editor for vector graphics.",
+    "website": "https://inkscape.org",
+    "color": "#6a8fba",
+    "glyph": "I",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://inkscape.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "blender",
+    "name": "Blender",
+    "category": "Design",
+    "description": "Tools for creating 3D content.",
+    "website": "https://www.blender.org",
+    "color": "#7059d6",
+    "glyph": "B",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.blender.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "godot",
+    "name": "Godot",
+    "category": "Design",
+    "description": "An engine for building games.",
+    "website": "https://godotengine.org",
+    "color": "#353535",
+    "glyph": "G",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://godotengine.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "excalidraw",
+    "name": "Excalidraw",
+    "category": "Design",
+    "description": "Sketch ideas on a visual canvas.",
+    "website": "https://excalidraw.com",
+    "color": "#2378dd",
+    "glyph": "E",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://excalidraw.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "tldraw",
+    "name": "tldraw",
+    "category": "Design",
+    "description": "A digital whiteboard.",
+    "website": "https://www.tldraw.com",
+    "color": "#df584e",
+    "glyph": "t",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.tldraw.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "diagrams-net",
+    "name": "diagrams.net",
+    "category": "Design",
+    "description": "Create diagrams and flowcharts.",
+    "website": "https://www.diagrams.net",
+    "color": "#655be8",
+    "glyph": "d",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.diagrams.net",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "lunacy",
+    "name": "Lunacy",
+    "category": "Design",
+    "description": "A tool for interface design.",
+    "website": "https://icons8.com/lunacy",
+    "color": "#19a394",
+    "glyph": "L",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://icons8.com/lunacy",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "framer",
+    "name": "Framer",
+    "category": "Design",
+    "description": "Design and publish websites.",
+    "website": "https://www.framer.com",
+    "color": "#bc6b9c",
+    "glyph": "F",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.framer.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "webflow",
+    "name": "Webflow",
+    "category": "Design",
+    "description": "Build websites visually.",
+    "website": "https://webflow.com",
+    "color": "#6a8fba",
+    "glyph": "W",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://webflow.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "spline",
+    "name": "Spline",
+    "category": "Design",
+    "description": "Create interactive 3D designs.",
+    "website": "https://spline.design",
+    "color": "#7059d6",
+    "glyph": "S",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://spline.design",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "photopea",
+    "name": "Photopea",
+    "category": "Design",
+    "description": "An image editor in your browser.",
+    "website": "https://www.photopea.com",
+    "color": "#353535",
+    "glyph": "P",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.photopea.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "pixlr",
+    "name": "Pixlr",
+    "category": "Design",
+    "description": "Tools for editing images.",
+    "website": "https://pixlr.com",
+    "color": "#2378dd",
+    "glyph": "P",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://pixlr.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "darktable",
+    "name": "Darktable",
+    "category": "Design",
+    "description": "Manage and edit photographs.",
+    "website": "https://www.darktable.org",
+    "color": "#df584e",
+    "glyph": "D",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.darktable.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "rawtherapee",
+    "name": "RawTherapee",
+    "category": "Design",
+    "description": "Process and edit raw photographs.",
+    "website": "https://rawtherapee.com",
+    "color": "#655be8",
+    "glyph": "R",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://rawtherapee.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "scribus",
+    "name": "Scribus",
+    "category": "Design",
+    "description": "Create page layouts and publications.",
+    "website": "https://www.scribus.net",
+    "color": "#19a394",
+    "glyph": "S",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.scribus.net",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "audacity",
+    "name": "Audacity",
+    "category": "Design",
+    "description": "Record and edit audio.",
+    "website": "https://www.audacityteam.org",
+    "color": "#bc6b9c",
+    "glyph": "A",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.audacityteam.org",
+        "claim": "Audio editing and recording application.",
+        "verifiedAt": "2026-10-21"
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "obs-studio",
+    "name": "OBS Studio",
+    "category": "Design",
+    "description": "Record and stream video.",
+    "website": "https://obsproject.com",
+    "color": "#6a8fba",
+    "glyph": "O",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://obsproject.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "davinci-resolve",
+    "name": "DaVinci Resolve",
+    "category": "Design",
+    "description": "Tools for video editing and post production.",
+    "website": "https://www.blackmagicdesign.com/products/davinciresolve",
+    "color": "#7059d6",
+    "glyph": "D",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "design"
+    ]
+  },
+  {
+    "id": "raycast",
+    "name": "Raycast",
+    "category": "Utilities",
+    "description": "An extensible productivity launcher.",
+    "website": "https://www.raycast.com",
+    "color": "#7059d6",
+    "glyph": "R",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.raycast.com",
+        "claim": "Extensible launcher and productivity tools.",
+        "verifiedAt": "2026-10-21"
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "alfred",
+    "name": "Alfred",
+    "category": "Utilities",
+    "description": "A launcher for desktop workflows.",
+    "website": "https://www.alfredapp.com",
+    "color": "#353535",
+    "glyph": "A",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.alfredapp.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "powertoys",
+    "name": "PowerToys",
+    "category": "Utilities",
+    "description": "A collection of desktop utilities.",
+    "website": "https://learn.microsoft.com/windows/powertoys",
+    "color": "#2378dd",
+    "glyph": "P",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://learn.microsoft.com/windows/powertoys",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "flow-launcher",
+    "name": "Flow Launcher",
+    "category": "Utilities",
+    "description": "A launcher for desktop workflows.",
+    "website": "https://www.flowlauncher.com",
+    "color": "#df584e",
+    "glyph": "F",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.flowlauncher.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "everything",
+    "name": "Everything",
+    "category": "Utilities",
+    "description": "A utility for finding files.",
+    "website": "https://www.voidtools.com",
+    "color": "#655be8",
+    "glyph": "E",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.voidtools.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "sharex",
+    "name": "ShareX",
+    "category": "Utilities",
+    "description": "Tools for capturing screenshots.",
+    "website": "https://getsharex.com",
+    "color": "#19a394",
+    "glyph": "S",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://getsharex.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "flameshot",
+    "name": "Flameshot",
+    "category": "Utilities",
+    "description": "A screenshot utility.",
+    "website": "https://flameshot.org",
+    "color": "#bc6b9c",
+    "glyph": "F",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://flameshot.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "greenshot",
+    "name": "Greenshot",
+    "category": "Utilities",
+    "description": "A screenshot utility.",
+    "website": "https://getgreenshot.org",
+    "color": "#6a8fba",
+    "glyph": "G",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://getgreenshot.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "bitwarden",
+    "name": "Bitwarden",
+    "category": "Utilities",
+    "description": "Manage passwords and credentials.",
+    "website": "https://bitwarden.com",
+    "color": "#7059d6",
+    "glyph": "B",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://bitwarden.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "keepassxc",
+    "name": "KeePassXC",
+    "category": "Utilities",
+    "description": "A desktop password manager.",
+    "website": "https://keepassxc.org",
+    "color": "#353535",
+    "glyph": "K",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://keepassxc.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "1password",
+    "name": "1Password",
+    "category": "Utilities",
+    "description": "Manage passwords and sensitive information.",
+    "website": "https://1password.com",
+    "color": "#2378dd",
+    "glyph": "1",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://1password.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "proton-pass",
+    "name": "Proton Pass",
+    "category": "Utilities",
+    "description": "A password management application.",
+    "website": "https://proton.me/pass",
+    "color": "#df584e",
+    "glyph": "P",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://proton.me/pass",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "firefox",
+    "name": "Firefox",
+    "category": "Utilities",
+    "description": "A browser with tracking protection.",
+    "website": "https://www.firefox.com",
+    "color": "#655be8",
+    "glyph": "F",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.firefox.com",
+        "claim": "Browser with tracking protection.",
+        "verifiedAt": "2026-10-21"
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "brave",
+    "name": "Brave",
+    "category": "Utilities",
+    "description": "A web browser.",
+    "website": "https://brave.com",
+    "color": "#19a394",
+    "glyph": "B",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://brave.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "vivaldi",
+    "name": "Vivaldi",
+    "category": "Utilities",
+    "description": "A customizable browser.",
+    "website": "https://vivaldi.com",
+    "color": "#bc6b9c",
+    "glyph": "V",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://vivaldi.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "thunderbird",
+    "name": "Thunderbird",
+    "category": "Utilities",
+    "description": "Manage email and calendars.",
+    "website": "https://www.thunderbird.net",
+    "color": "#6a8fba",
+    "glyph": "T",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.thunderbird.net",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "vlc",
+    "name": "VLC",
+    "category": "Utilities",
+    "description": "Play media files.",
+    "website": "https://www.videolan.org/vlc",
+    "color": "#7059d6",
+    "glyph": "V",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.videolan.org/vlc",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "mpv",
+    "name": "mpv",
+    "category": "Utilities",
+    "description": "A media player.",
+    "website": "https://mpv.io",
+    "color": "#353535",
+    "glyph": "m",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://mpv.io",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "handbrake",
+    "name": "HandBrake",
+    "category": "Utilities",
+    "description": "Convert video files.",
+    "website": "https://handbrake.fr",
+    "color": "#2378dd",
+    "glyph": "H",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://handbrake.fr",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "7-zip",
+    "name": "7-Zip",
+    "category": "Utilities",
+    "description": "Manage compressed archives.",
+    "website": "https://www.7-zip.org",
+    "color": "#df584e",
+    "glyph": "7",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.7-zip.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "peazip",
+    "name": "PeaZip",
+    "category": "Utilities",
+    "description": "An archive manager.",
+    "website": "https://peazip.github.io",
+    "color": "#655be8",
+    "glyph": "P",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://peazip.github.io",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "localsend",
+    "name": "LocalSend",
+    "category": "Utilities",
+    "description": "Transfer files between devices.",
+    "website": "https://localsend.org",
+    "color": "#19a394",
+    "glyph": "L",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://localsend.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "syncthing",
+    "name": "Syncthing",
+    "category": "Utilities",
+    "description": "Synchronize files between devices.",
+    "website": "https://syncthing.net",
+    "color": "#bc6b9c",
+    "glyph": "S",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://syncthing.net",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "kde-connect",
+    "name": "KDE Connect",
+    "category": "Utilities",
+    "description": "Connect your phone and computer.",
+    "website": "https://kdeconnect.kde.org",
+    "color": "#6a8fba",
+    "glyph": "K",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://kdeconnect.kde.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "rclone",
+    "name": "rclone",
+    "category": "Utilities",
+    "description": "Manage files across storage services.",
+    "website": "https://rclone.org",
+    "color": "#7059d6",
+    "glyph": "r",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://rclone.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "cryptomator",
+    "name": "Cryptomator",
+    "category": "Utilities",
+    "description": "Tools for encrypting files.",
+    "website": "https://cryptomator.org",
+    "color": "#353535",
+    "glyph": "C",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://cryptomator.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "veracrypt",
+    "name": "VeraCrypt",
+    "category": "Utilities",
+    "description": "A tool for encrypted storage.",
+    "website": "https://www.veracrypt.fr",
+    "color": "#2378dd",
+    "glyph": "V",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.veracrypt.fr",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "espanso",
+    "name": "Espanso",
+    "category": "Utilities",
+    "description": "A text expansion utility.",
+    "website": "https://espanso.org",
+    "color": "#df584e",
+    "glyph": "E",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://espanso.org",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  },
+  {
+    "id": "autohotkey",
+    "name": "AutoHotkey",
+    "category": "Utilities",
+    "description": "Create desktop automation scripts.",
+    "website": "https://www.autohotkey.com",
+    "color": "#655be8",
+    "glyph": "A",
+    "platforms": {},
+    "features": {},
+    "price": null,
+    "pricingNote": "Pricing not yet verified",
+    "ease": null,
+    "sources": [
+      {
+        "url": "https://www.autohotkey.com",
+        "claim": "Official website; detailed claims awaiting review",
+        "verifiedAt": null
+      }
+    ],
+    "limitations": [
+      "Platform, feature, and pricing details require verification."
+    ],
+    "keywords": [
+      "utilities"
+    ]
+  }
+]

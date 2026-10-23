@@ -1,0 +1,9 @@
+export const platforms = ['Windows','macOS','iOS','Android','Linux','Web'] as const;
+export const featureNames = ['offline','sync','collaboration','open-source','local-storage','integrations','customization','byok','dictation','databases','markdown','encryption','self-hosting'] as const;
+export type Support = 'supported'|'unsupported'|'unknown';
+export type App = { id:string; name:string; category:string; description:string; website:string; color:string; glyph:string; platforms:Partial<Record<string,Support>>; features:Partial<Record<string,Support>>; price:number|null; pricingNote:string; ease:number|null; sources:{url:string;claim:string;verifiedAt:string|null}[]; limitations:string[]; keywords:string[] };
+export type Profile = {platforms:string[]; budget:'free'|'under10'|'flexible'; priorities:string[]; experience:'Beginner'|'Intermediate'|'Advanced'; theme?:string};
+export type Consent = {personalization:boolean;history:boolean;analytics:boolean};
+export type Requirements = {query:string;category?:string;platform?:string;platformMandatory?:boolean;maxPrice?:number;priceMandatory?:boolean;requiredFeatures:string[];preferredFeatures:string[];excludeId?:string;priorities?:string[]};
+export type Ranked = {app:App;score:number;confidence:number;eligible:boolean;reasons:string[];unknowns:string[];breakdown:Record<string,number>};
+export const defaultProfile: Profile = {platforms:[],budget:'flexible',priorities:[],experience:'Intermediate'};

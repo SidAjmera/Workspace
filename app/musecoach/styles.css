@@ -1,0 +1,3378 @@
+
+body.musecoach-page {
+  --bg: #f6f7f9;
+  --panel: #fff;
+  --ink: #263141;
+  --muted: #6d798a;
+  --line: #e3e7ec;
+  --accent: #304767;
+  --accent-hover: #25364f;
+  --soft-blue: #e8edf3;
+  --peach: #f6e6d5;
+  --shadow: 0 6px 24px #26314104;
+  --danger: #a3443b;
+  color-scheme: light;
+}
+body.musecoach-page * {
+  box-sizing: border-box;
+}
+body.musecoach-page {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body.musecoach-page button,
+body.musecoach-page input,
+body.musecoach-page select,
+body.musecoach-page textarea {
+  font: inherit;
+}
+body.musecoach-page button,
+body.musecoach-page a,
+body.musecoach-page input,
+body.musecoach-page select {
+  -webkit-tap-highlight-color: transparent;
+}
+body.musecoach-page button {
+  cursor: pointer;
+}
+body.musecoach-page button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+body.musecoach-page a {
+  color: inherit;
+  text-decoration: none;
+}
+body.musecoach-page h1,
+body.musecoach-page h2,
+body.musecoach-page h3,
+body.musecoach-page h4,
+body.musecoach-page p {
+  margin: 0;
+}
+body.musecoach-page h1,
+body.musecoach-page h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -1.1px;
+  line-height: 1.17;
+}
+body.musecoach-page h1 {
+  font-size: 38px;
+}
+body.musecoach-page h2 {
+  font-size: 30px;
+}
+body.musecoach-page h3 {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+body.musecoach-page h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+body.musecoach-page p {
+  line-height: 1.75;
+}
+body.musecoach-page button {
+  border: 0;
+  background: none;
+  color: inherit;
+}
+body.musecoach-page svg {
+  flex-shrink: 0;
+}
+body.musecoach-page a,
+body.musecoach-page button {
+  touch-action: manipulation;
+}
+body.musecoach-page ::selection {
+  background: #c6d2e2;
+}
+body.musecoach-page *:focus-visible {
+  outline: 3px solid #b38145;
+  outline-offset: 4px;
+  border-radius: 5px;
+}
+body.musecoach-page #page-title:focus {
+  outline: none;
+}
+body.musecoach-page .muted {
+  color: var(--muted);
+}
+body.musecoach-page .small {
+  font-size: 12px;
+}
+body.musecoach-page .eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.7px;
+  font-weight: 700;
+  display: block;
+  color: var(--muted);
+}
+body.musecoach-page .app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+body.musecoach-page .sidebar {
+  width: 235px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 34px 21px 20px;
+  border-right: 1px solid var(--line);
+  background: var(--panel);
+  display: flex;
+  flex-direction: column;
+  z-index: 30;
+}
+body.musecoach-page .brand {
+  font-size: 26px;
+  letter-spacing: -1.4px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1;
+}
+body.musecoach-page .brand-period {
+  color: #a28458;
+  margin-left: -8px;
+}
+body.musecoach-page .brand-mark {
+  width: 31px;
+  height: 32px;
+  border-radius: 10px 10px 12px 3px;
+  background: var(--accent);
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+body.musecoach-page .sidebar-caption {
+  font-size: 8px;
+  letter-spacing: 1.7px;
+  color: var(--muted);
+  margin: 18px 0 39px 3px;
+}
+body.musecoach-page .sidebar nav {
+  display: grid;
+  gap: 8px;
+}
+body.musecoach-page .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 15px;
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+body.musecoach-page .nav-link:hover {
+  background: var(--bg);
+  color: var(--accent);
+}
+body.musecoach-page .nav-link.active {
+  background: var(--soft-blue);
+  color: var(--accent);
+  font-weight: 600;
+}
+body.musecoach-page .nav-dot {
+  margin-left: auto;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+body.musecoach-page .sidebar-bottom {
+  margin-top: auto;
+}
+body.musecoach-page .sidebar-note {
+  margin: 35px 5px 28px;
+  padding: 26px 20px 22px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-align: center;
+}
+body.musecoach-page .sun-doodle {
+  font-size: 39px;
+  color: #a38b5c;
+  display: block;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+body.musecoach-page .sidebar-note p {
+  font:
+    italic 19px/1.4 Georgia,
+    serif;
+}
+body.musecoach-page .sidebar-note > span:last-child {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 10px;
+}
+body.musecoach-page .profile-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  border-top: 1px solid var(--line);
+  padding: 18px 4px 0;
+  text-align: left;
+}
+body.musecoach-page .profile-initial,
+body.musecoach-page .small-profile {
+  background: #ead9bd;
+  color: #655a40;
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+}
+body.musecoach-page .profile-button strong {
+  font-size: 12px;
+  display: block;
+}
+body.musecoach-page .profile-button small {
+  font-size: 10px;
+  color: var(--muted);
+  display: block;
+}
+body.musecoach-page .profile-button > svg {
+  margin-left: auto;
+  color: var(--muted);
+}
+body.musecoach-page .workspace {
+  margin-left: 235px;
+  width: calc(100% - 235px);
+}
+body.musecoach-page .topbar {
+  height: 77px;
+  border-bottom: 1px solid var(--line);
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body.musecoach-page .breadcrumb {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  font-size: 11px;
+  color: var(--muted);
+}
+body.musecoach-page .breadcrumb > span {
+  color: var(--ink);
+}
+body.musecoach-page .topbar-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+body.musecoach-page .private-badge {
+  font-size: 10px;
+  color: var(--muted);
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+body.musecoach-page .private-badge > span,
+body.musecoach-page .online-dot {
+  width: 5px;
+  height: 5px;
+  background: #6780a2;
+  border-radius: 50%;
+  display: inline-block;
+}
+body.musecoach-page .icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--muted);
+}
+body.musecoach-page .icon-button:hover {
+  background: var(--soft-blue);
+}
+body.musecoach-page .small-profile {
+  height: 31px;
+  width: 31px;
+  font-size: 10px;
+}
+body.musecoach-page main {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 34px 40px 20px;
+}
+body.musecoach-page .page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 29px;
+  gap: 16px;
+}
+body.musecoach-page .page-heading .eyebrow {
+  margin-bottom: 10px;
+  font-size: 9px;
+}
+body.musecoach-page .page-heading p {
+  margin-top: 9px;
+  font-size: 12px;
+}
+body.musecoach-page .hello-spark {
+  font-size: 37px;
+  color: #ad915e;
+}
+body.musecoach-page .heading-action {
+  font-size: 11px !important;
+  margin-top: 23px;
+}
+body.musecoach-page .song-results {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0;
+  padding: 0;
+  list-style: none;
+}
+body.musecoach-page .song-results .button {
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+body.musecoach-page .song-results .button[aria-pressed="true"] {
+  background: var(--soft-blue);
+  border-color: var(--accent);
+}
+body.musecoach-page .song-search-form {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0;
+}
+body.musecoach-page .song-search-form .button {
+  justify-self: start;
+}
+body.musecoach-page .song-practice audio {
+  width: 100%;
+  margin: 16px 0;
+}
+body.musecoach-page .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  min-height: 42px;
+  transition: transform 0.2s;
+  white-space: normal;
+}
+body.musecoach-page .button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+body.musecoach-page .primary {
+  background: var(--accent);
+  color: #fff;
+}
+body.musecoach-page .primary:hover {
+  background: var(--accent-hover);
+}
+body.musecoach-page .secondary {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  color: var(--accent);
+}
+body.musecoach-page .secondary:hover {
+  background: var(--soft-blue);
+}
+body.musecoach-page .text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 600;
+  padding: 6px 0;
+}
+body.musecoach-page .text-button:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+body.musecoach-page .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 10px;
+  color: var(--muted);
+  font-weight: 400;
+  line-height: 1.5;
+}
+body.musecoach-page .tag.green {
+  background: var(--soft-blue);
+  color: var(--accent);
+}
+body.musecoach-page .home-top {
+  display: grid;
+  grid-template-columns: minmax(0, 2.6fr) minmax(235px, 1fr);
+  gap: 22px;
+}
+body.musecoach-page .hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  min-height: 335px;
+  padding: 36px 31px;
+  background: var(--peach);
+  border: 1px solid #eadfce;
+  border-radius: 13px;
+}
+body.musecoach-page .hero-content {
+  position: relative;
+  z-index: 2;
+  width: 60%;
+}
+body.musecoach-page .hero-tag {
+  background: #fff8e8;
+  border-color: #eadcc2;
+  font-size: 8px;
+  letter-spacing: 1.1px;
+  color: #807452;
+  padding: 5px 8px;
+}
+body.musecoach-page .hero h2 {
+  font-size: 45px;
+  line-height: 1.12;
+  margin: 18px 0 16px;
+  letter-spacing: -1.8px;
+}
+body.musecoach-page .hero h2 em {
+  color: #4f6380;
+  font-weight: 400;
+}
+body.musecoach-page .hero p {
+  font-size: 11px;
+  color: #7e7a6c;
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+body.musecoach-page .hero .button {
+  font-size: 11px;
+  padding: 11px 17px;
+}
+body.musecoach-page .hero-footnote {
+  font-size: 8px;
+  color: #847d6c;
+  display: block;
+  margin-top: 11px;
+}
+body.musecoach-page .hero-art {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body.musecoach-page .hero-art > svg {
+  width: 112%;
+  max-width: 350px;
+  position: relative;
+  margin-top: 9px;
+  z-index: 1;
+  transform: translateX(-3px);
+}
+body.musecoach-page .art-orbit {
+  position: absolute;
+  border: 1px solid #d5c5a3;
+  border-radius: 50%;
+  width: 245px;
+  height: 245px;
+  transform: rotate(-24deg);
+}
+body.musecoach-page .orbit-one {
+  width: 270px;
+  height: 285px;
+  border-style: dashed;
+  opacity: 0.5;
+}
+body.musecoach-page .orbit-two {
+  width: 310px;
+  height: 235px;
+  transform: rotate(56deg);
+  opacity: 0.4;
+}
+body.musecoach-page .art-spark {
+  position: absolute;
+  color: #9a8b53;
+  z-index: 2;
+}
+body.musecoach-page .spark-one {
+  top: 33px;
+  right: 27px;
+  font-size: 38px;
+}
+body.musecoach-page .spark-two {
+  bottom: 27px;
+  left: 7px;
+  font-size: 34px;
+}
+body.musecoach-page .floating-note {
+  font-family: Georgia, serif;
+  position: absolute;
+  font-size: 32px;
+  color: #63758f;
+  transform: rotate(-15deg);
+}
+body.musecoach-page .note-one {
+  top: 41px;
+  left: 8px;
+}
+body.musecoach-page .note-two {
+  bottom: 62px;
+  right: 19px;
+}
+body.musecoach-page .coach-caption {
+  border: 1px solid #e5ddc9;
+  background: #fffcf4e8;
+  position: absolute;
+  bottom: 29px;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 8px auto;
+  column-gap: 7px;
+  border-radius: 7px;
+  padding: 10px 14px;
+  box-shadow: 0 4px 8px #342f2208;
+  min-width: 140px;
+  transform: rotate(-3deg);
+}
+body.musecoach-page .coach-caption strong {
+  font-size: 12px;
+  line-height: 1.1;
+}
+body.musecoach-page .coach-caption > span:first-child {
+  margin-top: 3px;
+}
+body.musecoach-page .coach-caption > span:last-child {
+  font-size: 8px;
+  color: #837f70;
+  grid-column: 2;
+  margin-top: 4px;
+}
+body.musecoach-page .next-card {
+  background: var(--soft-blue);
+  border: 1px solid #d7dfe9;
+  border-radius: 13px;
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+}
+body.musecoach-page .next-card .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1.3px;
+}
+body.musecoach-page .small-star {
+  font-size: 24px;
+  color: #7b92b2;
+}
+body.musecoach-page .exercise-doodle {
+  display: block;
+  font:
+    56px/1 Georgia,
+    serif;
+  color: #637792;
+  margin: 17px 0 16px;
+}
+body.musecoach-page .next-card h3 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+}
+body.musecoach-page .next-card p {
+  font-size: 11px;
+  color: var(--muted);
+  margin: 11px 0 17px;
+}
+body.musecoach-page .next-card .chips {
+  gap: 6px;
+}
+body.musecoach-page .next-card .tag {
+  font-size: 8px;
+  background: #f0f4f9;
+  border: 0;
+  padding: 4px 7px;
+  color: #67778d;
+}
+body.musecoach-page .next-card > .text-button {
+  margin-top: auto;
+  padding-top: 19px;
+  font-size: 11px;
+}
+body.musecoach-page .section-block {
+  margin-top: 33px;
+}
+body.musecoach-page .section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+body.musecoach-page .section-heading h2 {
+  font-size: 25px;
+  margin-top: 7px;
+}
+body.musecoach-page .section-heading .eyebrow {
+  font-size: 8px;
+}
+body.musecoach-page .section-heading > .text-button {
+  font-size: 10px;
+}
+body.musecoach-page .practice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+}
+body.musecoach-page .practice-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 19px;
+  padding: 23px 22px 22px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  transition:
+    transform 0.2s,
+    border-color 0.2s;
+  min-height: 185px;
+}
+body.musecoach-page .practice-card:hover {
+  transform: translateY(-3px);
+  border-color: #b0bbcb;
+}
+body.musecoach-page .practice-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: #e3e9f2;
+  color: #647388;
+}
+body.musecoach-page .practice-hold .practice-icon {
+  background: #f6ede5;
+  color: #a18067;
+}
+body.musecoach-page .practice-melody .practice-icon {
+  background: #eeeaf3;
+  color: #8e7fa4;
+}
+body.musecoach-page .practice-card .eyebrow {
+  font-size: 7px;
+  letter-spacing: 1.25px;
+  color: #8892a1;
+}
+body.musecoach-page .practice-card h3 {
+  font-size: 15px;
+  margin-top: 7px;
+}
+body.musecoach-page .practice-card p {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 5px;
+  max-width: 95%;
+  line-height: 1.8;
+}
+body.musecoach-page .round-arrow {
+  position: absolute;
+  right: 19px;
+  top: 27px;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--line);
+  display: grid;
+  place-items: center;
+  color: #818d9d;
+}
+body.musecoach-page .home-bottom {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) minmax(240px, 1fr);
+  gap: 21px;
+}
+body.musecoach-page .panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+  min-width: 0;
+}
+body.musecoach-page .recent-panel {
+  margin-bottom: 0;
+  padding: 21px 23px;
+}
+body.musecoach-page .recent-panel .section-heading {
+  margin-bottom: 20px;
+}
+body.musecoach-page .recent-panel h3 {
+  font-size: 14px;
+}
+body.musecoach-page .empty-recent {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 8px 0 0;
+}
+body.musecoach-page .empty-icon {
+  width: 45px;
+  height: 45px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #8695aa;
+}
+body.musecoach-page .empty-recent h4 {
+  font-size: 12px;
+}
+body.musecoach-page .empty-recent p {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+body.musecoach-page .empty-recent > .text-button {
+  font-size: 10px;
+  margin-left: 60px;
+  padding: 0 0 2px;
+}
+body.musecoach-page .small-coach-note {
+  background: #f1eee5;
+  border-radius: 11px;
+  padding: 24px;
+}
+body.musecoach-page .small-coach-note .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1.2px;
+  color: #96907c;
+}
+body.musecoach-page .small-coach-note p {
+  font:
+    italic 19px/1.55 Georgia,
+    serif;
+  margin: 16px 0 10px;
+  color: #5c6c82;
+}
+body.musecoach-page .small-coach-note .text-button {
+  font-size: 10px;
+}
+body.musecoach-page .studio-footer {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 8px;
+  color: #8b95a4;
+  border-top: 1px solid var(--line);
+  margin-top: 30px;
+  padding: 17px 0 0;
+}
+body.musecoach-page .studio-footer > span:last-child {
+  margin-left: auto;
+}
+body.musecoach-page .chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+body.musecoach-page .chip {
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 8px 13px;
+  background: var(--panel);
+  font-size: 12px;
+  color: var(--muted);
+}
+body.musecoach-page .chip.selected {
+  border-color: #96a3b5;
+  background: var(--soft-blue);
+  color: var(--accent);
+}
+body.musecoach-page .notice {
+  padding: 15px 18px;
+  background: var(--soft-blue);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+body.musecoach-page .warning {
+  background: #fbf2df;
+  border-color: #e8d8b8;
+  color: #7e5c28;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+body.musecoach-page .warning p + p {
+  margin-top: 8px;
+}
+body.musecoach-page .status-toast {
+  position: fixed;
+  z-index: 80;
+  bottom: 26px;
+  left: calc(50% + 100px);
+  transform: translateX(-50%);
+  border-radius: 9px;
+  background: var(--accent);
+  color: white;
+  padding: 11px 15px;
+  box-shadow: 0 5px 30px #0002;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 12px;
+  max-width: 85vw;
+}
+body.musecoach-page .status-toast > button {
+  margin-left: 14px;
+  font-size: 20px;
+  line-height: 1;
+}
+body.musecoach-page .error,
+body.musecoach-page .danger {
+  color: var(--danger);
+}
+body.musecoach-page .error {
+  font-size: 13px;
+  margin: 14px 0;
+}
+body.musecoach-page .destructive {
+  background: var(--danger);
+  color: white;
+}
+body.musecoach-page .skip-link {
+  position: fixed;
+  left: 15px;
+  top: -100px;
+  z-index: 200;
+  background: var(--accent);
+  color: white;
+  padding: 12px;
+}
+body.musecoach-page .skip-link:focus {
+  top: 10px;
+}
+body.musecoach-page .sr-only {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+body.musecoach-page .loading-state {
+  text-align: center;
+  padding: 100px 20px;
+}
+body.musecoach-page .profile-dialog,
+body.musecoach-page .confirm-dialog {
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: 17px;
+  padding: 30px 34px;
+  width: min(660px, calc(100vw - 32px));
+  max-height: 90dvh;
+  box-shadow: 0 25px 100px #232d3a30;
+  position: fixed;
+  margin: auto;
+  overflow-y: auto;
+}
+body.musecoach-page .profile-dialog::backdrop,
+body.musecoach-page .confirm-dialog::backdrop {
+  background: #212a3663;
+  backdrop-filter: blur(5px);
+}
+body.musecoach-page .modal-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body.musecoach-page .modal-top .eyebrow {
+  font-size: 9px;
+}
+body.musecoach-page .step-dots {
+  display: flex;
+  gap: 6px;
+  margin: 14px 0 23px;
+}
+body.musecoach-page .step-dots button {
+  height: 5px;
+  width: 35px;
+  background: var(--line);
+  border-radius: 3px;
+  padding: 0;
+}
+body.musecoach-page .step-dots button.active {
+  background: var(--accent);
+}
+body.musecoach-page .profile-dialog h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+body.musecoach-page .profile-dialog > p {
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+body.musecoach-page .form-stack {
+  display: grid;
+  gap: 19px;
+}
+body.musecoach-page label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+}
+body.musecoach-page label .muted,
+body.musecoach-page legend .muted {
+  font-size: 10px;
+  font-weight: 400;
+  margin-left: 5px;
+}
+body.musecoach-page input:not([type="checkbox"]):not([type="file"]),
+body.musecoach-page select {
+  display: block;
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 11px 12px;
+  margin-top: 7px;
+  min-width: 0;
+  color: var(--ink);
+  font-size: 13px;
+}
+body.musecoach-page input:disabled,
+body.musecoach-page select:disabled {
+  opacity: 0.55;
+}
+body.musecoach-page fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+body.musecoach-page legend {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+body.musecoach-page .form-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+body.musecoach-page .modal-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+body.musecoach-page .coach-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+body.musecoach-page .coach-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 8px;
+  text-align: left;
+  position: relative;
+  min-width: 0;
+}
+body.musecoach-page .coach-option svg:first-child {
+  width: 53px;
+  height: 53px;
+}
+body.musecoach-page .coach-option strong {
+  font-size: 13px;
+  display: block;
+}
+body.musecoach-page .coach-option small {
+  font-size: 8px;
+  display: block;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-top: 3px;
+}
+body.musecoach-page .coach-option.selected {
+  border-color: #8697af;
+  background: var(--soft-blue);
+}
+body.musecoach-page .coach-option > svg:last-child:not(:first-child) {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+body.musecoach-page .segmented {
+  display: flex;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  overflow: hidden;
+  background: var(--bg);
+  padding: 3px;
+  gap: 4px;
+}
+body.musecoach-page .segmented button {
+  flex: 1;
+  padding: 7px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+body.musecoach-page .segmented .selected {
+  background: var(--accent);
+  color: #fff;
+}
+body.musecoach-page .confirm-dialog {
+  max-width: 460px;
+}
+body.musecoach-page .confirm-dialog h2 {
+  font-size: 27px;
+  margin-bottom: 16px;
+}
+body.musecoach-page .confirm-dialog p {
+  font-size: 13px;
+  color: var(--muted);
+}
+body.musecoach-page .record-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.9fr) minmax(250px, 1fr);
+  gap: 25px;
+}
+body.musecoach-page .recording-panel {
+  text-align: center;
+  padding: 27px 30px;
+}
+body.musecoach-page .recording-panel .section-heading {
+  margin-bottom: 10px;
+}
+body.musecoach-page .record-orb {
+  height: 151px;
+  width: 151px;
+  margin: 30px auto 27px;
+  border-radius: 50%;
+  background: var(--soft-blue);
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+body.musecoach-page .orb-inner {
+  height: 102px;
+  width: 102px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #ccd5e2;
+  border-radius: 50%;
+  color: var(--accent);
+  background: var(--panel);
+}
+body.musecoach-page .orb-ring {
+  position: absolute;
+  inset: -12px;
+  border: 1px dashed #cdd5e1;
+  border-radius: 50%;
+}
+body.musecoach-page .is-recording .orb-ring {
+  animation: pulse 1.7s ease-in-out infinite;
+}
+body.musecoach-page .is-recording .orb-inner {
+  background: var(--accent);
+  color: white;
+}
+body.musecoach-page .recording-panel h2 {
+  font-size: 30px;
+}
+body.musecoach-page .record-description {
+  font-size: 12px;
+  color: var(--muted);
+  max-width: 440px;
+  margin: 15px auto 22px;
+  min-height: 62px;
+}
+body.musecoach-page .record-time {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-variant-numeric: tabular-nums;
+}
+body.musecoach-page .record-time > span {
+  font-size: 17px;
+  color: var(--muted);
+}
+body.musecoach-page .input-level {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  margin: 15px 0 6px;
+}
+body.musecoach-page .input-level i {
+  width: 5px;
+  height: 18px;
+  border-radius: 3px;
+  background: var(--line);
+}
+body.musecoach-page .input-level i.lit {
+  background: #7c90ab;
+}
+body.musecoach-page .record-actions {
+  margin: 21px 0 14px;
+}
+body.musecoach-page .stop {
+  background: #985348;
+  color: white;
+}
+body.musecoach-page .recording-panel > .notice {
+  text-align: left;
+  margin-top: 22px;
+  font-size: 12px;
+}
+body.musecoach-page .playback-box {
+  margin: 25px 0 10px;
+  text-align: left;
+  border-top: 1px solid var(--line);
+  padding-top: 23px;
+}
+body.musecoach-page .playback-box h3 {
+  margin-bottom: 16px;
+}
+body.musecoach-page audio {
+  width: 100%;
+  height: 42px;
+  margin: 4px 0 16px;
+}
+body.musecoach-page .take-title {
+  margin: 4px 0 16px;
+}
+body.musecoach-page .checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+body.musecoach-page .checkbox-label input {
+  accent-color: var(--accent);
+  width: 16px;
+  height: 16px;
+}
+body.musecoach-page .playback-box .section-heading {
+  margin-top: 19px;
+}
+body.musecoach-page .playback-box .small {
+  margin: 8px 0 0;
+}
+body.musecoach-page .upload-divider {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 10px;
+  margin: 28px 0 22px;
+}
+body.musecoach-page .upload-divider:before,
+body.musecoach-page .upload-divider:after {
+  content: "";
+  height: 1px;
+  background: var(--line);
+  flex: 1;
+}
+body.musecoach-page .upload-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px dashed #c0c9d5;
+  border-radius: 9px;
+  background: var(--bg);
+  padding: 23px 10px;
+  cursor: pointer;
+  color: var(--muted);
+}
+body.musecoach-page .upload-area strong {
+  font-size: 12px;
+  color: var(--accent);
+}
+body.musecoach-page .upload-area > span {
+  font-size: 9px;
+  font-weight: 400;
+}
+body.musecoach-page .upload-area input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+}
+body.musecoach-page .upload-area:focus-within {
+  outline: 3px solid #b38145;
+  outline-offset: 3px;
+}
+body.musecoach-page .upload-area.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+body.musecoach-page .recording-tips h3 {
+  font:
+    26px/1.3 Georgia,
+    serif;
+  margin: 14px 0 26px;
+}
+body.musecoach-page .recording-tips ol {
+  list-style: none;
+  counter-reset: tips;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 23px;
+}
+body.musecoach-page .recording-tips li {
+  position: relative;
+  padding-left: 35px;
+  counter-increment: tips;
+}
+body.musecoach-page .recording-tips li:before {
+  content: counter(tips);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--soft-blue);
+  font:
+    12px Georgia,
+    serif;
+}
+body.musecoach-page .recording-tips strong {
+  display: block;
+  font-size: 12px;
+}
+body.musecoach-page .recording-tips li span {
+  font-size: 11px;
+  color: var(--muted);
+  display: block;
+  margin-top: 6px;
+}
+body.musecoach-page .privacy-note {
+  display: flex;
+  gap: 12px;
+  padding: 4px 14px;
+  color: var(--muted);
+}
+body.musecoach-page .privacy-note p {
+  font-size: 11px;
+}
+body.musecoach-page .target-notes {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+body.musecoach-page .target-notes > span {
+  background: var(--soft-blue);
+  border-radius: 6px;
+  padding: 9px 10px;
+  min-width: 49px;
+  text-align: center;
+  font-size: 14px;
+}
+body.musecoach-page .target-notes small {
+  display: block;
+  font-size: 8px;
+  color: var(--muted);
+}
+body.musecoach-page .target-notes .active {
+  background: var(--accent);
+  color: white;
+}
+body.musecoach-page .target-notes .active small {
+  color: #d9e1eb;
+}
+body.musecoach-page .record-sidebar .button {
+  font-size: 11px;
+}
+body.musecoach-page .record-sidebar .small {
+  margin-top: 12px;
+}
+body.musecoach-page .record-sidebar .eyebrow {
+  font-size: 9px;
+}
+body.musecoach-page .record-sidebar h3 {
+  margin-top: 12px;
+}
+body.musecoach-page .review-stack {
+  max-width: 1050px;
+}
+body.musecoach-page .review-banner {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  border-radius: 12px;
+  padding: 30px;
+  background: var(--soft-blue);
+  border: 1px solid var(--line);
+  margin-bottom: 20px;
+}
+body.musecoach-page .review-banner h2 {
+  margin-top: 11px;
+  font-size: 31px;
+}
+body.musecoach-page .review-banner p {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 14px;
+  max-width: 530px;
+}
+body.musecoach-page .score-circle {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #9dafc7;
+  border-radius: 50%;
+  width: 115px;
+  height: 115px;
+  background: var(--panel);
+}
+body.musecoach-page .score-circle strong {
+  font:
+    38px/1 Georgia,
+    serif;
+}
+body.musecoach-page .score-circle span {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+body.musecoach-page .metric-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 23px 0;
+}
+body.musecoach-page .metric {
+  padding: 16px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+body.musecoach-page .metric > span {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+body.musecoach-page .metric strong {
+  font-size: 24px;
+  font-weight: 500;
+}
+body.musecoach-page .metric small {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--muted);
+}
+body.musecoach-page .meter {
+  height: 4px;
+  border-radius: 4px;
+  background: var(--line);
+  margin-top: 13px;
+}
+body.musecoach-page .meter i {
+  display: block;
+  height: 100%;
+  background: #758aa7;
+  border-radius: 4px;
+}
+body.musecoach-page details {
+  border-top: 1px solid var(--line);
+  padding-top: 15px;
+}
+body.musecoach-page summary {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+body.musecoach-page details p {
+  margin-top: 13px;
+}
+body.musecoach-page .pitch-chart svg {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+}
+body.musecoach-page .pitch-chart text,
+body.musecoach-page .trend-chart text {
+  fill: var(--muted);
+  font:
+    10px Arial,
+    sans-serif;
+}
+body.musecoach-page .pitch-chart .small {
+  margin-top: 8px;
+}
+body.musecoach-page .two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+body.musecoach-page .feedback-line {
+  font-size: 12px;
+  margin: 15px 0;
+  color: var(--muted);
+}
+body.musecoach-page .observation {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
+}
+body.musecoach-page .observation:last-child {
+  border: 0;
+  padding-bottom: 0;
+}
+body.musecoach-page .observation p {
+  font-size: 12px;
+}
+body.musecoach-page .timestamp {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--bg);
+  padding: 5px 8px;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+body.musecoach-page .session-heading {
+  margin: 0 0 24px;
+}
+body.musecoach-page .session-heading h2 {
+  font-size: 26px;
+}
+body.musecoach-page .session-heading p {
+  font-size: 11px;
+  margin-top: 7px;
+}
+body.musecoach-page .practice-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 23px;
+  flex-wrap: wrap;
+}
+body.musecoach-page .practice-studio {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(260px, 1fr);
+  gap: 24px;
+}
+body.musecoach-page .exercise-main {
+  text-align: center;
+  background: var(--soft-blue);
+  padding: 40px;
+}
+body.musecoach-page .exercise-main.practice-match {
+  background: #e6ebf2;
+}
+body.musecoach-page .exercise-main.practice-melody {
+  background: #f1edf4;
+}
+body.musecoach-page .exercise-main.practice-hold {
+  background: #f4ece3;
+}
+body.musecoach-page .exercise-main h2 {
+  font-size: 38px;
+  margin: 15px 0;
+}
+body.musecoach-page .exercise-main > .eyebrow {
+  font-size: 9px;
+}
+body.musecoach-page .exercise-main p {
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 450px;
+  margin: 0 auto 22px;
+}
+body.musecoach-page .exercise-main .exercise-doodle {
+  margin: 0 0 26px;
+  font-size: 77px;
+}
+body.musecoach-page .exercise-steps {
+  display: flex;
+  gap: 14px;
+  margin: 30px 0;
+  font-size: 10px;
+  text-align: center;
+}
+body.musecoach-page .exercise-steps > div {
+  flex: 1;
+}
+body.musecoach-page .exercise-steps span {
+  display: block;
+  background: var(--panel);
+  height: 28px;
+  width: 28px;
+  margin: 0 auto 10px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font:
+    14px/28px Georgia,
+    serif;
+}
+body.musecoach-page .target-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+body.musecoach-page .target-selector select {
+  width: 100px;
+  margin: 0;
+  background: var(--panel);
+}
+body.musecoach-page .range-card {
+  margin-top: 23px;
+}
+body.musecoach-page .range-card h3 {
+  margin: 12px 0;
+}
+body.musecoach-page .practice-studio aside p {
+  margin: 14px 0;
+}
+body.musecoach-page .coach-layout {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 25px;
+}
+body.musecoach-page .coach-portrait {
+  text-align: center;
+  align-self: start;
+}
+body.musecoach-page .coach-portrait > svg {
+  width: 100%;
+  max-width: 270px;
+}
+body.musecoach-page .coach-portrait h2 {
+  font-size: 34px;
+  margin: 12px 0;
+}
+body.musecoach-page .coach-portrait > p {
+  font-size: 12px;
+  margin: 13px 0;
+}
+body.musecoach-page .coach-portrait > .button {
+  margin-top: 12px;
+  width: 100%;
+}
+body.musecoach-page .coach-portrait > .text-button {
+  font-size: 10px;
+  text-align: left;
+  margin-top: 15px;
+}
+body.musecoach-page .coach-conversation h2 {
+  font-size: 30px;
+  margin: 13px 0 18px;
+  max-width: 600px;
+}
+body.musecoach-page .coach-conversation p {
+  font-size: 12px;
+  margin: 13px 0;
+}
+body.musecoach-page .coach-conversation .text-button + .text-button {
+  margin-left: 16px;
+}
+body.musecoach-page .chat-panel .section-heading {
+  flex-wrap: wrap;
+}
+body.musecoach-page .chat-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 7px;
+}
+body.musecoach-page .ai-connection {
+  margin: 18px 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+}
+body.musecoach-page .ai-connection summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+body.musecoach-page .ai-connection summary::after {
+  content: "+";
+  margin-left: auto;
+}
+body.musecoach-page .ai-connection[open] summary::after {
+  content: "−";
+}
+body.musecoach-page .ai-connection fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+body.musecoach-page .ai-connection label {
+  display: block;
+  font-size: 12px;
+  margin: 12px 0;
+}
+body.musecoach-page .ai-connection .ai-remember {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  line-height: 1.5;
+}
+body.musecoach-page .ai-connection .ai-remember input {
+  width: 16px;
+  height: 16px;
+  margin: 0 !important;
+  flex-shrink: 0;
+}
+body.musecoach-page .ai-connection > .text-button {
+  margin-top: 14px;
+}
+body.musecoach-page .chat-input input {
+  margin: 0 !important;
+}
+body.musecoach-page .chat-input button {
+  padding: 10px;
+  min-width: 44px;
+}
+body.musecoach-page .chat-panel form .small {
+  margin-bottom: 0;
+}
+body.musecoach-page .chat-panel .notice {
+  font-size: 12px;
+}
+body.musecoach-page .messages {
+  display: grid;
+  gap: 15px;
+  max-height: 500px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+body.musecoach-page .message {
+  padding: 15px 18px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  max-width: 94%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+body.musecoach-page .message.user {
+  background: var(--soft-blue);
+  justify-self: end;
+}
+body.musecoach-page .message .eyebrow {
+  font-size: 8px;
+}
+body.musecoach-page .message p {
+  margin: 8px 0 0;
+}
+body.musecoach-page .stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+body.musecoach-page .stat > span {
+  font-size: 11px;
+  color: var(--muted);
+}
+body.musecoach-page .stat > strong {
+  display: block;
+  font:
+    42px Georgia,
+    serif;
+  margin: 13px 0 9px;
+}
+body.musecoach-page .stat > strong em {
+  font-size: 18px;
+  font-style: normal;
+}
+body.musecoach-page .stat > small {
+  color: var(--muted);
+  font-size: 10px;
+}
+body.musecoach-page .trend-filter {
+  max-width: 330px;
+  margin: 20px 0;
+}
+body.musecoach-page .trend-chart {
+  width: 100%;
+  margin-top: 10px;
+  max-height: 250px;
+}
+body.musecoach-page .goals-panel .chips {
+  margin: 15px 0;
+}
+body.musecoach-page .session-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-top: 1px solid var(--line);
+  padding: 17px 0;
+}
+body.musecoach-page .session-icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  background: var(--soft-blue);
+  border-radius: 9px;
+  color: var(--accent);
+}
+body.musecoach-page .session-row strong {
+  display: block;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+body.musecoach-page .session-row small {
+  font-size: 10px;
+  color: var(--muted);
+  display: block;
+  margin-top: 3px;
+}
+body.musecoach-page .session-row .session-score {
+  margin-left: auto;
+  display: block;
+  text-align: right;
+  font-size: 20px;
+  min-width: 55px;
+}
+body.musecoach-page .session-score small {
+  font-size: 8px;
+}
+body.musecoach-page .session-row > svg {
+  color: var(--muted);
+}
+body.musecoach-page .session-row:hover strong {
+  text-decoration: underline;
+}
+body.musecoach-page .session-list .session-row:first-child {
+  border-top: 0;
+}
+body.musecoach-page .history-footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+body.musecoach-page .history-footer .danger {
+  flex-shrink: 0;
+}
+body.musecoach-page #history-filter {
+  width: auto;
+  max-width: 160px;
+  margin: 0;
+  font-size: 11px;
+  padding: 7px 9px;
+}
+body.musecoach-page .empty-state {
+  text-align: center;
+  padding: 60px 25px;
+}
+body.musecoach-page .empty-state p {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 18px 0 25px;
+}
+body.musecoach-page .empty-state h3 {
+  margin-top: 18px;
+}
+body.musecoach-page .empty-state.compact {
+  padding: 25px;
+}
+body.musecoach-page .empty-inline {
+  padding: 35px 10px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+}
+body.musecoach-page .spin {
+  animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pulse {
+  50% {
+    transform: scale(1.07);
+    opacity: 0.4;
+  }
+}
+html[data-theme="dark"] body.musecoach-page {
+  --bg: #171e27;
+  --panel: #1e2631;
+  --ink: #d9e1eb;
+  --muted: #a0aab8;
+  --line: #323b48;
+  --accent: #819abe;
+  --accent-hover: #9bafcb;
+  --soft-blue: #28323f;
+  --peach: #3d362b;
+  --danger: #e7a096;
+  color-scheme: dark;
+}
+html[data-theme="dark"] body.musecoach-page .primary {
+  color: #151d29;
+}
+html[data-theme="dark"] body.musecoach-page .sidebar-note,
+html[data-theme="dark"] body.musecoach-page .small-coach-note {
+  background: #262d36;
+}
+html[data-theme="dark"] body.musecoach-page .hero {
+  border-color: #504736;
+}
+html[data-theme="dark"] body.musecoach-page .hero h2 em {
+  color: #9fb1ca;
+}
+html[data-theme="dark"] body.musecoach-page .hero p,
+html[data-theme="dark"] body.musecoach-page .hero-footnote {
+  color: #c5bdab;
+}
+html[data-theme="dark"] body.musecoach-page .hero-tag,
+html[data-theme="dark"] body.musecoach-page .next-card .tag {
+  background: #2b333f;
+  border-color: #55523f;
+  color: #cdc8ad;
+}
+html[data-theme="dark"] body.musecoach-page .next-card {
+  border-color: #323f51;
+}
+html[data-theme="dark"] body.musecoach-page .small-coach-note p {
+  color: #a5b5cb;
+}
+html[data-theme="dark"] body.musecoach-page .warning {
+  background: #453d28;
+  color: #e1cca5;
+  border-color: #5f5032;
+}
+html[data-theme="dark"] body.musecoach-page .exercise-main.practice-hold {
+  background: #39342b;
+}
+html[data-theme="dark"] body.musecoach-page .exercise-main.practice-melody {
+  background: #342e3d;
+}
+html[data-theme="dark"] body.musecoach-page .exercise-main.practice-match {
+  background: #28313d;
+}
+html[data-theme="dark"] body.musecoach-page .practice-icon {
+  background: #2d3643;
+  color: #9fb0c8;
+}
+html[data-theme="dark"] body.musecoach-page .practice-hold .practice-icon {
+  background: #443b31;
+  color: #d4b498;
+}
+html[data-theme="dark"] body.musecoach-page .practice-melody .practice-icon {
+  background: #3c3444;
+  color: #c1aed4;
+}
+html[data-theme="dark"] body.musecoach-page .brand-mark {
+  color: #172334;
+}
+html[data-theme="dark"] body.musecoach-page .destructive {
+  color: #2d1816;
+}
+html[data-theme="dark"] body.musecoach-page .status-toast {
+  color: #152133;
+}
+@media (min-width: 1500px) {
+  body.musecoach-page main {
+    padding-top: 43px;
+  }
+  body.musecoach-page .hero {
+    min-height: 365px;
+  }
+  body.musecoach-page .hero h2 {
+    font-size: 52px;
+  }
+  body.musecoach-page .hero-content {
+    width: 63%;
+  }
+  body.musecoach-page .hero p {
+    font-size: 13px;
+  }
+  body.musecoach-page .practice-card {
+    min-height: 205px;
+  }
+  body.musecoach-page .practice-card p {
+    font-size: 12px;
+  }
+  body.musecoach-page .practice-card h3 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1200px) {
+  body.musecoach-page .sidebar {
+    width: 205px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  body.musecoach-page .workspace {
+    margin-left: 205px;
+    width: calc(100% - 205px);
+  }
+  body.musecoach-page main {
+    padding: 28px;
+  }
+  body.musecoach-page .topbar {
+    padding: 0 28px;
+  }
+  body.musecoach-page .hero {
+    padding: 28px 23px;
+    min-height: 330px;
+  }
+  body.musecoach-page .hero h2 {
+    font-size: 39px;
+  }
+  body.musecoach-page .hero-content {
+    width: 65%;
+  }
+  body.musecoach-page .hero-art {
+    width: 43%;
+    right: -8px;
+  }
+  body.musecoach-page .hero-art > svg {
+    width: 125%;
+  }
+  body.musecoach-page .hero-tag {
+    font-size: 7px;
+  }
+  body.musecoach-page .hero p {
+    font-size: 10px;
+  }
+  body.musecoach-page .next-card {
+    padding: 20px;
+  }
+  body.musecoach-page .next-card h3 {
+    font-size: 22px;
+  }
+  body.musecoach-page .next-card .eyebrow {
+    font-size: 7px;
+  }
+  body.musecoach-page .practice-card {
+    padding: 19px 17px;
+  }
+  body.musecoach-page .practice-card h3 {
+    font-size: 14px;
+  }
+  body.musecoach-page .practice-card p {
+    font-size: 10px;
+  }
+  body.musecoach-page .round-arrow {
+    right: 15px;
+  }
+  body.musecoach-page .home-top {
+    gap: 17px;
+    grid-template-columns: minmax(0, 2fr) minmax(210px, 1fr);
+  }
+  body.musecoach-page .section-heading h2 {
+    font-size: 23px;
+  }
+  body.musecoach-page .coach-layout {
+    grid-template-columns: 245px minmax(0, 1fr);
+  }
+  body.musecoach-page .record-layout {
+    grid-template-columns: minmax(0, 1.8fr) minmax(220px, 1fr);
+    gap: 18px;
+  }
+  body.musecoach-page .recording-panel {
+    padding: 23px;
+  }
+  body.musecoach-page .record-sidebar .panel {
+    padding: 21px;
+  }
+  body.musecoach-page .record-sidebar h3 {
+    font-size: 23px;
+  }
+  body.musecoach-page .hero-tag > svg {
+    width: 10px;
+  }
+  body.musecoach-page .desktop-break {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  body.musecoach-page .sidebar {
+    width: 78px;
+    padding: 27px 12px 19px;
+    align-items: center;
+  }
+  body.musecoach-page .brand {
+    font-size: 0;
+    gap: 0;
+  }
+  body.musecoach-page .brand-period,
+  body.musecoach-page .sidebar-caption,
+  body.musecoach-page .nav-link > span,
+  body.musecoach-page .sidebar-note,
+  body.musecoach-page .profile-button > span:not(:first-child),
+  body.musecoach-page .profile-button > svg {
+    display: none;
+  }
+  body.musecoach-page .sidebar nav {
+    margin-top: 43px;
+    width: 100%;
+  }
+  body.musecoach-page .nav-link {
+    justify-content: center;
+    padding: 14px 10px;
+  }
+  body.musecoach-page .sidebar-bottom {
+    width: 100%;
+  }
+  body.musecoach-page .profile-button {
+    justify-content: center;
+    padding-top: 20px;
+  }
+  body.musecoach-page .workspace {
+    margin-left: 78px;
+    width: calc(100% - 78px);
+  }
+  body.musecoach-page .heading-action {
+    font-size: 10px !important;
+  }
+  body.musecoach-page .home-bottom {
+    grid-template-columns: 1.8fr 1fr;
+  }
+  body.musecoach-page .small-coach-note {
+    padding: 20px;
+  }
+  body.musecoach-page .small-coach-note p {
+    font-size: 17px;
+  }
+  body.musecoach-page .practice-studio {
+    grid-template-columns: minmax(0, 1.5fr) minmax(230px, 1fr);
+  }
+  body.musecoach-page .exercise-main {
+    padding: 30px;
+  }
+  body.musecoach-page .hero h2 {
+    font-size: 38px;
+  }
+  body.musecoach-page .practice-grid {
+    gap: 13px;
+  }
+  body.musecoach-page .coach-layout {
+    gap: 19px;
+  }
+  body.musecoach-page .status-toast {
+    left: calc(50% + 39px);
+  }
+}
+@media (max-width: 760px) {
+  body.musecoach-page .sidebar {
+    width: 100%;
+    height: 65px;
+    top: auto;
+    bottom: 0;
+    padding: 0 8px;
+    border-right: 0;
+    border-top: 1px solid var(--line);
+    display: block;
+    background: var(--panel);
+  }
+  body.musecoach-page .sidebar > .brand,
+  body.musecoach-page .sidebar-bottom {
+    display: none;
+  }
+  body.musecoach-page .sidebar nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    height: 100%;
+    gap: 2px;
+  }
+  body.musecoach-page .nav-link {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+    padding: 8px 4px 6px;
+    border-radius: 0;
+    font-size: 8px;
+    line-height: 1.3;
+  }
+  body.musecoach-page .nav-link > span:not(.nav-dot) {
+    display: block;
+  }
+  body.musecoach-page .nav-link > .nav-dot {
+    display: none;
+  }
+  body.musecoach-page .nav-link.active {
+    background: transparent;
+  }
+  body.musecoach-page .nav-link.active:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 3px;
+    border-radius: 0 0 3px 3px;
+    background: var(--accent);
+  }
+  body.musecoach-page .nav-link svg {
+    width: 20px;
+    height: 20px;
+  }
+  body.musecoach-page .workspace {
+    margin: 0;
+    width: 100%;
+    padding-bottom: 65px;
+  }
+  body.musecoach-page .topbar {
+    height: 62px;
+    padding: 0 21px;
+  }
+  body.musecoach-page .topbar-right {
+    gap: 10px;
+  }
+  body.musecoach-page .private-badge {
+    display: none;
+  }
+  body.musecoach-page .breadcrumb {
+    font-size: 10px;
+    gap: 9px;
+  }
+  body.musecoach-page main {
+    padding: 27px 20px 20px;
+  }
+  body.musecoach-page .page-heading {
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+  body.musecoach-page .page-heading h1 {
+    font-size: 34px;
+  }
+  body.musecoach-page .page-heading p {
+    font-size: 11px;
+    max-width: 280px;
+  }
+  body.musecoach-page .page-heading .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.3px;
+  }
+  body.musecoach-page .heading-action {
+    display: none;
+  }
+  body.musecoach-page .home-top {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  body.musecoach-page .hero {
+    min-height: 330px;
+    padding: 29px 24px;
+  }
+  body.musecoach-page .hero-content {
+    width: 64%;
+  }
+  body.musecoach-page .hero h2 {
+    font-size: 42px;
+  }
+  body.musecoach-page .hero p {
+    font-size: 11px;
+  }
+  body.musecoach-page .hero-tag {
+    font-size: 7px;
+    letter-spacing: 0.7px;
+  }
+  body.musecoach-page .hero-art {
+    width: 42%;
+    right: -4px;
+  }
+  body.musecoach-page .hero-art > svg {
+    width: 145%;
+    max-width: 290px;
+  }
+  body.musecoach-page .art-orbit {
+    width: 190px;
+    height: 190px;
+  }
+  body.musecoach-page .orbit-one {
+    width: 230px;
+    height: 250px;
+  }
+  body.musecoach-page .orbit-two {
+    height: 200px;
+    width: 250px;
+  }
+  body.musecoach-page .spark-one {
+    right: 6px;
+    top: 38px;
+  }
+  body.musecoach-page .coach-caption {
+    bottom: 31px;
+    padding: 8px 10px;
+    min-width: 125px;
+    transform: translateX(-4px) rotate(-3deg);
+  }
+  body.musecoach-page .coach-caption > span:last-child {
+    font-size: 7px;
+  }
+  body.musecoach-page .note-two {
+    right: 5px;
+  }
+  body.musecoach-page .next-card {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    column-gap: 18px;
+    align-items: center;
+    padding: 20px;
+  }
+  body.musecoach-page .next-card .section-heading {
+    grid-column: 2;
+    position: relative;
+    margin: 0 0 7px;
+  }
+  body.musecoach-page .next-card .small-star {
+    position: absolute;
+    right: 0;
+    top: -6px;
+  }
+  body.musecoach-page .next-card .eyebrow {
+    font-size: 7px;
+  }
+  body.musecoach-page .next-card .exercise-doodle {
+    grid-column: 1;
+    grid-row: 1/4;
+    align-self: center;
+    margin: 0;
+    font-size: 45px;
+  }
+  body.musecoach-page .next-card h3 {
+    grid-column: 2;
+    font-size: 23px;
+  }
+  body.musecoach-page .next-card p {
+    grid-column: 2;
+    margin: 6px 0;
+    font-size: 10px;
+  }
+  body.musecoach-page .next-card .chips {
+    grid-column: 2;
+    margin-top: 7px;
+  }
+  body.musecoach-page .next-card > .text-button {
+    grid-column: 2;
+    margin-top: 6px;
+    padding-top: 8px;
+    font-size: 11px;
+  }
+  body.musecoach-page .section-block {
+    margin-top: 29px;
+  }
+  body.musecoach-page .section-block > .section-heading {
+    align-items: flex-end;
+  }
+  body.musecoach-page .section-heading h2 {
+    font-size: 23px;
+    max-width: 220px;
+  }
+  body.musecoach-page .section-block > .section-heading > .text-button {
+    font-size: 9px;
+    white-space: nowrap;
+    gap: 5px;
+  }
+  body.musecoach-page .practice-grid {
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
+  body.musecoach-page .practice-card {
+    min-height: 0;
+    padding: 19px;
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    align-items: center;
+  }
+  body.musecoach-page .practice-card .eyebrow {
+    font-size: 7px;
+  }
+  body.musecoach-page .practice-card h3 {
+    font-size: 15px;
+    margin-top: 4px;
+  }
+  body.musecoach-page .practice-card p {
+    font-size: 10px;
+    max-width: 93%;
+  }
+  body.musecoach-page .practice-icon {
+    flex-shrink: 0;
+    width: 42px;
+    height: 45px;
+  }
+  body.musecoach-page .round-arrow {
+    position: static;
+    flex-shrink: 0;
+    margin-left: auto;
+    width: 25px;
+    height: 25px;
+  }
+  body.musecoach-page .home-bottom {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 19px;
+  }
+  body.musecoach-page .small-coach-note {
+    padding: 22px 25px;
+  }
+  body.musecoach-page .small-coach-note p {
+    font-size: 21px;
+    margin: 11px 0;
+  }
+  body.musecoach-page .recent-panel {
+    padding: 20px;
+  }
+  body.musecoach-page .empty-recent > .text-button {
+    margin-left: 60px;
+  }
+  body.musecoach-page .studio-footer {
+    font-size: 8px;
+    margin-top: 24px;
+    padding-top: 17px;
+  }
+  body.musecoach-page .studio-footer > span:last-child {
+    display: none;
+  }
+  body.musecoach-page .panel {
+    padding: 22px;
+  }
+  body.musecoach-page .record-layout {
+    grid-template-columns: 1fr;
+  }
+  body.musecoach-page .recording-panel {
+    padding: 23px 20px;
+  }
+  body.musecoach-page .recording-panel h2 {
+    font-size: 28px;
+  }
+  body.musecoach-page .record-description {
+    font-size: 12px;
+  }
+  body.musecoach-page .record-orb {
+    margin-top: 26px;
+  }
+  body.musecoach-page .record-sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+  body.musecoach-page .recording-tips {
+    order: 1;
+  }
+  body.musecoach-page .privacy-note {
+    order: 2;
+    padding-bottom: 20px;
+  }
+  body.musecoach-page .record-sidebar h3 {
+    font-size: 26px;
+  }
+  body.musecoach-page .record-sidebar .panel .button {
+    width: 100%;
+  }
+  body.musecoach-page .record-sidebar .panel .button + .text-button {
+    margin-top: 8px;
+  }
+  body.musecoach-page .review-banner {
+    padding: 23px 20px;
+    gap: 15px;
+  }
+  body.musecoach-page .review-banner h2 {
+    font-size: 25px;
+  }
+  body.musecoach-page .review-banner .eyebrow {
+    font-size: 8px;
+  }
+  body.musecoach-page .review-banner p {
+    font-size: 11px;
+  }
+  body.musecoach-page .score-circle {
+    height: 85px;
+    width: 85px;
+    border-width: 4px;
+  }
+  body.musecoach-page .score-circle strong {
+    font-size: 30px;
+  }
+  body.musecoach-page .score-circle span {
+    font-size: 8px;
+  }
+  body.musecoach-page .two-columns {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  body.musecoach-page .metric-grid {
+    gap: 11px;
+  }
+  body.musecoach-page .metric {
+    padding: 13px;
+  }
+  body.musecoach-page .metric strong {
+    font-size: 23px;
+  }
+  body.musecoach-page .metric small {
+    display: block;
+    margin-top: 3px;
+    font-size: 9px;
+  }
+  body.musecoach-page .metric > span {
+    font-size: 10px;
+  }
+  body.musecoach-page .observation {
+    gap: 11px;
+  }
+  body.musecoach-page .observation p {
+    font-size: 11px;
+  }
+  body.musecoach-page .practice-studio {
+    grid-template-columns: 1fr;
+  }
+  body.musecoach-page .exercise-main {
+    padding: 30px 24px;
+  }
+  body.musecoach-page .exercise-main h2 {
+    font-size: 34px;
+  }
+  body.musecoach-page .practice-tabs {
+    gap: 8px;
+  }
+  body.musecoach-page .practice-tabs button {
+    font-size: 10px;
+    padding: 9px 10px;
+  }
+  body.musecoach-page .exercise-steps {
+    gap: 9px;
+    font-size: 9px;
+  }
+  body.musecoach-page .coach-layout {
+    grid-template-columns: 1fr;
+  }
+  body.musecoach-page .coach-portrait {
+    display: grid;
+    grid-template-columns: 105px 1fr;
+    text-align: left;
+    padding: 20px;
+    column-gap: 18px;
+  }
+  body.musecoach-page .coach-portrait > svg {
+    width: 110px;
+    grid-column: 1;
+    grid-row: 1/5;
+    align-self: center;
+  }
+  body.musecoach-page .coach-portrait > .eyebrow {
+    font-size: 8px;
+    grid-column: 2;
+  }
+  body.musecoach-page .coach-portrait h2 {
+    grid-column: 2;
+    font-size: 29px;
+    margin: 8px 0;
+  }
+  body.musecoach-page .coach-portrait > p {
+    grid-column: 2;
+    font-size: 10px;
+    margin: 2px 0 9px;
+  }
+  body.musecoach-page .coach-portrait > .button {
+    grid-column: 1/-1;
+  }
+  body.musecoach-page .coach-portrait > .text-button {
+    grid-column: 1/-1;
+  }
+  body.musecoach-page .coach-portrait > .small {
+    grid-column: 1/-1;
+  }
+  body.musecoach-page .coach-conversation h2 {
+    font-size: 28px;
+  }
+  body.musecoach-page .stats-row {
+    gap: 10px;
+  }
+  body.musecoach-page .stat {
+    padding: 17px 12px;
+  }
+  body.musecoach-page .stat > span {
+    font-size: 9px;
+  }
+  body.musecoach-page .stat > strong {
+    font-size: 33px;
+  }
+  body.musecoach-page .stat > strong em {
+    font-size: 12px;
+  }
+  body.musecoach-page .stat > small {
+    font-size: 8px;
+  }
+  body.musecoach-page .history-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+  }
+  body.musecoach-page .history-footer .small {
+    font-size: 10px;
+  }
+  body.musecoach-page .session-row {
+    gap: 10px;
+  }
+  body.musecoach-page .session-row strong {
+    font-size: 11px;
+  }
+  body.musecoach-page .session-row small {
+    font-size: 9px;
+  }
+  body.musecoach-page .session-icon {
+    width: 34px;
+    height: 34px;
+  }
+  body.musecoach-page .status-toast {
+    left: 50%;
+    bottom: 80px;
+    width: max-content;
+    font-size: 11px;
+  }
+  body.musecoach-page .profile-dialog {
+    padding: 23px;
+    width: calc(100vw - 24px);
+    max-height: 92dvh;
+  }
+  body.musecoach-page .profile-dialog h2 {
+    font-size: 28px;
+  }
+  body.musecoach-page .coach-grid {
+    gap: 8px;
+  }
+  body.musecoach-page .coach-option {
+    padding: 7px;
+    gap: 7px;
+  }
+  body.musecoach-page .coach-option svg:first-child {
+    width: 41px;
+    height: 45px;
+  }
+  body.musecoach-page .coach-option strong {
+    font-size: 12px;
+  }
+  body.musecoach-page .coach-option small {
+    font-size: 7px;
+  }
+  body.musecoach-page .profile-dialog .modal-actions {
+    gap: 10px;
+  }
+  body.musecoach-page .profile-dialog .button {
+    padding: 11px 14px;
+  }
+  body.musecoach-page .confirm-dialog {
+    padding: 25px;
+  }
+  body.musecoach-page .chat-input input {
+    font-size: 12px !important;
+  }
+  body.musecoach-page .message {
+    max-width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  body.musecoach-page main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  body.musecoach-page .hero {
+    padding: 27px 19px;
+  }
+  body.musecoach-page .hero h2 {
+    font-size: 38px;
+  }
+  body.musecoach-page .hero p {
+    font-size: 10px;
+  }
+  body.musecoach-page .hero-tag {
+    font-size: 6px;
+  }
+  body.musecoach-page .hero-footnote {
+    font-size: 7px;
+  }
+  body.musecoach-page .hero .button {
+    font-size: 10px;
+    padding: 11px 13px;
+  }
+  body.musecoach-page .hero-art {
+    right: -13px;
+  }
+  body.musecoach-page .coach-caption {
+    min-width: 114px;
+    font-size: 9px;
+  }
+  body.musecoach-page .hero-art > svg {
+    width: 160%;
+  }
+  body.musecoach-page .section-heading h2 {
+    font-size: 21px;
+    max-width: 180px;
+  }
+  body.musecoach-page .empty-recent {
+    gap: 11px;
+  }
+  body.musecoach-page .empty-recent h4 {
+    font-size: 11px;
+  }
+  body.musecoach-page .empty-recent p {
+    font-size: 9px;
+  }
+  body.musecoach-page .review-banner {
+    align-items: flex-start;
+  }
+  body.musecoach-page .score-circle {
+    width: 70px;
+    height: 70px;
+  }
+  body.musecoach-page .score-circle strong {
+    font-size: 25px;
+  }
+  body.musecoach-page .score-circle span {
+    font-size: 7px;
+  }
+  body.musecoach-page .profile-dialog {
+    padding: 20px;
+  }
+  body.musecoach-page .coach-grid {
+    grid-template-columns: 1fr;
+  }
+  body.musecoach-page .coach-option svg:first-child {
+    width: 49px;
+    height: 49px;
+  }
+  body.musecoach-page .coach-option small {
+    font-size: 9px;
+  }
+  body.musecoach-page .coach-option strong {
+    font-size: 13px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.musecoach-page *,
+  body.musecoach-page *:before,
+  body.musecoach-page *:after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body.musecoach-page .status-toast {
+  pointer-events: none;
+}
+body.musecoach-page .status-toast > button {
+  pointer-events: auto;
+}
+
+body.musecoach-page .trend-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 20px 0;
+}
+body.musecoach-page .trend-controls label {
+  flex: 1;
+  min-width: 180px;
+}
+body.musecoach-page .goals-panel > p {
+  margin-top: 15px;
+}
+
+/* Keep small supporting labels readable in both colour themes. */
+body.musecoach-page {
+  --muted: #5b6777;
+}
+body.musecoach-page .practice-card .eyebrow,
+body.musecoach-page .small-coach-note .eyebrow,
+body.musecoach-page .studio-footer {
+  color: var(--muted);
+}
+body.musecoach-page .hero p,
+body.musecoach-page .hero-footnote {
+  color: #686252;
+}
+body.musecoach-page .next-card .tag {
+  color: #4d5c71;
+}
+body.musecoach-page .small-coach-note p {
+  color: #4b5b72;
+}
+html[data-theme="dark"] body.musecoach-page .small-coach-note p {
+  color: #a9b8cd;
+}
+html[data-theme="dark"] body.musecoach-page .practice-card .eyebrow,
+html[data-theme="dark"] body.musecoach-page .small-coach-note .eyebrow,
+html[data-theme="dark"] body.musecoach-page .studio-footer {
+  color: var(--muted);
+}
+
+body.musecoach-page {
+  --muted: #566171;
+}
+body.musecoach-page .hero-tag {
+  color: #716646;
+}
+html[data-theme="dark"] body.musecoach-page {
+  --muted: #a8b2c1;
+}
+
+body.musecoach-page .coach-caption {
+  color: #313e4f;
+}
+body.musecoach-page .coach-caption > span:last-child {
+  color: #575447;
+}
+body.musecoach-page .empty-state > svg {
+  margin: 0 auto;
+}
+
+@media (max-width: 760px) {
+  body.musecoach-page .hero-art > svg {
+    width: 112%;
+  }
+  body.musecoach-page .hero-art .coach-caption {
+    top: calc(50% + 65px);
+    bottom: auto;
+  }
+}
+
+/* A quiet, animated studio window on the home page. */
+body.musecoach-page .voice-visual {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  bottom: 18px;
+  width: 40%;
+  overflow: hidden;
+  border-radius: 100px 100px 16px 16px;
+  background: radial-gradient(ellipse at 40% 40%, #3e5068, #233042 78%);
+  color: #dbe4f2;
+  border: 1px solid #ffffff26;
+  box-shadow: inset 0 0 50px #142e3226;
+}
+body.musecoach-page .voice-visual-label {
+  position: absolute;
+  top: 37px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 7px;
+  letter-spacing: 1.7px;
+  color: #c5d1e1;
+}
+body.musecoach-page .voice-motion-toggle {
+  position: absolute;
+  top: 22px;
+  right: 36px;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #bdcbde5c;
+  border-radius: 50%;
+  background: #233042;
+  color: #dbe4f2;
+  cursor: pointer;
+}
+body.musecoach-page .voice-waveform {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+}
+body.musecoach-page .voice-wave-bar {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: voice-wave var(--wave-duration) ease-in-out var(--wave-delay)
+    infinite alternate;
+}
+@keyframes voice-wave {
+  from {
+    transform: scaleY(0.25);
+    opacity: 0.5;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+body.musecoach-page .voice-coach-messages {
+  position: absolute;
+  bottom: 48px;
+  left: 12px;
+  right: 12px;
+  height: 61px;
+}
+body.musecoach-page .voice-coach-bubble {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid #fff9e9;
+  border-radius: 12px 12px 12px 2px;
+  color: #2c394c;
+  background: #fff9ed;
+  box-shadow: 0 6px 20px #122e3226;
+  opacity: 0;
+  animation: coach-message 60s ease-in-out infinite;
+}
+
+body.musecoach-page .voice-coach-initial {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: #e4d1ac;
+  font-family: Georgia, serif;
+  font-size: 14px;
+}
+body.musecoach-page .voice-coach-bubble-1 .voice-coach-initial {
+  background: #bac7da;
+}
+body.musecoach-page .voice-coach-bubble-2 .voice-coach-initial {
+  background: #b9d7dd;
+}
+body.musecoach-page .voice-coach-bubble strong {
+  display: block;
+  font-size: 10px;
+}
+body.musecoach-page .voice-coach-bubble strong span {
+  font-size: 8px;
+  font-weight: 400;
+  color: #525e6f;
+}
+body.musecoach-page .voice-coach-message {
+  display: block;
+  margin-top: 4px;
+  font-size: 9px;
+  line-height: 1.4;
+}
+@keyframes coach-message {
+  0%,
+  9%,
+  100% {
+    opacity: 0;
+    transform: translateY(8px);
+    visibility: hidden;
+  }
+  1%,
+  7.5% {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+body.musecoach-page .voice-visual-caption {
+  position: absolute;
+  bottom: 16px;
+  right: 15px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #f6e8cb;
+}
+body.musecoach-page .is-paused .voice-wave-bar,
+body.musecoach-page .is-paused .voice-coach-bubble {
+  animation-play-state: paused;
+}
+@media (max-width: 760px) {
+  body.musecoach-page .hero {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 26px;
+  }
+  body.musecoach-page .hero-content {
+    width: 100%;
+  }
+  body.musecoach-page .voice-visual {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: 260px;
+    flex-shrink: 0;
+    border-radius: 70px 70px 14px 14px;
+  }
+  body.musecoach-page .voice-waveform {
+    max-height: 260px;
+  }
+  body.musecoach-page .voice-coach-messages {
+    left: 18px;
+    right: 18px;
+  }
+  body.musecoach-page .voice-coach-message {
+    font-size: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.musecoach-page .voice-wave-bar,
+  body.musecoach-page .voice-coach-bubble {
+    animation: none;
+  }
+  body.musecoach-page .voice-coach-bubble {
+    visibility: hidden;
+  }
+  body.musecoach-page .voice-coach-bubble-0 {
+    opacity: 1;
+    visibility: visible;
+  }
+  body.musecoach-page .voice-motion-toggle {
+    display: none;
+  }
+}
+
+/* Blue studio palette and tools. */
+body.musecoach-page {
+  --bg: #f5f8fd;
+  --ink: #24364e;
+  --muted: #5a6b80;
+  --line: #dfe7f2;
+  --accent: #285da8;
+  --accent-hover: #1c4786;
+  --soft-blue: #eaf2ff;
+  --peach: #e8f0fc;
+}
+html[data-theme="dark"] body.musecoach-page {
+  --bg: #111d30;
+  --panel: #19283e;
+  --ink: #e5edf9;
+  --muted: #b0bed2;
+  --line: #34465f;
+  --accent: #9bc5ff;
+  --accent-hover: #c4ddff;
+  --soft-blue: #203654;
+  --peach: #1d304c;
+}
+body.musecoach-page .hero {
+  border-color: var(--line);
+}
+body.musecoach-page .hero h2 em {
+  color: var(--accent);
+}
+body.musecoach-page .hero p,
+body.musecoach-page .hero-footnote {
+  color: #52657e;
+}
+body.musecoach-page .hero-tag,
+body.musecoach-page .next-card .tag {
+  color: #385780;
+  background: #f5f9ff;
+  border-color: #cdddf2;
+}
+body.musecoach-page .next-card {
+  border-color: var(--line);
+}
+body.musecoach-page .sidebar-note,
+body.musecoach-page .small-coach-note {
+  background: var(--soft-blue);
+}
+body.musecoach-page .small-coach-note p {
+  color: #3a5680;
+}
+html[data-theme="dark"] body.musecoach-page .hero {
+  border-color: var(--line);
+}
+html[data-theme="dark"] body.musecoach-page .hero h2 em {
+  color: var(--accent);
+}
+html[data-theme="dark"] body.musecoach-page .hero p,
+html[data-theme="dark"] body.musecoach-page .hero-footnote {
+  color: #c2d1e7;
+}
+html[data-theme="dark"] body.musecoach-page .hero-tag,
+html[data-theme="dark"] body.musecoach-page .next-card .tag {
+  color: #c4dcff;
+  background: #263e5c;
+  border-color: #48638a;
+}
+html[data-theme="dark"] body.musecoach-page .sidebar-note,
+html[data-theme="dark"] body.musecoach-page .small-coach-note {
+  background: var(--soft-blue);
+}
+html[data-theme="dark"] body.musecoach-page .small-coach-note p {
+  color: #c4d8f3;
+}
+body.musecoach-page .voice-visual {
+  background: radial-gradient(ellipse at 40% 40%, #355e91, #162f53 78%);
+  color: #e3efff;
+}
+body.musecoach-page .voice-visual-label {
+  color: #d1e3ff;
+}
+body.musecoach-page .voice-motion-toggle {
+  background: #1c3b63;
+  border-color: #b6d6ff75;
+}
+body.musecoach-page .voice-coach-messages {
+  height: 84px;
+}
+body.musecoach-page .voice-coach-bubble {
+  background: #f7faff;
+  color: #263f60;
+  border-color: #d6e7ff;
+}
+body.musecoach-page .voice-coach-message {
+  font-size: 10px;
+}
+body.musecoach-page .voice-coach-bubble strong span {
+  color: #536984;
+}
+body.musecoach-page .voice-coach-initial {
+  background: #ccddf7;
+}
+body.musecoach-page .voice-coach-bubble-1 .voice-coach-initial,
+body.musecoach-page .voice-coach-bubble-2 .voice-coach-initial {
+  background: #c8e1f5;
+}
+body.musecoach-page .voice-visual-caption {
+  color: #e0edff;
+}
+body.musecoach-page .tuner-panel > p {
+  margin: 12px 0;
+}
+body.musecoach-page .tuner-reading {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  margin: 14px 0;
+  padding: 16px;
+  border-radius: 10px;
+  background: var(--soft-blue);
+}
+body.musecoach-page .tuner-reading strong {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  line-height: 1.2;
+  color: var(--accent);
+}
+body.musecoach-page .tuner-reading span {
+  font-size: 11px;
+  text-align: center;
+}
+body.musecoach-page .tuner-panel meter {
+  width: 100%;
+  height: 12px;
+  accent-color: var(--accent);
+}
+body.musecoach-page .tuner-panel .button {
+  margin-top: 12px;
+  width: 100%;
+}
+body.musecoach-page .chart-empty {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px;
+  margin-top: 10px;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  font-size: 12px;
+}
+body.musecoach-page .practice-tabs {
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+body.musecoach-page .exercise-library {
+  margin-bottom: 24px;
+}
+body.musecoach-page .library-filters {
+  margin: 20px 0 12px;
+}
+body.musecoach-page .exercise-library-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  max-height: 340px;
+  overflow-y: auto;
+  padding: 4px;
+}
+body.musecoach-page .library-exercise {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  padding: 15px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--ink);
+  min-height: 82px;
+}
+body.musecoach-page .library-exercise > span:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+body.musecoach-page .library-exercise strong {
+  display: block;
+  font-size: 13px;
+  line-height: 1.4;
+}
+body.musecoach-page .library-exercise small {
+  display: block;
+  color: var(--muted);
+  margin-top: 5px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+body.musecoach-page .library-exercise-icon {
+  color: var(--accent);
+  font-size: 22px;
+}
+body.musecoach-page .library-exercise.selected {
+  border-color: var(--accent);
+  background: var(--soft-blue);
+}
+body.musecoach-page .library-exercise:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+body.musecoach-page .audio-tools {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+body.musecoach-page .inline-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 0;
+  font-size: 13px;
+}
+body.musecoach-page .inline-check input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+body.musecoach-page .tool-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+@media (max-width: 1100px) {
+  body.musecoach-page .exercise-library-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  body.musecoach-page .exercise-library-grid {
+    grid-template-columns: 1fr;
+    max-height: 310px;
+  }
+  body.musecoach-page .exercise-library .section-heading {
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+body.musecoach-page .practice-plan {
+  margin-bottom: 24px;
+}
+body.musecoach-page .practice-plan .chips {
+  margin: 18px 0;
+}
+body.musecoach-page .practice-plan details {
+  margin: 14px 0;
+  font-size: 13px;
+}
+body.musecoach-page .practice-plan summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+body.musecoach-page .practice-plan ul {
+  padding-left: 20px;
+}
+body.musecoach-page .practice-plan li {
+  margin: 8px 0;
+}
+body.musecoach-page .exercise-designer {
+  margin-bottom: 24px;
+}
+body.musecoach-page .key-prompt {
+  margin-top: 18px;
+}
+body.musecoach-page .designed-preview {
+  margin-top: 22px;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+body.musecoach-page .designed-preview h4 {
+  font-size: 18px;
+  margin: 14px 0 8px;
+}
+body.musecoach-page .designed-targets {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+  margin: 18px 0;
+}
+body.musecoach-page .designed-targets li {
+  background: var(--soft-blue);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 600;
+}
+body.musecoach-page .designed-targets span {
+  display: block;
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--muted);
+}
+body.musecoach-page .exercise-main {
+  scroll-margin-top: 95px;
+}
+body.musecoach-page .backup-import {
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+body.musecoach-page .backup-import > label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+body.musecoach-page .backup-preview {
+  margin: 18px 0;
+  padding: 20px;
+  background: var(--soft-blue);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+body.musecoach-page .backup-preview h4 {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+body.musecoach-page .backup-details > summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+}
+body.musecoach-page .backup-details[open] > summary {
+  margin-bottom: 20px;
+}
+body.musecoach-page .library-tile {
+  position: relative;
+  min-width: 0;
+}
+body.musecoach-page .library-tile .library-exercise {
+  width: 100%;
+  height: 100%;
+  padding-right: 46px;
+}
+body.musecoach-page .favorite-toggle {
+  position: absolute;
+  right: 9px;
+  top: 10px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: 7px;
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+}
+body.musecoach-page .favorite-toggle:hover,
+body.musecoach-page .favorite-toggle[aria-pressed="true"] {
+  color: var(--accent);
+  background: var(--soft-blue);
+}
+body.musecoach-page .library-favorite-filter {
+  margin-bottom: 8px;
+}
+body.musecoach-page .home-favorites {
+  margin-bottom: 24px;
+}
+body.musecoach-page .home-favorites .chips {
+  margin: 14px 0;
+}
+body.musecoach-page .session-notes summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+body.musecoach-page .session-notes form {
+  margin-top: 18px;
+}
+body.musecoach-page .session-notes form > label {
+  display: block;
+  margin: 14px 0;
+}

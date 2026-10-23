@@ -1,0 +1,2 @@
+import {NextResponse} from 'next/server';import {requireUser} from '@toolnest/lib/supabase/server';import {body,errorResponse} from '@toolnest/lib/http';import {z} from 'zod';
+export async function PUT(req:Request){try{const {db,user}=await requireUser();const {theme}=z.object({theme:z.enum(['light','dark','system'])}).parse(await body(req));const {error}=await db.from('user_profiles').upsert({user_id:user.id,theme});if(error)throw new Error('Unable to save appearance.');return NextResponse.json({ok:true});}catch(e){return errorResponse(e);}}

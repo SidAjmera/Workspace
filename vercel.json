@@ -1,0 +1,1 @@
+{"framework":"nextjs","buildCommand":"pnpm build","functions":{"app/api/toolnest/ai/search/route.ts":{"maxDuration":60},"app/api/toolnest/ai/connection/route.ts":{"maxDuration":30},"app/api/musecoach/coach/route.ts":{"maxDuration":45},"app/api/musecoach/exercise/route.ts":{"maxDuration":45}}}

@@ -1,0 +1,1 @@
+import './styles.css'; export const metadata={title:'Toolnest · Workspace'}; export default function Layout({children}:{children:React.ReactNode}){return children;}

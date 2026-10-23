@@ -1,0 +1,1 @@
+import {defineConfig} from 'vitest/config';import path from 'node:path';export default defineConfig({resolve:{alias:{'@toolnest':path.resolve('modules/toolnest'),'@musecoach':path.resolve('modules/musecoach'),'@':path.resolve('shared')}},test:{include:['tests/**/*.test.ts'],environment:'node',testTimeout:30000}});

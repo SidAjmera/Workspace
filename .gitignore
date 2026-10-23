@@ -1,0 +1,15 @@
+node_modules/
+.next/
+.env*
+!.env.example
+test-results/
+playwright-report/
+*.tsbuildinfo
+.vercel/
+artifacts/
+supabase/.temp/
+
+.pnpm-store/
+
+# Generated from the curated catalog; regenerate with pnpm catalog:sql.
+/supabase/seed.sql

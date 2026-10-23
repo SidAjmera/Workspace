@@ -1,0 +1,2 @@
+import {NextResponse} from 'next/server';import {catalog,loadCatalog} from '@toolnest/lib/catalog';import {serverClient} from '@toolnest/lib/supabase/server';import {errorResponse} from '@toolnest/lib/http';
+export async function GET(req:Request){try{if(!process.env.NEXT_PUBLIC_SUPABASE_URL)return NextResponse.json({apps:catalog,source:'local'});return NextResponse.json({apps:await loadCatalog(await serverClient(),new URL(req.url).searchParams.get('q')||undefined),source:'database'});}catch(e){return errorResponse(e);}}
