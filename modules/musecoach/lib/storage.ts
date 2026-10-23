@@ -1,11 +1,21 @@
-import {accountOwner} from '@/account-scope';
-import {cloudSessions,saveCloudSession,cloudSession,cloudAudio,updateCloudSession,deleteCloudSession} from '@/cloud';
-import {accountStorage as localStorage} from '@/account-scope';
+import { accountOwner } from "@/account-scope";
+import { assertOwner, cloudReview } from "@/practice-cloud";
+import { sameReview, type CloudReview } from "@/sync-model";
+import { validatePracticeSession } from "./history-backup";
+import {
+  cloudSessions,
+  saveCloudSession,
+  cloudSession,
+  cloudAudio,
+  updateCloudSession,
+  deleteCloudSession,
+} from "@/cloud";
+import { accountStorage as localStorage } from "@/account-scope";
 import { Profile, Session, Analysis, defaultProfile } from "./types";
 import { forgetAIConnection } from "./ai-settings";
 import { exerciseKinds } from "./exercises";
 const DB = "musecoach-v1";
-function openDB(owner=accountOwner()): Promise<IDBDatabase> {
+function openDB(owner = accountOwner()): Promise<IDBDatabase> {
   return new Promise((resolve, reject) => {
     const r = indexedDB.open(DB + ":" + owner, 1);
     r.onupgradeneeded = () =>
@@ -66,10 +76,21 @@ export function readProfile(): Profile | null {
 }
 export function saveProfile(p: Profile) {
   localStorage.setItem("musecoach-profile", JSON.stringify(p));
+  signalLocalChange();
 }
 export async function saveSession(session: Session, audio?: Blob) {
-  if(session.storage==='cloud'){await saveCloudSession(session,audio);return;}
-  await transaction("readwrite", (s) => s.put({...session,storage:'local',audioSaved:!!audio,audio}));
+  if (session.storage === "cloud") {
+    await saveCloudSession(session, audio);
+    return;
+  }
+  await putRawSession({
+    ...session,
+    storage: "local",
+    audioSaved: !!audio,
+    audio,
+    syncPending: true,
+  });
+  signalLocalChange();
 }
 async function updateStoredSession(
   id: string,
@@ -117,14 +138,59 @@ export async function updateSessionMetadata(
     throw new Error(
       "Use a session name of 1–80 characters and notes of up to 1,000 characters.",
     );
-  const local=await transaction<Session|undefined>('readonly',s=>s.get(id));
-  if(!local){await updateCloudSession(id,record=>({...record,title:clean,notes:notes.trim()}));return;}
-  await updateStoredSession(id,record=>({...record,title:clean,notes:notes.trim()}));
+  const local = await transaction<Session | undefined>("readonly", (s) =>
+    s.get(id),
+  );
+  if (!local) {
+    await updateCloudSession(id, (record) => ({
+      ...record,
+      title: clean,
+      notes: notes.trim(),
+    }));
+    return;
+  }
+  if (local.storage === "cloud" && local.cloudRevision !== undefined) {
+    await updateCloudSession(
+      id,
+      (record) => ({ ...record, title: clean, notes: notes.trim() }),
+      local.cloudRevision,
+    );
+    const row = await cloudReview(id);
+    if (row) await applyCloudReview(row, local);
+    return;
+  }
+  await updateStoredSession(id, (record) => ({
+    ...record,
+    title: clean,
+    notes: notes.trim(),
+    syncPending: true,
+  }));
+  signalLocalChange();
 }
 export async function updateSessionAnalysis(id: string, analysis: Analysis) {
-  const local=await transaction<Session|undefined>('readonly',s=>s.get(id));
-  if(!local){await updateCloudSession(id,record=>({...record,analysis}));return;}
-  await updateStoredSession(id,record=>({...record,analysis}));
+  const local = await transaction<Session | undefined>("readonly", (s) =>
+    s.get(id),
+  );
+  if (!local) {
+    await updateCloudSession(id, (record) => ({ ...record, analysis }));
+    return;
+  }
+  if (local.storage === "cloud" && local.cloudRevision !== undefined) {
+    await updateCloudSession(
+      id,
+      (record) => ({ ...record, analysis }),
+      local.cloudRevision,
+    );
+    const row = await cloudReview(id);
+    if (row) await applyCloudReview(row, local);
+    return;
+  }
+  await updateStoredSession(id, (record) => ({
+    ...record,
+    analysis,
+    syncPending: true,
+  }));
+  signalLocalChange();
 }
 export async function restoreSessionHistory(
   incoming: Session[],
@@ -143,13 +209,23 @@ export async function restoreSessionHistory(
           skipped++;
           continue;
         }
-        store.put({ ...session, audioSaved: false, restored: true });
+        store.put({
+          ...session,
+          storage: "local",
+          audioSaved: false,
+          restored: true,
+          cloudRevision: undefined,
+          cloudAudioSaved: false,
+          syncPending: true,
+          syncExcluded: false,
+        });
         existing.add(session.id);
         added++;
       }
     };
     tx.oncomplete = () => {
       db.close();
+      signalLocalChange();
       resolve({ added, skipped });
     };
     const fail = () => {
@@ -169,9 +245,25 @@ export async function listSessions(): Promise<Session[]> {
     "readonly",
     (s) => s.getAll(),
   );
-  let cloud:Session[]=[];
-  if(accountOwner()!=='guest'){try{cloud=await cloudSessions();}catch(e){window.dispatchEvent(new CustomEvent('workspace-cloud-error',{detail:e instanceof Error?e.message:'Cloud history is unavailable.'}));}}
-  return [...records,...cloud.filter(s=>!records.some(r=>r.id===s.id)).map(s=>({...s,audio:undefined as Blob|undefined}))]
+  let cloud: Session[] = [];
+  if (accountOwner() !== "guest") {
+    try {
+      cloud = await cloudSessions();
+    } catch (e) {
+      window.dispatchEvent(
+        new CustomEvent("workspace-cloud-error", {
+          detail:
+            e instanceof Error ? e.message : "Cloud history is unavailable.",
+        }),
+      );
+    }
+  }
+  return [
+    ...records,
+    ...cloud
+      .filter((s) => !records.some((r) => r.id === s.id))
+      .map((s) => ({ ...s, audio: undefined as Blob | undefined })),
+  ]
     .map(({ audio, ...session }) => {
       void audio;
       return session;
@@ -183,11 +275,20 @@ export async function getAudio(id: string): Promise<Blob | undefined> {
     "readonly",
     (s) => s.get(id),
   );
-  return r?.audio || (accountOwner()!=="guest"?await cloudAudio(id):undefined);
+  return (
+    r?.audio || (accountOwner() !== "guest" ? await cloudAudio(id) : undefined)
+  );
 }
 export async function deleteSession(id: string) {
-  const local=await transaction<Session|undefined>('readonly',s=>s.get(id));
-  if(!local){await deleteCloudSession(id);return;}
+  const local = await transaction<Session | undefined>("readonly", (s) =>
+    s.get(id),
+  );
+  if (!local) {
+    await deleteCloudSession(id);
+    return;
+  }
+  if (local.cloudRevision !== undefined && !local.syncExcluded)
+    await deleteCloudSession(id, false, local.cloudRevision);
   await transaction("readwrite", (s) => s.delete(id));
 }
 export async function deleteAudio(id: string) {
@@ -195,10 +296,19 @@ export async function deleteAudio(id: string) {
     "readonly",
     (s) => s.get(id),
   );
-  if(!r){await deleteCloudSession(id,true);return;}
+  if (!r) {
+    await deleteCloudSession(id, true);
+    return;
+  }
+  if (!r.audio && r.cloudAudioSaved) {
+    await deleteCloudSession(id, true, r.cloudRevision);
+    const remote = await cloudReview(id);
+    if (remote) await applyCloudReview(remote, r);
+    return;
+  }
   if (r) {
     delete r.audio;
-    r.audioSaved = false;
+    r.audioSaved = !!r.cloudAudioSaved;
     await transaction("readwrite", (s) => s.put(r));
   }
 }
@@ -209,13 +319,125 @@ export async function clearData() {
   localStorage.removeItem("musecoach-chat");
   localStorage.removeItem("musecoach-designed-exercise");
   localStorage.removeItem("musecoach-song-reference");
+  localStorage.removeItem("musecoach-profile-sync");
+  localStorage.removeItem("musecoach-last-sync");
+  localStorage.removeItem("musecoach-sync-error");
 }
 /** An explicit copy into the signed-in account; never uploads or removes guest originals. */
-export async function importGuestSessions(){
- const owner=accountOwner();if(owner==='guest')throw Error('Sign in before importing guest practice.');
- const guest=await openDB('guest');
- const records=await new Promise<(Session & {audio?:Blob})[]>((resolve,reject)=>{const tx=guest.transaction('sessions','readonly'),request=tx.objectStore('sessions').getAll();tx.oncomplete=()=>resolve(request.result);tx.onerror=()=>reject(Error('Could not read guest practice.'));});guest.close();
- if(accountOwner()!==owner)throw Error('Your account changed. Retry the import.');
- const db=await openDB(owner);
- return new Promise<{added:number;skipped:number}>((resolve,reject)=>{const tx=db.transaction('sessions','readwrite'),store=tx.objectStore('sessions'),keys=store.getAllKeys();let added=0,skipped=0;keys.onsuccess=()=>{const existing=new Set(keys.result);for(const record of records){if(existing.has(record.id)){skipped++;continue;}store.put({...record,storage:'local'});existing.add(record.id);added++;}};tx.oncomplete=()=>{db.close();resolve({added,skipped});};tx.onerror=()=>{db.close();reject(Error('Guest import failed. Existing data was kept.'));};});
+export async function importGuestSessions() {
+  const owner = accountOwner();
+  if (owner === "guest")
+    throw Error("Sign in before importing guest practice.");
+  const guest = await openDB("guest");
+  const records = await new Promise<(Session & { audio?: Blob })[]>(
+    (resolve, reject) => {
+      const tx = guest.transaction("sessions", "readonly"),
+        request = tx.objectStore("sessions").getAll();
+      tx.oncomplete = () => resolve(request.result);
+      tx.onerror = () => reject(Error("Could not read guest practice."));
+    },
+  );
+  guest.close();
+  if (accountOwner() !== owner)
+    throw Error("Your account changed. Retry the import.");
+  const db = await openDB(owner);
+  return new Promise<{ added: number; skipped: number }>((resolve, reject) => {
+    const tx = db.transaction("sessions", "readwrite"),
+      store = tx.objectStore("sessions"),
+      keys = store.getAllKeys();
+    let added = 0,
+      skipped = 0;
+    keys.onsuccess = () => {
+      const existing = new Set(keys.result);
+      for (const record of records) {
+        if (existing.has(record.id)) {
+          skipped++;
+          continue;
+        }
+        store.put({ ...record, storage: "local" });
+        existing.add(record.id);
+        added++;
+      }
+    };
+    tx.oncomplete = () => {
+      db.close();
+      signalLocalChange();
+      resolve({ added, skipped });
+    };
+    tx.onerror = () => {
+      db.close();
+      reject(Error("Guest import failed. Existing data was kept."));
+    };
+  });
+}
+export type StoredTake = Session & { audio?: Blob };
+export function signalLocalChange() {
+  if (typeof window !== "undefined")
+    window.dispatchEvent(new Event("musecoach-local-change"));
+}
+export function storeSyncedProfile(p: Profile) {
+  localStorage.setItem("musecoach-profile", JSON.stringify(p));
+}
+export async function rawSessions() {
+  const owner = accountOwner();
+  const records = await transaction<StoredTake[]>("readonly", (s) =>
+    s.getAll(),
+  );
+  assertOwner(owner);
+  return records;
+}
+export async function rawSession(id: string) {
+  const owner = accountOwner();
+  const record = await transaction<StoredTake | undefined>("readonly", (s) =>
+    s.get(id),
+  );
+  assertOwner(owner);
+  return record;
+}
+export async function putRawSession(record: StoredTake) {
+  await transaction("readwrite", (s) => s.put(record));
+}
+export async function removeRawSession(id: string) {
+  await transaction("readwrite", (s) => s.delete(id));
+}
+export async function applyCloudReview(
+  row: CloudReview,
+  expected?: StoredTake,
+) {
+  const owner = accountOwner(),
+    current = await rawSession(row.id);
+  assertOwner(owner);
+  if (row.deleted_at) return;
+  // A user can keep editing while a network operation is pending; preserve that newer device draft.
+  if (
+    current &&
+    ((expected && !sameReview(current, expected)) ||
+      (!expected && !sameReview(current, row.data)))
+  ) {
+    if (expected && sameReview(expected, row.data))
+      await putRawSession({
+        ...current,
+        cloudRevision: row.revision,
+        cloudAudioSaved: !!row.audio_path,
+        syncPending: true,
+      });
+    else await putRawSession({ ...current, syncConflict: true });
+    return;
+  }
+  const audio = current?.audio || expected?.audio;
+  const clean = validatePracticeSession({
+    ...row.data,
+    audioSaved: !!audio || !!row.audio_path,
+  });
+  assertOwner(owner);
+  await putRawSession({
+    ...clean,
+    audio,
+    storage: audio ? "local" : row.audio_path ? "cloud" : "local",
+    cloudRevision: row.revision,
+    cloudAudioSaved: !!row.audio_path,
+    syncPending: false,
+    syncConflict: false,
+    syncExcluded: false,
+  });
 }

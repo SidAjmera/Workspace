@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import {useAccount} from "@/auth";
+import { useAccount } from "@/auth";
 import {
   Mic,
   Square,
@@ -30,9 +30,11 @@ export default function Recorder({
   rangeExploration?: boolean;
   onSave: (session: Session, blob?: Blob) => Promise<void>;
 }) {
-  const {user}=useAccount();
-  const [destination,setDestination]=useState<'none'|'local'|'cloud'>('none');
-  const saveAudio=destination!=='none';
+  const { user } = useAccount();
+  const [destination, setDestination] = useState<
+    "none" | "local" | "cloud-review" | "cloud"
+  >("none");
+  const saveAudio = destination === "local" || destination === "cloud";
   const [speed, setSpeed] = useState(1);
   const exercise = reference ? withTempo(reference, speed) : undefined;
   const [status, setStatus] = useState<
@@ -182,7 +184,7 @@ export default function Recorder({
         context: exercise?.kind || "free",
         analysis,
         audioSaved: saveAudio,
-        storage: destination==='cloud'?'cloud':'local',
+        storage: destination.startsWith("cloud") ? "cloud" : "local",
       };
       await onSave(session, saveAudio ? blob : undefined);
     } catch (e) {
@@ -381,14 +383,37 @@ export default function Recorder({
                 disabled={busy || rangeExploration}
               />
             </label>
-            <label className="take-title">Recording storage
-              <select aria-label="Recording storage" value={destination} disabled={busy} onChange={e=>setDestination(e.target.value as typeof destination)}>
+            <label className="take-title">
+              Recording storage
+              <select
+                aria-label="Recording storage"
+                value={destination}
+                disabled={busy}
+                onChange={(e) =>
+                  setDestination(e.target.value as typeof destination)
+                }
+              >
                 <option value="none">Measurements only · no saved audio</option>
                 <option value="local">Save audio on this device</option>
-                <option value="cloud" disabled={!user}>Save audio privately in the cloud{!user?' · sign in required':''}</option>
+                <option value="cloud-review" disabled={!user}>
+                  Cloud review only · no saved audio
+                </option>
+                <option value="cloud" disabled={!user}>
+                  Save audio privately in the cloud
+                  {!user ? " · sign in required" : ""}
+                </option>
               </select>
             </label>
-            <p className="small muted">{destination==='cloud'?'This take and its measurements will upload to your private workspace storage. Other accounts cannot access it.':destination==='local'?'Audio and measurements stay in this browser, separated by account.':'Only measurements are saved on this device.'} {!user&&<a href="/settings">Sign in for cloud storage.</a>}</p>
+            <p className="small muted">
+              {destination === "cloud"
+                ? "This take and its measurements will upload to your private workspace storage. Other accounts cannot access it."
+                : destination === "cloud-review"
+                  ? "Only this measured review uploads to your account. Audio is not saved."
+                  : destination === "local"
+                    ? "Audio stays in this browser, separated by account. Measurements also sync if you enable review sync."
+                    : "No audio is saved. Measurements stay on this device, or sync if you enable review sync."}{" "}
+              {!user && <a href="/settings">Sign in for cloud storage.</a>}
+            </p>
             <div className="section-heading">
               <button
                 className="text-button"
@@ -529,8 +554,8 @@ export default function Recorder({
         <div className="privacy-note">
           <ShieldCheck size={22} />
           <p>
-            You choose device or private cloud storage for each take. Analysis is local and
-            works without an AI provider.
+            You choose device or private cloud storage for each take. Analysis
+            is local and works without an AI provider.
           </p>
         </div>
       </aside>

@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import {useAccount} from '@/auth';
-import {useTheme} from 'next-themes';
+import { useAccount } from "@/auth";
+import { useTheme } from "next-themes";
+import { RecordingStorage } from "@/recording-storage";
 import Link from "@/musecoach-link";
 import { usePathname, useRouter } from "@/musecoach-navigation";
 import {
@@ -24,7 +25,12 @@ import {
   Trash2,
   Check,
 } from "lucide-react";
-import { defaultProfile, ExerciseKind, Profile, Session } from "@musecoach/lib/types";
+import {
+  defaultProfile,
+  ExerciseKind,
+  Profile,
+  Session,
+} from "@musecoach/lib/types";
 import { coachById } from "@musecoach/lib/coaches";
 import {
   clearData,
@@ -70,9 +76,14 @@ const navigation = [
   { path: "/progress", label: "Progress", icon: ChartNoAxesCombined },
 ];
 export default function Musecoach() {
-  const {user}=useAccount();
-  const {resolvedTheme,setTheme}=useTheme();
-  useEffect(()=>{const show=(event:Event)=>setError((event as CustomEvent<string>).detail);window.addEventListener('workspace-cloud-error',show);return()=>window.removeEventListener('workspace-cloud-error',show);},[]);
+  const { user } = useAccount();
+  const { resolvedTheme, setTheme } = useTheme();
+  useEffect(() => {
+    const show = (event: Event) =>
+      setError((event as CustomEvent<string>).detail);
+    window.addEventListener("workspace-cloud-error", show);
+    return () => window.removeEventListener("workspace-cloud-error", show);
+  }, []);
   const router = useRouter(),
     path = usePathname(),
     [profile, setProfile] = useState<Profile>(defaultProfile),
@@ -84,6 +95,25 @@ export default function Musecoach() {
     [confirm, setConfirm] = useState<"all" | "session" | "audio" | null>(null),
     [notice, setNotice] = useState("");
   const previousPath = useRef<string | null>(null);
+  useEffect(() => {
+    let live = true;
+    const refresh = () => {
+      const saved = readProfile();
+      if (saved) setProfile(saved);
+      void listSessions()
+        .then((value) => {
+          if (live) setSessions(value);
+        })
+        .catch((e) => {
+          if (live) setError(e.message);
+        });
+    };
+    window.addEventListener("musecoach-sync-complete", refresh);
+    return () => {
+      live = false;
+      window.removeEventListener("musecoach-sync-complete", refresh);
+    };
+  }, []);
   useEffect(() => {
     try {
       const p = readProfile();
@@ -99,9 +129,14 @@ export default function Musecoach() {
       .finally(() => setReady(true));
   }, []);
   useEffect(() => {
-    document.documentElement.dataset.theme = resolvedTheme||profile.theme;
-    if(resolvedTheme==='light'||resolvedTheme==='dark')setProfile(current=>current.theme===resolvedTheme?current:{...current,theme:resolvedTheme});
-  }, [profile.theme,resolvedTheme]);
+    document.documentElement.dataset.theme = resolvedTheme || profile.theme;
+    if (resolvedTheme === "light" || resolvedTheme === "dark")
+      setProfile((current) =>
+        current.theme === resolvedTheme
+          ? current
+          : { ...current, theme: resolvedTheme },
+      );
+  }, [profile.theme, resolvedTheme]);
   useEffect(() => {
     if (!notice) return;
     const timer = setTimeout(() => setNotice(""), 4500);
@@ -118,7 +153,7 @@ export default function Musecoach() {
   function updateProfile(p: Profile) {
     try {
       saveProfile(p);
-      if(p.theme!==profile.theme)setTheme(p.theme);
+      if (p.theme !== profile.theme) setTheme(p.theme);
       setProfile(p);
       setEditing(false);
       setFirst(false);
@@ -154,7 +189,7 @@ export default function Musecoach() {
       if (confirm === "all") {
         await clearData();
         setProfile(defaultProfile);
-        setSessions([]);
+        setSessions(await listSessions());
         setFirst(false);
         setEditing(false);
         router.push("/");
@@ -241,7 +276,11 @@ export default function Musecoach() {
             </span>
             <span>
               <strong>{profile.name || "Your space"}</strong>
-              <small>{user?"Workspace account · device preferences":"Guest · device preferences"}</small>
+              <small>
+                {user
+                  ? "Workspace account · device preferences"
+                  : "Guest · device preferences"}
+              </small>
             </span>
             <Settings2 size={17} />
           </button>
@@ -250,7 +289,8 @@ export default function Musecoach() {
       <div className="workspace">
         <header className="topbar">
           <div className="breadcrumb">
-            Workspace <ChevronRight size={13} /> Musecoach <ChevronRight size={13} /> <span>{title}</span>
+            Workspace <ChevronRight size={13} /> Musecoach{" "}
+            <ChevronRight size={13} /> <span>{title}</span>
           </div>
           <div className="topbar-right">
             <span className="private-badge">
@@ -602,6 +642,10 @@ export default function Musecoach() {
                       : exerciseInfo[detail.context].label}
                   </p>
                 </div>
+                <RecordingStorage
+                  session={detail}
+                  onChange={async () => setSessions(await listSessions())}
+                />
                 <Review
                   session={detail}
                   sessions={sessions}
@@ -696,7 +740,11 @@ function SessionRows({ sessions }: { sessions: Session[] }) {
             <strong>{s.title}</strong>
             <small>
               {formatDate(s.date)} · {s.analysis.duration.toFixed(0)}s
-              {s.audioSaved ? (s.storage==='cloud'?" · Cloud audio":" · Device audio") : ""}
+              {s.audioSaved
+                ? s.storage === "cloud"
+                  ? " · Cloud audio"
+                  : " · Device audio"
+                : ""}
             </small>
           </span>
           <span className="session-score">
@@ -1043,7 +1091,9 @@ function Progress({
       </section>
       <div className="history-footer">
         <p className="small muted">
-          Device takes stay in this browser. Cloud takes belong to your workspace account. Audio is saved only when you choose. Manage cloud data in Account & settings.
+          Device takes stay in this browser. Cloud takes belong to your
+          workspace account. Audio is saved only when you choose. Manage cloud
+          data in Account & settings.
         </p>
         <button className="text-button danger" onClick={onClear}>
           <Trash2 size={15} /> Delete all local data

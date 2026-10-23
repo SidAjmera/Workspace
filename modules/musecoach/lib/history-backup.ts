@@ -10,6 +10,10 @@ import {
 } from "./types";
 
 export const MAX_BACKUP_BYTES = 64 * 1024 * 1024;
+export {
+  profile as validatePracticeProfile,
+  session as validatePracticeSession,
+};
 export const MAX_BACKUP_SESSIONS = 1000;
 export interface HistoryBackup {
   schema: "musecoach-backup";

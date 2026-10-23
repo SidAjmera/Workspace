@@ -4,32 +4,29 @@ Live site: https://sidajmera-workspace.vercel.app/
 Private repository: https://github.com/SidAjmera/Workspace
 Local project: C:/Users/ajmer/OneDrive/Documents/Coding/Workspace
 
-## Implemented and checked
+## Release one production setup completed
 
-- Equal Toolnest and Musecoach modules under one public origin, with neutral home and app switcher.
-- Shared Supabase sign-in, shared account appearance/display-name controls, account-scoped local data and logout.
-- Per-take measurements-only, device-audio or private-cloud-audio choice; cloud reviews accompany cloud recordings.
-- Private Supabase bucket with 20 MB audio limit and owner-only storage policies; owner-only workspace profile and review tables.
-- Explicit guest-session import, legacy-site backup migration guidance, separate app/entire-workspace deletion and export controls.
-- 509 unit/database tests passed, including both original suites and new account/cloud/RLS coverage.
-- TypeScript and production builds passed, including an independent build after moving to the neutral folder.
-- 16 local desktop/mobile browser checks and 16 live-site desktop/mobile checks passed. Browser recordings use synthetic WAV fixtures.
-- Supabase security advisor reports the pre-existing intentional consume_ai_quota SECURITY DEFINER warning; no new workspace SECURITY DEFINER functions were added.
-- Both original repositories remain unchanged and available for legacy browser-data export.
+The user explicitly approved the remaining settings. BYOK_SESSION_SECRET was imported as a Vercel Secret for Production and Preview, and production redeployment 8K43rYcdahBJ7tzP9anDN1SGaXD3 reached Ready. Supabase's Site URL is the neutral workspace address, and its exact /auth/callback was added while retaining the previous three redirects. No secret values are committed or printed in these notes.
 
-## Pending explicit approval
+## Release two implementation
 
-Automatic approval review blocked transmitting the new generated encryption secret to Vercel. It has not been uploaded or saved there. Its ignored local file is .env.vercel and contains only a new BYOK_SESSION_SECRET. The existing Toolnest deployment's secret was not copied to the new production project.
+- Optional, independently controlled profile and review sync, both off by default.
+- Automatic sync on opening/returning, reconnection and saved device changes, with manual Sync now and visible failures.
+- Cloud reviews without saved audio, preserving independent recording choices.
+- Revisions and explicit conflict-resolution controls, without silently overwriting concurrent edits.
+- Copy/move recordings between device and private cloud storage, with destination-first save, failure recovery and explicit return transfers.
+- Deletion markers that prevent background resurrection, and device-only exclusions after moving out of cloud.
+- Export/deletion/privacy updates for new cloud profiles, choices and markers.
+- Both original app READMEs and the neutral Workspace README updated with scoped behavior and implementation status.
 
-Finish these reviewed settings after approval:
+## Validation and rollout
 
-1. Import .env.vercel into Vercel project sidajmera-workspace as a Secret named BYOK_SESSION_SECRET for Production and Preview, then redeploy. The public Supabase URL/key and ENABLE_EXPERIMENTAL_COREPACK=1 are already configured.
-2. Set the existing Supabase project's Site URL to https://sidajmera-workspace.vercel.app and add the exact redirect https://sidajmera-workspace.vercel.app/auth/callback while retaining existing redirects. The local workspace callback http://127.0.0.1:3100/auth/callback may also be added for development.
+The final unit/database suite passed 547 tests. TypeScript and production builds passed. The expanded local desktop/mobile suite passed all 22 checks. Production rollout and the final hosted checks are in progress.
 
-Until then, Toolnest AI connection encryption is not configured on the new deployment, and new confirmation emails may return to the original Toolnest site. Existing confirmed account credentials can use the shared sign-in form; no real account password was used in the browser checks.
+Release-two SQL is supabase/release-two.sql. Embedded PostgreSQL tests verify opt-in enforcement, RLS isolation, stale-write rejection, audio-pointer preservation and deletion behavior. Migration-history and connected schema-write requests returned invalid request-state errors. The reviewed upgrade was applied transactionally through the Supabase SQL editor, then the new tables were verified to have RLS and all three new functions were verified to be SECURITY INVOKER. No new security-advisor findings were added. Do not claim a recorded migration-history entry or rerun the one-time schema blindly.
 
-## Remaining real-account/device verification
+## Real account/device checks still required
 
-Email delivery and confirmation, authenticated cloud upload/download/deletion across devices, physical microphones and real AI-provider calls need an actual account/device check. SQL/RLS tests execute with synthetic claims in embedded PostgreSQL, and cloud transport unit tests use mocks. Do not claim those are live authenticated upload verification.
+Email delivery and confirmation, signed-in profile/history sync across actual devices, authenticated audio upload/download/transfers/deletion, physical microphones and real AI-provider calls still need an actual account/device check. Browser recordings use synthetic WAV fixtures; transport tests use mocks and SQL tests supply synthetic claims in embedded PostgreSQL. These are not live authenticated-upload verification.
 
-The additive database SQL is supabase/workspace.sql and is already applied. The MCP migration-history call failed, so do not run the non-idempotent schema again or claim a recorded migration-history entry. Full account deletion is explicitly queued for operator processing after app data and cloud-file cleanup.
+Full account deletion is queued for operator processing after file/app-data cleanup. Both original standalone sites remain available for legacy browser-data export.

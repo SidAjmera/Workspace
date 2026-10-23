@@ -111,7 +111,12 @@ export interface Analysis {
   exercise?: Exercise;
 }
 export interface Session {
-  storage?: 'local' | 'cloud';
+  storage?: "local" | "cloud";
+  cloudRevision?: number;
+  cloudAudioSaved?: boolean;
+  syncPending?: boolean;
+  syncConflict?: boolean;
+  syncExcluded?: boolean;
   id: string;
   date: string;
   title: string;
