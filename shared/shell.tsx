@@ -9,6 +9,8 @@ import {
   Compass,
   Grid2X2,
   UserRound,
+  Sun,
+  Moon,
 } from "lucide-react";
 import { useAccount } from "./auth";
 export function Shell({ children }: { children: React.ReactNode }) {
@@ -19,10 +21,15 @@ export function Shell({ children }: { children: React.ReactNode }) {
     : path.startsWith("/musecoach")
       ? "musecoach"
       : "";
-  const { resolvedTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [legacy, setLegacy] = useState(false);
   useEffect(() => {
-    setLegacy(location.hostname === "sidajmera-workspace.vercel.app");
+    setLegacy(
+      [
+        "sidajmera-workspace.vercel.app",
+        "toolnest-musecoach.vercel.app",
+      ].includes(location.hostname),
+    );
   }, []);
   useEffect(() => {
     document.body.classList.toggle("ws-theme-dark", resolvedTheme === "dark");
@@ -63,6 +70,22 @@ export function Shell({ children }: { children: React.ReactNode }) {
             <span>Musecoach</span>
           </a>
         </div>
+        <button
+          className="ws-theme-toggle"
+          aria-label={
+            resolvedTheme === "dark"
+              ? "Switch to light mode"
+              : "Switch to dark mode"
+          }
+          title={
+            resolvedTheme === "dark"
+              ? "Switch to light mode"
+              : "Switch to dark mode"
+          }
+          onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+        >
+          {resolvedTheme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+        </button>
         <a
           className="ws-account-link"
           href="/settings"
@@ -88,7 +111,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
             account.
           </p>
           <a href="/musecoach/progress">Export from Progress</a>
-          <a href="https://toolnest-musecoach.vercel.app/">
+          <a href="https://workspaceapps.vercel.app/">
             Visit the new Workspace ↗
           </a>
         </aside>

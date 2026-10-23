@@ -1,15 +1,15 @@
 @import "tailwindcss";
 :root {
   font-family: "Segoe UI", Arial, sans-serif;
-  color: #202e35;
-  background: #f8f7f3;
+  color: #24364e;
+  background: #f5f8fd;
   color-scheme: light;
-  --ws-bg: #f8f7f3;
-  --ws-paper: #fffefa;
-  --ws-ink: #202e35;
-  --ws-muted: #67736f;
-  --ws-line: #dddfd7;
-  --ws-mint: #d6eacb;
+  --ws-bg: #f5f8fd;
+  --ws-paper: #ffffff;
+  --ws-ink: #24364e;
+  --ws-muted: #5a6b80;
+  --ws-line: #dfe7f2;
+  --ws-soft: #c5d8f0;
   --ws-nav-height: 76px;
 }
 * {
@@ -35,21 +35,21 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 select:focus-visible {
-  outline: 3px solid #338674;
+  outline: 3px solid #518bd5;
   outline-offset: 5px;
 }
 ::selection {
-  background: #d6eacb;
-  color: #1d3934;
+  background: #c5d8f0;
+  color: #19293d;
 }
 body .ws-bar {
   position: fixed;
   inset: 0 0 auto;
   height: var(--ws-nav-height);
   z-index: 100;
-  background: #faf9f5f5;
-  color: #202e35;
-  border-bottom: 1px solid #dedfd6;
+  background: #f5f8fdf5;
+  color: #24364e;
+  border-bottom: 1px solid #c5d8f0;
   display: flex;
   align-items: center;
   gap: 28px;
@@ -83,16 +83,16 @@ body .ws-bar .ws-wordmark {
   width: 35px;
   height: 35px;
   border-radius: 10px;
-  background: #203b35;
-  color: #e3efce;
+  background: #285da8;
+  color: #f0f6ff;
 }
 .ws-brand-period {
-  color: #508971;
+  color: #3f669a;
 }
 .ws-nav-divider {
   width: 1px;
   height: 25px;
-  background: #d7dcd2;
+  background: #bfd4ef;
 }
 .ws-apps {
   display: flex;
@@ -102,21 +102,21 @@ body .ws-apps a {
   padding: 10px 13px;
   border-radius: 7px;
   font-size: 12px;
-  color: #5c6965;
+  color: #395d8c;
 }
 body .ws-apps a:hover {
-  background: #e9ece3;
-  color: #1d3934;
+  background: #d8e5f7;
+  color: #19293d;
 }
 body .ws-apps [aria-current] {
-  background: #e1ecda;
-  color: #234d41;
+  background: #d2e1f4;
+  color: #203550;
   font-weight: 650;
 }
 body .ws-bar .ws-account-link {
   margin-left: auto;
   padding: 10px 16px;
-  border: 1px solid #d0d6c9;
+  border: 1px solid #b3ccec;
   border-radius: 7px;
   font-size: 12px;
   font-weight: 600;
@@ -128,9 +128,9 @@ body .ws-account-link span {
   text-overflow: ellipsis;
 }
 body .ws-bar .ws-account-link:hover {
-  background: #203b35;
+  background: #285da8;
   color: #fff;
-  border-color: #203b35;
+  border-color: #285da8;
 }
 .ws-home {
   max-width: 1280px;
@@ -151,12 +151,12 @@ body .ws-bar .ws-account-link:hover {
   font-size: 10px;
   font-weight: 650;
   letter-spacing: 1.7px;
-  color: #617365;
+  color: #3d6497;
 }
 .ws-kicker > span {
   width: 6px;
   height: 6px;
-  background: #638a63;
+  background: #4570a8;
   border-radius: 50%;
 }
 .ws-hero h1 {
@@ -169,20 +169,20 @@ body .ws-bar .ws-account-link:hover {
 .ws-hero h1 em {
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 400;
-  color: #497360;
+  color: #285da8;
   letter-spacing: -3px;
 }
 .ws-hero-copy > p {
   font-size: 15px;
   line-height: 1.85;
-  color: #6c746f;
+  color: #416a9f;
   margin: 0;
 }
 .ws-hero-note {
   padding: 8px 35px 0;
   transform: rotate(-6deg);
   text-align: center;
-  color: #69756a;
+  color: #40699e;
   flex-shrink: 0;
 }
 .ws-note-symbol {
@@ -190,7 +190,7 @@ body .ws-bar .ws-account-link:hover {
   font:
     100px/1 Georgia,
     serif;
-  color: #829b72;
+  color: #5680b7;
 }
 .ws-hero-note p {
   font-family: Georgia, serif;
@@ -203,7 +203,7 @@ body .ws-bar .ws-account-link:hover {
   display: block;
   width: 68px;
   height: 1px;
-  background: #a5b69b;
+  background: #86a4cb;
   margin: 22px auto 0;
 }
 .ws-section-heading {
@@ -220,7 +220,7 @@ body .ws-bar .ws-account-link:hover {
 }
 .ws-section-heading > span {
   font-size: 11px;
-  color: #778079;
+  color: #4875af;
 }
 .ws-cards {
   display: grid;
@@ -230,7 +230,7 @@ body .ws-bar .ws-account-link:hover {
 .ws-app-card {
   display: block;
   min-width: 0;
-  border: 1px solid #dce0d5;
+  border: 1px solid #c5d8f0;
   border-radius: 16px;
   background: var(--ws-paper);
   text-decoration: none;
@@ -242,8 +242,8 @@ body .ws-bar .ws-account-link:hover {
 }
 .ws-app-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 14px 36px #243e2912;
-  border-color: #a5baa2;
+  box-shadow: 0 14px 36px #1c2e4612;
+  border-color: #8eaace;
 }
 .ws-preview {
   height: 245px;
@@ -251,17 +251,17 @@ body .ws-bar .ws-account-link:hover {
   overflow: hidden;
 }
 .ws-preview-tools {
-  background: #e3ebd9;
+  background: #e8f0fc;
   padding: 28px 44px 0;
-  background-image: radial-gradient(#a8b59d66 0.7px, transparent 0.7px);
+  background-image: radial-gradient(#87a4cb66 0.7px, transparent 0.7px);
   background-size: 12px 12px;
 }
 .ws-mini-window {
-  border: 1px solid #fafcf5;
+  border: 1px solid #f4f8fd;
   border-radius: 11px;
-  background: #fdfef8;
+  background: #f8fbfe;
   transform: rotate(-4deg);
-  box-shadow: 0 15px 30px #49634217;
+  box-shadow: 0 15px 30px #304e7517;
   padding: 15px 18px;
   max-width: 390px;
   margin: auto;
@@ -271,7 +271,7 @@ body .ws-bar .ws-account-link:hover {
   gap: 14px;
   align-items: center;
   font-size: 8px;
-  color: #819078;
+  color: #537db5;
 }
 .ws-mini-top > svg {
   margin-left: auto;
@@ -283,7 +283,7 @@ body .ws-bar .ws-account-link:hover {
 .ws-window-dots i {
   height: 4px;
   width: 4px;
-  background: #bcc8ad;
+  background: #9fb7d6;
   border-radius: 50%;
 }
 .ws-mini-search {
@@ -291,19 +291,19 @@ body .ws-bar .ws-account-link:hover {
   align-items: center;
   gap: 8px;
   margin: 17px 0 15px;
-  background: #f2f5eb;
-  border: 1px solid #e5eadb;
+  background: #e6effa;
+  border: 1px solid #d1e0f4;
   padding: 11px 9px;
   border-radius: 6px;
   font-size: 9px;
-  color: #87917e;
+  color: #5881b7;
 }
 .ws-mini-search kbd {
   margin-left: auto;
   font:
     8px "Segoe UI",
     sans-serif;
-  border: 1px solid #dbe1d1;
+  border: 1px solid #c2d6f0;
   border-radius: 3px;
   padding: 2px;
 }
@@ -313,8 +313,8 @@ body .ws-bar .ws-account-link:hover {
   gap: 9px;
 }
 .ws-mini-apps > div {
-  border: 1px solid #e3e8d9;
-  background: #fffefb;
+  border: 1px solid #cedef3;
+  background: #fcfdfe;
   padding: 12px 8px;
   border-radius: 7px;
 }
@@ -329,32 +329,32 @@ body .ws-bar .ws-account-link:hover {
   margin-bottom: 10px;
 }
 .ws-icon-purple {
-  background: #eee9fc;
-  color: #7964a8;
+  background: #eaf1fb;
+  color: #5680b6;
 }
 .ws-icon-blue {
-  background: #e4effb;
-  color: #5b87ac;
+  background: #e5eefa;
+  color: #527db5;
 }
 .ws-icon-orange {
-  background: #f9e9dd;
-  color: #c18250;
+  background: #dee9f8;
+  color: #5982b8;
 }
 .ws-mini-apps > div > span:last-child {
   font-size: 8px;
   line-height: 1.5;
   display: block;
-  color: #8a9183;
+  color: #5b84b9;
 }
 .ws-mini-apps b {
-  color: #4d5d46;
+  color: #2f4d74;
   font-weight: 600;
 }
 .ws-mini-bottom {
   display: flex;
   justify-content: space-between;
   font-size: 8px;
-  color: #819078;
+  color: #537db5;
   padding-top: 12px;
 }
 .ws-mini-bottom span {
@@ -365,7 +365,7 @@ body .ws-bar .ws-account-link:hover {
 .ws-mini-bottom i {
   height: 4px;
   width: 4px;
-  background: #779268;
+  background: #4976b2;
   border-radius: 50%;
 }
 .ws-preview-sticker {
@@ -375,18 +375,18 @@ body .ws-bar .ws-account-link:hover {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: #f7f9ef;
-  border: 1px solid #d1dcc7;
-  box-shadow: 0 3px 9px #243e2910;
+  background: #edf3fb;
+  border: 1px solid #b6ceed;
+  box-shadow: 0 3px 9px #1c2e4610;
   padding: 8px 11px;
   border-radius: 5px;
   transform: rotate(3deg);
   font-size: 9px;
-  color: #65755a;
+  color: #3c6293;
 }
 .ws-preview-voice {
-  background: #213e3b;
-  color: #e5eee3;
+  background: #162f53;
+  color: #e3efff;
   padding: 28px 33px;
   display: flex;
   flex-direction: column;
@@ -394,7 +394,7 @@ body .ws-bar .ws-account-link:hover {
 }
 .ws-voice-orbit {
   position: absolute;
-  border: 1px solid #a2bdac14;
+  border: 1px solid #90abcf14;
   border-radius: 50%;
   pointer-events: none;
 }
@@ -422,14 +422,14 @@ body .ws-bar .ws-account-link:hover {
   align-items: center;
   font-size: 8px;
   letter-spacing: 1.5px;
-  color: #b5cdbb;
+  color: #9cbce6;
 }
 .ws-live-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #dab28b;
-  box-shadow: 0 0 0 4px #dab28b12;
+  background: #94aed1;
+  box-shadow: 0 0 0 4px #94aed112;
 }
 .ws-waveform {
   height: 96px;
@@ -443,14 +443,14 @@ body .ws-bar .ws-account-link:hover {
   display: block;
   width: 6px;
   border-radius: 10px;
-  background: #bfd3aa;
+  background: #a5bbd8;
   min-height: 5px;
 }
 .ws-waveform i:nth-child(3n) {
-  background: #d6b18a;
+  background: #90acd0;
 }
 .ws-waveform i:nth-child(4n) {
-  background: #789d90;
+  background: #5c84b9;
 }
 .ws-voice-bottom {
   display: flex;
@@ -466,21 +466,21 @@ body .ws-bar .ws-account-link:hover {
   background: #ffffff0b;
   border: 1px solid #ffffff1a;
   border-radius: 50%;
-  color: #d0b08d;
+  color: #8eaacf;
   font-size: 20px;
 }
 .ws-voice-bottom > div {
   font-size: 10px;
-  color: #92aba0;
+  color: #7899c5;
   line-height: 1.6;
 }
 .ws-voice-bottom strong {
-  color: #e0e8d6;
+  color: #ccdcf2;
   font-weight: 500;
 }
 .ws-voice-bottom > svg {
   margin-left: auto;
-  color: #b7c9aa;
+  color: #9eb6d5;
 }
 .ws-card-content {
   padding: 25px 29px 0;
@@ -496,15 +496,15 @@ body .ws-bar .ws-account-link:hover {
   align-items: center;
   font-size: 10px;
   letter-spacing: 1.1px;
-  color: #6d7e65;
+  color: #426ba1;
   font-weight: 650;
 }
 .ws-musecoach-card .ws-card-label > span:first-child {
-  color: #9c7960;
+  color: #4876af;
 }
 .ws-card-index {
   font-size: 9px;
-  color: #9aa194;
+  color: #7295c3;
   letter-spacing: 1px;
 }
 .ws-card-title {
@@ -523,31 +523,31 @@ body .ws-bar .ws-account-link:hover {
 .ws-round-arrow {
   width: 36px;
   height: 36px;
-  border: 1px solid #e0e5d8;
+  border: 1px solid #cbdcf2;
   border-radius: 50%;
   display: grid;
   place-items: center;
-  color: #748868;
+  color: #4671aa;
   transition:
     background 0.25s,
     transform 0.25s;
 }
 .ws-musecoach-card .ws-round-arrow {
-  color: #a88268;
+  color: #4876af;
 }
 .ws-app-card:hover .ws-round-arrow {
-  background: #e4eddb;
+  background: #d4e2f4;
   transform: rotate(7deg);
 }
 .ws-card-content > p {
   font-size: 14px;
   line-height: 1.85;
-  color: #63715f;
+  color: #5a6b80;
   max-width: 365px;
   margin: 13px 0 25px;
 }
 .ws-card-footer {
-  border-top: 1px solid #e7e9e0;
+  border-top: 1px solid #d5e2f4;
   padding: 17px 0;
   display: flex;
   align-items: center;
@@ -556,7 +556,7 @@ body .ws-bar .ws-account-link:hover {
 }
 .ws-card-footer > span {
   font-size: 11px;
-  color: #8b9588;
+  color: #6289bc;
 }
 .ws-card-footer strong {
   font-weight: 600;
@@ -564,10 +564,10 @@ body .ws-bar .ws-account-link:hover {
   align-items: center;
   gap: 8px;
   font-size: 12px;
-  color: #3f6453;
+  color: #285da8;
 }
 .ws-musecoach-card .ws-card-footer strong {
-  color: #906c54;
+  color: #285da8;
 }
 .ws-benefits {
   display: flex;
@@ -582,7 +582,7 @@ body .ws-bar .ws-account-link:hover {
   gap: 12px;
 }
 .ws-benefits > div > svg {
-  color: #839276;
+  color: #537db5;
 }
 .ws-benefits p {
   display: flex;
@@ -593,11 +593,11 @@ body .ws-bar .ws-account-link:hover {
 .ws-benefits strong {
   font-size: 12px;
   font-weight: 600;
-  color: #5e6e5b;
+  color: #3a5f8f;
 }
 .ws-benefits p > span {
   font-size: 11px;
-  color: #8b9387;
+  color: #5f87bb;
 }
 .ws-benefits > a {
   margin-left: auto;
@@ -606,20 +606,20 @@ body .ws-bar .ws-account-link:hover {
   align-items: center;
   text-decoration: none;
   font-size: 12px;
-  color: #597050;
+  color: #385b88;
 }
 .ws-benefits > a:hover {
   text-decoration: underline;
 }
 .ws-footer {
-  border-top: 1px solid #dfe2d7;
+  border-top: 1px solid #c8daf1;
   padding: 23px 0 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
   font-size: 11px;
-  color: #8a9384;
+  color: #5d85ba;
 }
 .ws-footer-dot {
   padding: 0 6px;
@@ -635,7 +635,7 @@ body .ws-bar .ws-account-link:hover {
   text-decoration: none;
 }
 .ws-footer a:hover {
-  color: #45673b;
+  color: #2f4c73;
   text-decoration: underline;
 }
 .ws-settings {
@@ -647,7 +647,7 @@ body .ws-bar .ws-account-link:hover {
 .ws-settings > a:first-child {
   display: inline-block;
   font-size: 12px;
-  color: #678063;
+  color: #426ba1;
   text-decoration: none;
   margin-bottom: 18px;
 }
@@ -669,7 +669,7 @@ body .ws-bar .ws-account-link:hover {
   border-radius: 14px;
   padding: 30px;
   margin: 24px 0;
-  box-shadow: 0 5px 18px #263c2603;
+  box-shadow: 0 5px 18px #1c2e4603;
 }
 .ws-settings h2 {
   font-size: 21px;
@@ -698,7 +698,7 @@ body .ws-bar .ws-account-link:hover {
 .ws-action {
   display: inline-block;
   padding: 12px 18px;
-  background: #294d40;
+  background: #285da8;
   color: #fff;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -710,7 +710,7 @@ body .ws-bar .ws-account-link:hover {
 }
 .ws-settings button:hover,
 .ws-action:hover {
-  background: #3f6751;
+  background: #1c4786;
 }
 .ws-settings button:disabled {
   opacity: 0.5;
@@ -725,10 +725,10 @@ body .ws-bar .ws-account-link:hover {
 }
 .ws-feedback {
   padding: 16px 20px;
-  background: #e8f0df;
-  border: 1px solid #cadcbb;
+  background: #d8e5f7;
+  border: 1px solid #adc7ea;
   border-radius: 9px;
-  color: #35562d;
+  color: #244975;
 }
 .ws-loading {
   padding: 40px;
@@ -741,7 +741,7 @@ body .ws-bar .ws-account-link:hover {
   display: inline-block;
   width: auto;
   margin: 0 9px 0 0;
-  accent-color: #477c59;
+  accent-color: #395c8a;
 }
 body.toolnest-page .sidebar {
   top: var(--ws-nav-height) !important;
@@ -791,67 +791,67 @@ body.musecoach-page .storage-actions {
   text-decoration: underline;
 }
 .ws-theme-dark {
-  --ws-bg: #172522;
-  --ws-paper: #20312c;
-  --ws-ink: #edf0e6;
-  --ws-muted: #a3b2a7;
-  --ws-line: #364a3f;
+  --ws-bg: #111d30;
+  --ws-paper: #19283e;
+  --ws-ink: #e5edf9;
+  --ws-muted: #b0bed2;
+  --ws-line: #34465f;
   background: var(--ws-bg);
   color: var(--ws-ink);
   color-scheme: dark;
 }
 .ws-theme-dark .ws-hero h1 {
-  color: #edf0e6;
+  color: #e5edf9;
 }
 .ws-theme-dark .ws-hero h1 em {
-  color: #a9c496;
+  color: #9bc5ff;
 }
 .ws-theme-dark .ws-hero-copy > p,
 .ws-theme-dark .ws-section-heading > span,
 .ws-theme-dark .ws-card-content > p {
-  color: #acb7a8;
+  color: #b0bed2;
 }
 .ws-theme-dark .ws-app-card {
-  border-color: #3e5041;
+  border-color: #294365;
 }
 .ws-theme-dark .ws-card-title h2 {
-  color: #edf0e6;
+  color: #e5edf9;
 }
 .ws-theme-dark .ws-card-footer {
-  border-color: #3c4d40;
+  border-color: #284161;
 }
 .ws-theme-dark .ws-card-footer strong,
 .ws-theme-dark .ws-card-label > span:first-child,
 .ws-theme-dark .ws-benefits strong,
 .ws-theme-dark .ws-benefits > a {
-  color: #b6ce9f;
+  color: #b9d6ff;
 }
 .ws-theme-dark .ws-card-index,
 .ws-theme-dark .ws-card-footer > span,
 .ws-theme-dark .ws-benefits p > span {
-  color: #a4b19c;
+  color: #83a2ca;
 }
 .ws-theme-dark .ws-round-arrow {
-  border-color: #5a6c53;
-  color: #bdcfae;
+  border-color: #375a88;
+  color: #a5bbd8;
 }
 .ws-theme-dark .ws-footer {
-  border-color: #3e5041;
-  color: #a1b294;
+  border-color: #294365;
+  color: #7e9ec8;
 }
 .ws-theme-dark .ws-settings input,
 .ws-theme-dark .ws-settings select {
   color-scheme: dark;
 }
 .ws-theme-dark .ws-feedback {
-  background: #2b442e;
-  color: #d6e8c7;
-  border-color: #48623b;
+  background: #20344f;
+  color: #c0d4ef;
+  border-color: #2e4a6f;
 }
 .ws-theme-dark .ws-settings button,
 .ws-theme-dark .ws-action {
-  background: #b4cfa1;
-  color: #233a27;
+  background: #9bc5ff;
+  color: #162c48;
 }
 .ws-theme-dark .ws-settings .ws-danger {
   background: #a14843;
@@ -1115,31 +1115,31 @@ body.musecoach-page .storage-actions {
   }
 }
 body.ws-theme-dark .ws-bar {
-  background: #192a25f5;
-  color: #edf0e6;
-  border-color: #364a3f;
+  background: #111d30f5;
+  color: #e5edf9;
+  border-color: #34465f;
 }
 body.ws-theme-dark .ws-apps a {
-  color: #aebcae;
+  color: #97b1d3;
 }
 body.ws-theme-dark .ws-apps a:hover,
 body.ws-theme-dark .ws-apps [aria-current] {
-  color: #d8e8c8;
-  background: #324d3d;
+  color: #c1d5ef;
+  background: #253c5a;
 }
 body.ws-theme-dark .ws-bar .ws-account-link {
-  border-color: #526549;
+  border-color: #32527c;
 }
 body.ws-theme-dark .ws-bar .ws-account-link:hover {
-  background: #b4cfa1;
-  color: #203526;
+  background: #9bc5ff;
+  color: #19283c;
 }
 body.ws-theme-dark .ws-nav-divider {
-  background: #42533b;
+  background: #294365;
 }
 body.ws-theme-dark .ws-brand-icon {
-  background: #b4cfa1;
-  color: #203526;
+  background: #9bc5ff;
+  color: #19283c;
 }
 
 .ws-move-notice {
@@ -1153,7 +1153,7 @@ body.ws-theme-dark .ws-brand-icon {
   color: var(--ws-ink);
   border: 1px solid var(--ws-line);
   border-radius: 12px;
-  box-shadow: 0 12px 45px #18332522;
+  box-shadow: 0 12px 45px #16233522;
   font:
     13px/1.7 "Segoe UI",
     sans-serif;
@@ -1175,6 +1175,54 @@ body.ws-theme-dark .ws-brand-icon {
 .ws-move-notice a {
   display: inline-block;
   margin: 3px 15px 3px 0;
-  color: #527a4f;
+  color: #3a5f8f;
   text-underline-offset: 3px;
+}
+
+body .ws-theme-toggle {
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border: 1px solid #d0dff2;
+  border-radius: 8px;
+  background: transparent;
+  color: #285da8;
+  cursor: pointer;
+}
+body .ws-theme-toggle:hover {
+  background: #eaf2ff;
+}
+body .ws-bar .ws-account-link {
+  margin-left: 0;
+}
+body.ws-theme-dark .ws-theme-toggle {
+  border-color: #34465f;
+  color: #9bc5ff;
+}
+body.ws-theme-dark .ws-theme-toggle:hover {
+  background: #203654;
+}
+.ws-theme-dark .ws-hero-note,
+.ws-theme-dark .ws-kicker {
+  color: #b0bed2;
+}
+@media (max-width: 600px) {
+  body .ws-bar {
+    gap: 8px;
+  }
+  body .ws-theme-toggle {
+    width: 28px;
+    height: 28px;
+  }
+  body .ws-bar .ws-account-link {
+    padding: 7px 5px;
+  }
+}
+@media (max-width: 359px) {
+  body .ws-bar .ws-wordmark > span:last-child {
+    display: none;
+  }
 }

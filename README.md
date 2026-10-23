@@ -2,15 +2,15 @@
 
 One Supabase account for **Toolnest** and **Musecoach**, maintained as equal sibling modules under a neutral workspace.
 
-**Live:** https://toolnest-musecoach.vercel.app/
+**Live:** https://workspaceapps.vercel.app/
 
 **Private source:** https://github.com/SidAjmera/Workspace
 
 ## Workspace design and neutral address
 
-The public address is **toolnest-musecoach.vercel.app**. The shared home now uses an ivory and evergreen palette, illustrated app previews, readable typography and equal cards for both apps. Navigation, account forms and privacy pages share the design, with mobile, dark-mode, keyboard-focus and reduced-motion support.
+The public address is **workspaceapps.vercel.app**. The shared home uses the blue studio palette from Musecoach, illustrated app previews, readable typography and equal cards for the current apps. The brand and public address support adding more apps without renaming. Navigation, account forms and privacy pages share the design, with mobile, light/dark modes, keyboard-focus and reduced-motion support. A theme toggle is available to guests and signed-in users in the shared header; the browser remembers the choice.
 
-The previous Workspace address remains available with a migration notice so device-only history and recordings can be exported before moving. Browser storage and sign-in sessions are scoped to each address: sign in again on the new address, enable desired sync, or restore an exported review backup in Musecoach Progress. Original audio needs a separate download/upload or an explicit cloud transfer. API keys remembered at the former address must be re-entered.
+Both previous Workspace addresses remain available with a migration notice so device-only history and recordings can be exported before moving. Browser storage and sign-in sessions are scoped to each address: sign in again on the new address, enable desired sync, or restore an exported review backup in Musecoach Progress. Original audio needs a separate download/upload or an explicit cloud transfer. API keys remembered at the former address must be re-entered.
 
 ## Release two (1.1.0)
 
@@ -54,7 +54,7 @@ Every added table uses RLS. Cloud objects are private, owner-scoped and limited 
 
 The schema scripts are explicit one-time upgrades. Connected migration-history requests failed, so do not infer migration-history entries from the SQL files or blindly rerun them. The previously intentional `consume_ai_quota` SECURITY DEFINER function can still appear in the security advisor; Workspace adds no new SECURITY DEFINER functions.
 
-The approved Vercel server secret is configured for Production and Preview. Supabase's Site URL is `https://toolnest-musecoach.vercel.app`, with its exact `/auth/callback` allowed alongside earlier callbacks. Local email-redirect tests need the exact `http://127.0.0.1:3100/auth/callback` allowlisted separately. Keep email confirmation enabled and custom SMTP configured; real email delivery still needs account verification.
+The approved Vercel server secret is configured for Production and Preview. Supabase's Site URL is `https://workspaceapps.vercel.app`, with its exact `/auth/callback` allowed alongside earlier callbacks. Local email-redirect tests need the exact `http://127.0.0.1:3100/auth/callback` allowlisted separately. Keep email confirmation enabled and custom SMTP configured; real email delivery still needs account verification.
 
 ## Consent, device storage and migration
 

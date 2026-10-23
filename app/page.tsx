@@ -142,7 +142,7 @@ export default function Home() {
       <section aria-labelledby="ws-apps-heading" className="ws-app-section">
         <div className="ws-section-heading">
           <h2 id="ws-apps-heading">Your workspace</h2>
-          <span>Two apps. One account. Your choice.</span>
+          <span>Your apps. One account. Room to grow.</span>
         </div>
         <div className="ws-cards">
           <a

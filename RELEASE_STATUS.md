@@ -1,6 +1,6 @@
 # Workspace release status — 23 October 2026
 
-Live site: https://toolnest-musecoach.vercel.app/
+Live site: https://workspaceapps.vercel.app/
 Private repository: https://github.com/SidAjmera/Workspace
 Local project: C:/Users/ajmer/OneDrive/Documents/Coding/Workspace
 
@@ -34,3 +34,7 @@ Full account deletion is queued for operator processing after file/app-data clea
 ## Neutral domain and visual redesign
 
 The new production address and exact authentication callback are configured in Vercel and Supabase. The previous address remains connected for device-data export, with a migration notice linking to the new home. A full shared-home redesign adds illustrated equal app cards, ivory/evergreen styling, improved navigation and account/privacy surfaces. Commit 2acae57 deployed successfully as Vercel deployment 4DRLs2PE8UtoKS3xKfWVJXqgVFKG. TypeScript and the production build passed. All 22 local and 22 hosted desktop/mobile checks passed against the redesigned site. Additional layout checks at 320px, 390px and 1280px found no horizontal overflow on home, settings, privacy or either app. Dark mode, the visible waveform and the live legacy-origin migration notice were also verified.
+
+## Blue studio theme and expandable Workspace Apps address
+
+The public home is now https://workspaceapps.vercel.app/. workspace-apps.vercel.app was unavailable. Shared light/dark palettes follow Musecoach, with a header theme toggle available before sign-in. Previous addresses remain available for exporting browser-only data and link to the new home. Current validation and rollout are in progress.
