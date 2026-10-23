@@ -26,6 +26,8 @@ Review sync never uploads device audio. Audio downloads occur for requested play
 
 ## All Apps navigation
 
+The shared home wordmark is **Workspace.**, with a blue period; app pages retain their own app names.
+
 The shared header shows the active app name (Toolnest or MuseCoach). Use **All Apps** to open the app-selection sidebar; the sidebar supports keyboard navigation, Escape to close, focus restoration and light/dark themes. Outside apps, the header and home keep Workspace branding; All Apps labels the app selector and collective app references, and sign-in does not assume a previous Toolnest account. App headers show names without workspace or app breadcrumb prefixes.
 
 ## Equal app structure

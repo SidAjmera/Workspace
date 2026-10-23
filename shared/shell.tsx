@@ -76,7 +76,14 @@ export function Shell({ children }: { children: React.ReactNode }) {
           <span className="ws-brand-icon">
             <ActiveIcon size={19} />
           </span>
-          <span>{activeApp.name}</span>
+          <span>
+            {activeApp.name}
+            {!app && (
+              <span className="ws-brand-period" aria-hidden="true">
+                .
+              </span>
+            )}
+          </span>
         </Link>
         <span className="ws-nav-divider" />
         <button
