@@ -1400,3 +1400,80 @@ body.ws-theme-dark .ws-app-dialog .ws-switcher-close:hover {
     gap: 5px;
   }
 }
+
+body .ws-bar .ws-switcher-button {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  justify-content: center;
+  flex-shrink: 0;
+}
+body .ws-bar .ws-nav-divider {
+  flex-shrink: 0;
+}
+@media (max-width: 600px) {
+  body .ws-bar .ws-switcher-button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+  }
+  .ws-nav-divider {
+    display: block;
+    height: 23px;
+  }
+  body .ws-bar {
+    gap: 12px;
+  }
+}
+@media (max-width: 359px) {
+  body .ws-bar {
+    gap: 8px;
+  }
+}
+
+.ws-previous-practice {
+  padding: 22px;
+  background: var(--ws-paper);
+  color: var(--ws-ink);
+  border: 1px solid var(--ws-line);
+  border-radius: 12px;
+  margin: 22px 0;
+  font:
+    13px/1.7 "Segoe UI",
+    sans-serif;
+}
+.ws-previous-practice h2 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+.ws-previous-practice p {
+  font-size: 12px;
+}
+.ws-previous-practice > button:not(.ws-previous-dismiss) {
+  border: 0;
+  border-radius: 7px;
+  background: #285da8;
+  color: white;
+  padding: 11px;
+  font:
+    600 12px "Segoe UI",
+    sans-serif;
+}
+.ws-previous-practice .ws-previous-dismiss {
+  float: right;
+  background: none;
+  border: 0;
+  color: inherit;
+  font-size: 20px;
+}
+.ws-previous-floating {
+  position: fixed;
+  z-index: 105;
+  bottom: 90px;
+  right: 18px;
+  width: min(400px, calc(100vw - 36px));
+  max-height: 65vh;
+  overflow: auto;
+  box-shadow: 0 12px 40px #142e5322;
+  margin: 0;
+}

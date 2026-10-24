@@ -1,3 +1,4 @@
+import { AppDestinationLink } from "@/site-context";
 export default function Privacy() {
   return (
     <main className="ws-settings">
@@ -16,16 +17,18 @@ export default function Privacy() {
           Toolnest’s Preferences & privacy. There is no active analytics
           collector.
         </p>
-        <a href="/toolnest/privacy">Toolnest’s detailed data policy</a>
+        <AppDestinationLink app="toolnest" path="/privacy">
+          Toolnest’s detailed data policy
+        </AppDestinationLink>
       </section>
       <section>
         <h2>Musecoach sync choices</h2>
         <p>
           Profile sync and review sync start off and are controlled
           independently in Account & settings. Profile sync stores your singing
-          profile, coach choices, goals, comfortable range and favorites.
-          Review sync stores measured reviews, pitch graphs, session names and
-          notes, including takes whose audio was never saved.
+          profile, coach choices, goals, comfortable range and favorites. Review
+          sync stores measured reviews, pitch graphs, session names and notes,
+          including takes whose audio was never saved.
         </p>
         <p>
           Enabled sync runs when you open or return to the workspace, reconnect,

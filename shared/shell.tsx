@@ -11,28 +11,40 @@ import {
   UserRound,
   Sun,
   Moon,
-  PanelLeft,
+  Menu,
   X,
   Check,
 } from "lucide-react";
 import { useAccount } from "./auth";
+import { PreviousPracticeImport } from "./legacy-practice-ui";
+import { useSite } from "./site-context";
+import { appURL, workspaceOrigin, sharedPath } from "./site-routing";
 export function Shell({ children }: { children: React.ReactNode }) {
   const path = usePathname(),
     { user, displayName } = useAccount();
-  const app = path.startsWith("/toolnest")
-    ? "toolnest"
-    : path.startsWith("/musecoach")
-      ? "musecoach"
-      : "";
+  const site = useSite();
+  const app = sharedPath(path) ? "" : site.app || "";
   const { resolvedTheme, setTheme } = useTheme();
   const [switcherOpen, setSwitcherOpen] = useState(false);
   const switcher = useRef<HTMLDialogElement>(null);
   const activeApp =
     app === "musecoach"
-      ? { name: "MuseCoach", href: "/musecoach", icon: AudioLines }
+      ? {
+          name: "MuseCoach",
+          href: appURL("musecoach", "/", site.origin),
+          icon: AudioLines,
+        }
       : app === "toolnest"
-        ? { name: "Toolnest", href: "/toolnest", icon: Compass }
-        : { name: "Workspace", href: "/", icon: Grid2X2 };
+        ? {
+            name: "Toolnest",
+            href: appURL("toolnest", "/", site.origin),
+            icon: Compass,
+          }
+        : {
+            name: "Workspace",
+            href: workspaceOrigin(site.origin),
+            icon: Grid2X2,
+          };
   const ActiveIcon = activeApp.icon;
   useEffect(() => {
     if (switcher.current?.open) switcher.current.close();
@@ -68,6 +80,21 @@ export function Shell({ children }: { children: React.ReactNode }) {
   return (
     <>
       <nav className="ws-bar" aria-label="Workspace navigation">
+        <button
+          className="ws-switcher-button"
+          aria-label="All Apps"
+          title="All Apps"
+          aria-haspopup="dialog"
+          aria-controls="ws-app-switcher"
+          aria-expanded={switcherOpen}
+          onClick={() => {
+            switcher.current?.showModal();
+            setSwitcherOpen(true);
+          }}
+        >
+          <Menu size={21} />
+        </button>
+        <span className="ws-nav-divider" />
         <Link
           href={activeApp.href}
           className="ws-wordmark"
@@ -85,20 +112,6 @@ export function Shell({ children }: { children: React.ReactNode }) {
             )}
           </span>
         </Link>
-        <span className="ws-nav-divider" />
-        <button
-          className="ws-switcher-button"
-          aria-haspopup="dialog"
-          aria-controls="ws-app-switcher"
-          aria-expanded={switcherOpen}
-          onClick={() => {
-            switcher.current?.showModal();
-            setSwitcherOpen(true);
-          }}
-        >
-          <PanelLeft size={17} />
-          <span>All Apps</span>
-        </button>
         <button
           className="ws-theme-toggle"
           aria-label={
@@ -170,7 +183,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
           <p className="ws-switcher-description">Choose where to go next.</p>
           <nav aria-label="All Apps">
             <a
-              href="/"
+              href={workspaceOrigin(site.origin)}
               aria-current={!app && path === "/" ? "page" : undefined}
             >
               <Grid2X2 size={20} />
@@ -182,14 +195,14 @@ export function Shell({ children }: { children: React.ReactNode }) {
             {[
               {
                 name: "Toolnest",
-                href: "/toolnest",
+                href: appURL("toolnest", "/", site.origin),
                 id: "toolnest",
                 icon: Compass,
                 description: "Discover and compare software",
               },
               {
                 name: "MuseCoach",
-                href: "/musecoach",
+                href: appURL("musecoach", "/", site.origin),
                 id: "musecoach",
                 icon: AudioLines,
                 description: "Find your voice, build your practice",
@@ -215,7 +228,9 @@ export function Shell({ children }: { children: React.ReactNode }) {
               Account & settings
               <ArrowUpRight size={14} />
             </a>
-            <a href="/privacy">Privacy & data</a>
+            <a href={site.app ? "/account/privacy" : "/privacy"}>
+              Privacy & data
+            </a>
           </div>
         </div>
       </dialog>
@@ -233,11 +248,14 @@ export function Shell({ children }: { children: React.ReactNode }) {
             backup and audio here before switching. Cloud data follows your
             account.
           </p>
-          <a href="/musecoach/progress">Export from Progress</a>
+          <a href="/device-export">Export previous device data</a>
           <a href="https://workspaceapps.vercel.app/">
             Visit the new Workspace ↗
           </a>
         </aside>
+      )}
+      {site.app === "musecoach" && (path === "/" || path === "/progress") && (
+        <PreviousPracticeImport />
       )}
       {children}
     </>

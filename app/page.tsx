@@ -1,3 +1,4 @@
+import { AppDestinationLink } from "@/site-context";
 import {
   ArrowUpRight,
   AudioLines,
@@ -145,8 +146,8 @@ export default function Home() {
           <span>Your apps. One account. Room to grow.</span>
         </div>
         <div className="ws-cards">
-          <a
-            href="/toolnest"
+          <AppDestinationLink
+            app="toolnest"
             className="ws-app-card ws-toolnest-card"
             aria-label="Open Toolnest"
           >
@@ -175,9 +176,9 @@ export default function Home() {
                 </strong>
               </div>
             </div>
-          </a>
-          <a
-            href="/musecoach"
+          </AppDestinationLink>
+          <AppDestinationLink
+            app="musecoach"
             className="ws-app-card ws-musecoach-card"
             aria-label="Open MuseCoach"
           >
@@ -206,7 +207,7 @@ export default function Home() {
                 </strong>
               </div>
             </div>
-          </a>
+          </AppDestinationLink>
         </div>
       </section>
       <aside className="ws-benefits">
@@ -235,6 +236,7 @@ export default function Home() {
         </span>
         <div>
           <a href="/privacy">Privacy & data</a>
+          <a href="/device-export">Previous device data</a>
           <a href="/settings">
             Account & settings <ArrowUpRight size={13} />
           </a>

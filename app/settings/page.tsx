@@ -1,4 +1,6 @@
 "use client";
+import { PreviousPracticeImport } from "@/legacy-practice-ui";
+import { AppDestinationLink } from "@/site-context";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { browserClient, configured } from "@toolnest/lib/supabase/client";
@@ -73,6 +75,7 @@ export default function Settings() {
         All Apps share your account. App preferences and saved content remain
         separate.
       </p>
+      <PreviousPracticeImport always />
       {message && (
         <p role="status" className="ws-feedback">
           {message}
@@ -198,9 +201,13 @@ export default function Settings() {
               destination before removing the source audio. Review sync never
               uploads device audio.
             </p>
-            <a className="ws-action" href="/musecoach/record">
+            <AppDestinationLink
+              className="ws-action"
+              app="musecoach"
+              path="/record"
+            >
               Record a take
-            </a>
+            </AppDestinationLink>
           </section>
           <section>
             <h2>Import guest practice</h2>
@@ -313,12 +320,12 @@ export default function Settings() {
             You can explore All Apps and practice without an account. Sign in
             when you want private cloud recordings.
           </p>
-          <a className="ws-action" href="/musecoach">
+          <AppDestinationLink className="ws-action" app="musecoach">
             Open Musecoach
-          </a>
-          <a className="ws-action" href="/toolnest">
+          </AppDestinationLink>
+          <AppDestinationLink className="ws-action" app="toolnest">
             Open Toolnest
-          </a>
+          </AppDestinationLink>
         </section>
       )}
       <p>

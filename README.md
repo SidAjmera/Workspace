@@ -40,7 +40,7 @@ The shared header shows the active app name (Toolnest or MuseCoach). Use **All A
 - `modules/toolnest` and `modules/musecoach`: independent feature modules with separate aliases, scoped styles and API routes.
 - `shared`: identity, account-scoped browser storage, sync coordination, conflict planning and recording transfers.
 
-The original projects remain [SidAjmera/AppScout](https://github.com/SidAjmera/AppScout) and [SidAjmera/Musecoach](https://github.com/SidAjmera/Musecoach). Neither is the parent product. The original Musecoach site remains available for exporting older browser records. Both original READMEs describe the shared releases and distinguish them from standalone behavior.
+The original projects remain [SidAjmera/Toolnest](https://github.com/SidAjmera/Toolnest) and [SidAjmera/Musecoach](https://github.com/SidAjmera/Musecoach). Neither is the parent product. The original Musecoach site remains available for exporting older browser records. Both original READMEs describe the shared releases and distinguish them from standalone behavior.
 
 ## Run and verify
 
@@ -52,7 +52,7 @@ Run `pnpm run typecheck`, `pnpm run test`, `pnpm run build` and `pnpm run test:e
 
 The shared site reuses the original Singapore project, retaining existing Toolnest account IDs and catalog. A fresh database needs these SQL files in order; an existing database must only apply upgrades it does not already have:
 
-1. `supabase/migrations/001_appscout.sql`: original Toolnest schema.
+1. `supabase/migrations/001_toolnest.sql`: original Toolnest schema.
 2. `supabase/workspace.sql`: shared account profile, private recording bucket and cloud reviews.
 3. `supabase/release-two.sql`: optional sync choices, practice profiles, revision checks and deletion markers.
 

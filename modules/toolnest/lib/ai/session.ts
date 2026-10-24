@@ -1,5 +1,5 @@
 import {createCipheriv,createDecipheriv,randomBytes} from 'node:crypto';import {cookies} from 'next/headers';import type {Connection} from './providers';
-const name='appscout-ai';
+const name='toolnest-ai';
 function secret(){const key=Buffer.from(process.env.BYOK_SESSION_SECRET||'','base64');if(key.length!==32)throw new Error('AI session security is not configured.');return key;}
 export function seal(value:unknown){const iv=randomBytes(12),cipher=createCipheriv('aes-256-gcm',secret(),iv);const data=Buffer.concat([cipher.update(JSON.stringify(value)),cipher.final()]);return Buffer.concat([iv,cipher.getAuthTag(),data]).toString('base64url');}
 export function unseal(token:string){const data=Buffer.from(token,'base64url'),dec=createDecipheriv('aes-256-gcm',secret(),data.subarray(0,12));dec.setAuthTag(data.subarray(12,28));return JSON.parse(Buffer.concat([dec.update(data.subarray(28)),dec.final()]).toString());}
